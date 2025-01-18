@@ -1,0 +1,12 @@
+{
+    "diagnostics.globals": [
+        "��⣷⠀⣿⡇⣸⣿⡟⠁⡀⣸⣿⣇⠀⢻⣿⣇⠀⢻⣿⠀⡙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⠿⣷⡀⢻⣿⣿⣿",
+        "vim",
+        "check_missing_imports"
+    ],
+    "diagnostics.disable": [
+        "undefined-global",
+        "need-check-nil",
+        "undefined-doc-name"
+    ]
+}

@@ -1,0 +1,57 @@
+# Fonts
+font_family JetBrainsMonoNL Nerd Font Mono
+font_size 16
+
+
+# Window
+initial_window_width 900
+initial_window_height 555
+remember_window_size yes
+scrollback_lines 10000
+
+# hide title bar
+hide_window_decorations yes
+
+
+# Misc
+term xterm-256color
+background_opacity 0.9
+copy_on_select yes
+
+# Keybindings
+macos_option_as_alt both
+map Cmd+a send_key Ctrl+a
+map Cmd+z send_key Ctrl+z
+map alt+s send_key alt+s
+map alt+c send_key alt+c
+map alt+x send_key alt+x
+map Cmd+r send_key Ctrl+r
+map Cmd+e send_key Ctrl+e
+map Cmd+c send_key Ctrl+c
+map Cmd+f send_key Ctrl+f
+map alt+e set_tab_title
+# map ctrl+k launch  ~/.config/kitty/kitty.conf
+
+# map a keybinding to run a kitten command
+map alt+t kitten themes
+
+# switching tabs
+map shift+right next_tab
+map shift+left previous_tab
+
+# Switch focus to the neighboring window in the indicated direction
+map alt+left neighboring_window left
+map alt+right neighboring_window right
+map alt+up neighboring_window up
+map alt+down neighboring_window down
+
+vim:fileencoding=utf-8:foldmethod=marker
+
+tab_bar_style powerline
+
+tab_powerline_style round
+
+# BEGIN_KITTY_THEME
+# Gruvbox Dark Hard
+include current-theme.conf
+# END_KITTY_THEME
