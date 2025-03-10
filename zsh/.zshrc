@@ -1,5 +1,6 @@
 #git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting ~/bash_scripts/say.sh "Welcome Welcome back Tariq Abubakar"
-# neofetch
+source ~/.env
+fastfetch
  # zmodload zsh/zprof # uncomment to profile startup time
 #toilet "tariqbaater" -F metal -F border
 # for displaying a logo during terminal start up
@@ -7,7 +8,6 @@
 
 # echo "Remaining balance:"
 # mysql -e "USE finances; SELECT * FROM asset_payments;" | tail -n +2 | awk '{sum += $3} END {result = (3500000) - sum; printf "%'\''d\n", result}'
-
 export PATH="/opt/homebrew/bin:$PATH"
 
 

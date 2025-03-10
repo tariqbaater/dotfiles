@@ -92,7 +92,7 @@ outer.right =      10
 
 # You can uncomment this line to open up terminal with alt + enter shortcut
 # See: https://nikitabobko.github.io/AeroSpace/commands#exec-and-forget
-cmd-enter = 'exec-and-forget open -a "Ghostty.app"'
+# cmd-enter = 'exec-and-forget open -a "Ghostty.app"'
 cmd-b = 'exec-and-forget open -a "Safari.app"'
 
 # custom commands
@@ -157,10 +157,10 @@ r = ['reload-config', 'mode main']
 f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
 backspace = ['close-all-windows-but-current', 'mode main']
 
-alt-shift-h = ['join-with left', 'mode main']
-alt-shift-j = ['join-with down', 'mode main']
-alt-shift-k = ['join-with up', 'mode main']
-alt-shift-l = ['join-with right', 'mode main']
+alt-shift-h = ['join-with left']
+alt-shift-j = ['join-with down']
+alt-shift-k = ['join-with up']
+alt-shift-l = ['join-with right']
 
 [[on-window-detected]]
 if.app-id = 'com.install4j.9806-1938-4586-6531.70'
