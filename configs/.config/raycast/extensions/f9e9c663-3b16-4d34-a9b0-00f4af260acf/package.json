@@ -20,12 +20,17 @@
     "ridemountainpig",
     "kcole93",
     "Rob",
-    "jagadeesh_k"
+    "jagadeesh_k",
+    "scottlovegrove",
+    "henningmu",
+    "FlohGro",
+    "dedalusj",
+    "william_sault"
   ],
   "commands": [
     {
       "name": "home",
-      "title": "Home",
+      "title": "My Tasks",
       "subtitle": "Todoist",
       "description": "Show your Todoist tasks and views (inbox, today, upcoming, completed, projects, labels).",
       "mode": "view",
@@ -58,6 +63,7 @@
         }
       ],
       "keywords": [
+        "home",
         "inbox",
         "today",
         "today tasks",
@@ -103,6 +109,14 @@
           "type": "checkbox",
           "label": "Close window immediately",
           "description": "When enabled, the Raycast window is closed immediately, allowing you to carry on with other work.",
+          "default": false,
+          "required": false
+        },
+        {
+          "name": "autoCreateLabels",
+          "type": "checkbox",
+          "label": "Create labels automatically",
+          "description": "When enabled Raycast will parse labels and create them automatically.",
           "default": false,
           "required": false
         }
@@ -156,6 +170,10 @@
           "name": "view",
           "type": "dropdown",
           "data": [
+            {
+              "title": "Inbox",
+              "value": "inbox"
+            },
             {
               "title": "Today",
               "value": "today"
@@ -244,7 +262,8 @@
       "title": "Open Focus Task",
       "subtitle": "Todoist",
       "description": "When a task is chosen as the focused one, you can open it directly using this command.",
-      "mode": "no-view"
+      "mode": "no-view",
+      "disabledByDefault": true
     }
   ],
   "tools": [
@@ -276,32 +295,18 @@
       "input": {
         "type": "object",
         "properties": {
-          "project_id": {
-            "type": "string",
-            "description": "Filter tasks by project ID"
-          },
-          "section_id": {
-            "type": "string",
-            "description": "Filter tasks by section ID"
-          },
-          "label": {
-            "type": "string",
-            "description": "Filter tasks by label name"
-          },
-          "filter": {
+          "query": {
             "type": "string",
             "description": "Filter tasks by any supported filter. Supports advanced filtering with various operators and keywords.\n\nBASIC OPERATORS:\n- | (OR): \"today | overdue\"\n- & (AND): \"today & p1\"\n- ! (NOT): \"!subtask\"\n- () (Grouping): \"(today | overdue) & #Work\"\n- , (Separate lists): \"date: yesterday, today\"\n- \\ (Escape special chars): \"#One \\& Two\"\n\nDATE FILTERS:\n- Specific dates:\n  \"date: Jan 3\" - Tasks for January 3rd\n  \"date before: May 5\" - Tasks before May 5th\n  \"date after: May 5\" - Tasks after May 5th\n- Relative dates:\n  \"date before: +4 hours\" - Tasks due within next 4 hours plus overdue\n  \"5 days\" or \"next 5 days\" - Tasks in next 5 days\n- Special date filters:\n  \"no date\" - Tasks without dates\n  \"!no time\" - Tasks with specific times\n  \"recurring\" - Recurring tasks\n\nPRIORITY FILTERS:\n- \"p1\" - Priority 1 (highest)\n- \"p2\" - Priority 2\n- \"p3\" - Priority 3\n- \"no priority\" - No priority set (p4)\n\nORGANIZATION FILTERS:\nLabels:\n- \"@email\" - Tasks with email label\n- \"no labels\" - Tasks without any labels\n- \"@home*\" - Tasks with labels starting with \"home\"\n\nProjects:\n- \"#Work\" - Tasks in Work project\n- \"##Work\" - Tasks in Work project and its sub-projects\n- \"##School & !#Science\" - School project tasks excluding Science\n\nSections:\n- \"/Meetings\" - Tasks in any Meetings section\n- \"#Work & /Meetings\" - Tasks in Work project's Meetings section\n- \"!/*\" - Tasks not in any section\n\nWorkspaces:\n- \"workspace: My projects\" - Tasks in My Projects workspace\n\nTASK PROPERTIES:\n- Search: \"search: Meeting\"\n- Creation: \"created: today\"\n- Subtasks: \"subtask\" or \"!subtask\"\n\nASSIGNMENT FILTERS:\n- \"assigned to: others\" - Tasks assigned to others\n- \"assigned by: me\" - Tasks you assigned\n- \"shared\" - Tasks in shared projects\n\nCOMPLEX EXAMPLES:\n- \"(today | overdue) & #Work\" - Today's or overdue Work tasks\n- \"7 days &\n\n@waiting \" - Next week's waiting tasks\n- \"#Inbox & no date\" - Undated Inbox tasks\n- \"@urgent* & ##Work\" - Work tasks with urgent-like labels\n\nNote: Multiple filters (using the comma operator) are not supported"
           },
           "lang": {
             "type": "string",
             "description": "IETF language tag defining what language filter is written in,\nif differs from default English"
-          },
-          "ids": {
-            "type": "string",
-            "description": "A list of the task IDs to retrieve, this should be a comma separated list."
           }
         },
-        "required": []
+        "required": [
+          "query"
+        ]
       },
       "confirmation": false
     },
@@ -402,7 +407,7 @@
           },
           "priority": {
             "type": "number",
-            "description": "The priority of the task (1-4, where 4 is very urgent and 1 is natural)"
+            "description": "The priority of the task (1-4, where 1 is highest priotiy and 4 is the lowest priority)."
           },
           "parent_id": {
             "type": "string",
@@ -525,7 +530,7 @@
           },
           "priority": {
             "type": "number",
-            "description": "The priority of the task (1-4, where 4 is very urgent and 1 is natural)"
+            "description": "The priority of the task (1-4, where 1 is highest priotiy and 4 is the lowest priority)."
           },
           "collapsed": {
             "type": "boolean",
@@ -1334,6 +1339,29 @@
             }
           }
         ]
+      },
+      {
+        "input": "@todoist Update the priority of task Task 1 to priority 1",
+        "mocks": {
+          "get-tasks": [
+            {
+              "id": "Task 1",
+              "priority": 4
+            }
+          ],
+          "update-task": "Successfully called \"update-task\""
+        },
+        "expected": [
+          {
+            "callsTool": {
+              "arguments": {
+                "id": "Task 1",
+                "priority": 1
+              },
+              "name": "update-task"
+            }
+          }
+        ]
       }
     ]
   },
@@ -1353,31 +1381,39 @@
       "title": "Focus Label",
       "description": "Shared label name to apply to your focused task. No label will be applied if left empty.",
       "placeholder": "raycast-focus"
+    },
+    {
+      "name": "useConfetti",
+      "type": "checkbox",
+      "label": "Use confetti to celebrate task completion",
+      "description": "When enabled, completing a task will trigger a confetti celebration.",
+      "default": false,
+      "required": false
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.78.1",
-    "@raycast/utils": "^1.18.1",
-    "axios": "^1.7.2",
-    "date-fns": "^3.6.0",
-    "form-data": "^4.0.0",
+    "@raycast/api": "^1.100.0",
+    "@raycast/utils": "^1.19.1",
+    "axios": "^1.8.4",
+    "date-fns": "^4.1.0",
+    "form-data": "^4.0.2",
     "lodash": "^4.17.21",
-    "mime": "^4.0.4",
+    "mime": "^4.0.7",
     "node-fetch": "^3.3.2",
-    "remove-markdown": "^0.5.0"
+    "remove-markdown": "^0.6.0"
   },
   "devDependencies": {
-    "@raycast/eslint-config": "^1.0.8",
-    "@types/lodash": "^4.17.6",
+    "@raycast/eslint-config": "^2.0.4",
+    "@types/lodash": "^4.17.16",
     "@types/mime": "^4.0.0",
-    "@types/node": "^20.14.10",
-    "@types/react": "^18.3.3",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.0",
     "@types/remove-markdown": "^0.3.4",
-    "eslint": "^8.57.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "prettier": "^3.3.2",
-    "typescript": "^5.5.3"
+    "eslint": "^9.24.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
   },
   "scripts": {
     "build": "ray build -e dist",
