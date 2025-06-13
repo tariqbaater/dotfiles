@@ -78,7 +78,8 @@ alias rest="timer 10m && terminal-notifier -message 'Pomodoro'\
 alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
 alias fman='compgen -c | fzf | xargs man'
 # Search a file with fzf and open it using neovim
-alias vifzf='vi $(fzf -m --preview "bat --style=numbers --color=always --line-range :500 {}")'
+# alias fzf='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
+alias vifzf='vi $(fd --type f --hidden --exclude .git | fzf-tmux -m --preview "bat --style=numbers --color=always --line-range :500 {}")'
 
 # man page in vim
 export MANPAGER='nvim +Man!'
@@ -237,14 +238,14 @@ zinit load zpm-zsh/colorize
 # ZSH Basic Options
 ######################################################
 
-setopt autocd #change to directory by typing it's name 
+setopt autocd #change to directory by typing it's name
 setopt correct #auto correct mistakes
-setopt interactivecomments #allow comments in interactive mode 
+setopt interactivecomments #allow comments in interactive mode
 setopt magicequalsubst #enable filename expansion for arguments of the form ‘argument=value’
-setopt nonomatch #hide error message if there are no matches for expansion 
+setopt nonomatch #hide error message if there are no matches for expansion
 setopt notify #report the status of background jobs immediately
 setopt numericglobsort #sort filenames numerically when it makes sense
-setopt promptsubst #enable parameter expansion, backslash substitution, and command substitution in prompts 
+setopt promptsubst #enable parameter expansion, backslash substitution, and command substitution in prompts
 
 # ZSH History Options
 ######################################################
@@ -266,5 +267,5 @@ setopt hist_ignore_dups
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' menu no 
+zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
