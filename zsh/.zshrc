@@ -1,5 +1,6 @@
 #git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting ~/bash_scripts/say.sh "Welcome Welcome back Tariq Abubakar"
 source ~/.env
+export $(grep -v '^#' .env | xargs)
 fastfetch
  # zmodload zsh/zprof # uncomment to profile startup time
 #toilet "tariqbaater" -F metal -F border
