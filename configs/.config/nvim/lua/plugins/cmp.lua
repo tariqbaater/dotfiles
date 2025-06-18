@@ -3,6 +3,7 @@ return {
   event = {
     "BufNewFile",
     "BufReadPre",
+    "InsertEnter",
   },
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
@@ -25,7 +26,7 @@ return {
         -- REQUIRED - you must specify a snippet engine
         expand = function(args)
           -- vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
-          require("luasnip").lsp_expand(args.body)           -- For `luasnip` users.
+          require("luasnip").lsp_expand(args.body) -- For `luasnip` users.
           -- require('snippy').expand_snippet(args.body) -- For `snippy` users.
           -- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
         end,
@@ -44,13 +45,11 @@ return {
         ["<C-f>"] = cmp.mapping.scroll_docs(4),
         ["<C-Space>"] = cmp.mapping.complete(),
         ["<C-e>"] = cmp.mapping.abort(),
-        ["<CR>"] = cmp.mapping.confirm({ select = true }),         -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+        ["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
       }),
       sources = cmp.config.sources({
-        { name = "luasnip" },         -- For luasnip users.
-        -- { name = "codeium" },
+        { name = "luasnip" }, -- For luasnip users.
         { name = "nvim_lsp" },
-        -- { name = "tailwindcss" }
 
       }, {
         { name = "buffer" },
@@ -67,7 +66,6 @@ return {
             buffer = "[Buffer]",
             path = "[Path]",
             codeium = "[Codeium]",
-            -- tailwindcss = "[TailwindCSS]",
           }),
         }),
       },
@@ -76,7 +74,7 @@ return {
     -- Set configuration for specific filetype.
     cmp.setup.filetype("gitcommit", {
       sources = cmp.config.sources({
-        { name = "git" },         -- You can specify the `git` source if [you were installed it](https://github.com/petertriho/cmp-git).
+        { name = "git" }, -- You can specify the `git` source if [you were installed it](https://github.com/petertriho/cmp-git).
       }, {
         { name = "buffer" },
       }),
@@ -139,93 +137,21 @@ return {
 
     local servers = {
       "cssls",
-      "rust_analyzer",
-      "gopls",
-      -- php server
+      "biome",
       "intelephense",
-      "html",
-      -- "tsserver",
       "ts_ls",
       "lua_ls",
       "jsonls",
-      "clangd",
       "emmet_ls",
-      "html",
       "sqlls",
       "pylsp",
-      -- "tailwindcss",
     }
-    -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+    -- Loop over the servers and apply the on_attach function
     for _, lsp in ipairs(servers) do
-      if lsp == "lua_ls" then
-        require("lspconfig")[lsp].setup({
-          capabilities = capabilities,
-          on_attach = on_attach,
-          settings = {
-            Lua = {
-              diagnostics = {
-                globals = { "vim" },
-              },
-            },
-          },
-        })
-      else
-        if lsp == "clangd" then
-          capabilities = vim.lsp.protocol.make_client_capabilities()
-          capabilities.offsetEncoding = { "utf-16" }
-
-          require("lspconfig")[lsp].setup({
-            capabilities = capabilities,
-            on_attach = on_attach,
-            filetypes = { "c", "cpp", "objc", "objcpp" },
-          })
-        else
-          require("lspconfig")[lsp].setup({
-            capabilities = capabilities,
-            on_attach = on_attach,
-          })
-        end
-        if lsp == "sqlls" then
-          require 'lspconfig'.sqlls.setup {
-            capabilities = capabilities,
-            on_attach = on_attach,
-            filetypes = { 'sql' },
-            root_dir = function(_)
-              return vim.loop.cwd()
-            end,
-          }
-        end
-        if lsp == "intelephense" then
-          require 'lspconfig'.intelephense.setup {
-            capabilities = capabilities,
-            on_attach = on_attach,
-            filetypes = { 'php', 'html', 'blade' },
-            root_dir = function(_)
-              return vim.loop.cwd()
-            end,
-          }
-        end
-        if lsp == "emmet_ls" then
-          require 'lspconfig'.emmet_ls.setup {
-            capabilities = capabilities,
-            on_attach = on_attach,
-            filetypes = { 'html', 'blade', 'php' },
-            root_dir = function(_)
-              return vim.loop.cwd()
-            end,
-          }
-        end
-        if lsp == "html" then
-          require 'lspconfig'.html.setup {
-            capabilities = capabilities,
-            on_attach = on_attach,
-            filetypes = { 'html', 'blade', 'php' },
-            root_dir = function(_)
-              return vim.loop.cwd()
-            end,
-          }
-        end
-      end
+      require("lspconfig")[lsp].setup({
+        on_attach = on_attach,
+        capabilities = capabilities,
+      })
     end
   end,
 }

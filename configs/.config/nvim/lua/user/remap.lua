@@ -5,6 +5,11 @@ local map = vim.api.nvim_set_keymap
 -- show alpha dashboard
 -- map("n", "<leader>h", ":Alpha<CR>", { noremap = true, silent = true })
 
+
+-- increment/decrement numbers
+map("n", "<leader>+", "<C-a>", { noremap = true, silent = true, desc = "Increment number" }) -- increment
+map("n", "<leader>-", "<C-x>", { noremap = true, silent = true, desc = "Decrement number" }) -- decrement
+
 -- normal mode
 map("i", "jk", "<ESC>", { noremap = true, silent = true })
 map("i", "jj", "<ESC>", { noremap = true, silent = true })

@@ -55,6 +55,7 @@ return {
       { "<leader>pa", "<cmd>Lazy update<CR>",                                         desc = "Update plugins" },
       { "<leader>ps", "<cmd>Lazy sync<CR>",                                           desc = "Sync plugins" },
       { "<leader>pU", "<cmd>Lazy check<CR>",                                          desc = "Check Update" },
+      { "<leader>pp", "<cmd>MCPHub<CR>",                                              desc = "MCPHub" },
       { "<leader>fa", "<cmd>Config <CR>",                                             desc = "Nvim config files" },
       { "<leader>fo", "<cmd>Telescope oldfiles<CR>",                                  desc = "open old files" },
       { "<leader>fc", "<cmd>Telescope commands<CR>",                                  desc = "commands" },
@@ -88,7 +89,9 @@ return {
       { "<leader>D",  "<cmd>w<cr>:sp |terminal g++ % -o %:r && ./%:r<CR>",            desc = "compile and run c++" },
       { "<leader>m",  "<cmd>DBUIToggle<CR>",                                          desc = "Deploy DBUI" },
       { "<leader>y",  "<cmd>InspectTree<CR>",                                         desc = "Inspect tree" },
-      { "<leader>o",  "<cmd>TSJToggle<CR>",                                           desc = "Toggle TSJ" }
+      { "<leader>o",  "<cmd>TSJToggle<CR>",                                           desc = "Toggle TSJ" },
+      { "<leader>vp", "<cmd>MarkdownPreviewToggle<CR>",                               desc = "Markdown Preview" },
+      { "<leader>vs", "<cmd>MarkdownPreviewStop<CR>",                                 desc = "Markdown Stop" }
     })
   end
 }

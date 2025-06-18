@@ -7,7 +7,7 @@ ssh_auto: 22
 servernames:
   light-wolverine-59.telebit.io:
     wildcard: true
-    handler: 8888
+    handler: 8000
 ports: {}
 email: liwof26574@evnft.com
 agree_tos: true

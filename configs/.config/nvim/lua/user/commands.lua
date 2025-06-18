@@ -28,16 +28,18 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 -- set filetype for blade files
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
   pattern = { "*.blade.php" },
-  callback = function() vim.opt.filetype = "html" end
+  callback = function()
+    vim.opt.filetype = "html"
+  end,
 })
 -- remove trailing whitespace
 vim.api.nvim_create_autocmd("BufWritePre", {
-    group = vim.api.nvim_create_augroup("strip_trailing_whitespace", {}),
-    desc = "Remove trailing whitespace on save",
-    pattern = "*",
-    callback = function()
-        vim.cmd([[%s/\s\+$//e]])
-    end,
+  group = vim.api.nvim_create_augroup("strip_trailing_whitespace", {}),
+  desc = "Remove trailing whitespace on save",
+  pattern = "*",
+  callback = function()
+    vim.cmd([[%s/\s\+$//e]])
+  end,
 })
 
 -- terminal settings
@@ -89,12 +91,12 @@ vim.api.nvim_create_autocmd("FileType", {
 
 -- format on save
 vim.api.nvim_create_autocmd("BufWritePre", {
-    group = vim.api.nvim_create_augroup("format_on_save", {}),
-    desc = "Format on save",
-    pattern = "*",
-    callback = function()
-        vim.lsp.buf.format()
-    end,
+  group = vim.api.nvim_create_augroup("format_on_save", {}),
+  desc = "Format on save",
+  pattern = "*",
+  callback = function()
+    vim.lsp.buf.format()
+  end,
 })
 
 -- source lua files on save
@@ -121,5 +123,17 @@ vim.api.nvim_create_autocmd("TermOpen", {
   pattern = "*lazygit*",
   callback = function()
     vim.cmd([[resize 30]])
+  end,
+})
+
+-- save macros that are triggered when entering a buffer
+vim.api.nvim_create_autocmd("BufEnter", {
+  group = vim.api.nvim_create_augroup("save_macros", {}),
+  desc = "Save macros",
+  pattern = "*",
+  callback = function()
+    vim.fn.setreg("r", "diwAMath.floor(Math.random() * pa))")
+    vim.fn.setreg("f", '0f"s{`;s`}')
+    vim.fn.setreg("s", 'vatof>i class=""i')
   end,
 })
