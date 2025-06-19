@@ -1,6 +1,4 @@
 nvchad/*
-kitty/kitty-themes/*
-configs/.config/raycast/
 github-copilot/*
 git/*
 .git/*
@@ -15,8 +13,8 @@ lazy-lock.json
 .zcompdump
 .zsh
 .zsh_sessions/
-configs/.config/kitty/kitty-themes
-configs/.config/github-copilot
-configs/.config/raycast/extensions
-configs/.config/github-copilot
-configs/.config/kitty
+configs/.config/kitty/*
+configs/.config/github-copilot/*
+configs/.config/raycast/extensions/*
+configs/.config/github-copilot/*
+configs/.config/kitty/*
