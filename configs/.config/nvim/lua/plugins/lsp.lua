@@ -10,38 +10,18 @@ return {
   },
   config = function()
     require("mason").setup({
-      ui = {
-        border = "rounded",
-        icons = {
-          package_installed = "✓",
-          package_pending = "➜",
-          package_uninstalled = "✗",
-        },
-      },
+      ui = { border = "rounded" }
     })
     require("mason-lspconfig").setup({
       auto_install = true,
       ensure_installed = {
-        "lua_ls",
-        "intelephense",
-        "cssls",
-        "jsonls",
-        "emmet_ls",
-        "html",
-        "pylsp",
-        "sqlls",
-        "biome",
+        "lua_ls", "intelephense", "cssls", "jsonls",
+        "emmet_ls", "html", "pylsp", "sqlls", "biome"
       },
     })
-
     require("mason-tool-installer").setup({
       ensure_installed = {
-        "prettierd",
-        "stylua",
-        "black",
-        "isort",
-        "sql-formatter",
-        "biome",
+        "prettierd", "stylua", "black", "isort", "sql-formatter", "biome"
       },
     })
   end,

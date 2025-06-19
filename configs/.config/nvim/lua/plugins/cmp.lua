@@ -107,46 +107,44 @@ return {
       }),
     })
 
-    -- Set up lspconfig.
-    local capabilities = require("cmp_nvim_lsp").default_capabilities()
-    local on_attach = function(_, _)
-      vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<cr>", {})
-      vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-      vim.keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<cr>", {})
-      vim.keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<cr>", {})
-      vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, {})
-      vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action, {})
-      vim.keymap.set("n", "gr", "<cmd>Telescope lsp_references<cr>", {})
-      vim.keymap.set("n", "<leader>ls", vim.lsp.buf.signature_help, {})
-      vim.keymap.set("n", "<leader>ld", vim.diagnostic.open_float, {})
-      vim.keymap.set("n", "<leader>lq", vim.diagnostic.setloclist, {})
-      vim.keymap.set("n", "<leader>lD", "<cmd>Telescope diagnostics<cr>", {})
-      vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, {})
-      vim.keymap.set("n", "]d", vim.diagnostic.goto_next, {})
-      vim.keymap.set("n", "<leader>lf", function()
+    -- Helper for LSP keymaps
+    local function setup_lsp_keymaps()
+      local set = vim.keymap.set
+      set("n", "gd", "<cmd>Telescope lsp_definitions<cr>", {})
+      set("n", "K", vim.lsp.buf.hover, {})
+      set("n", "gi", "<cmd>Telescope lsp_implementations<cr>", {})
+      set("n", "gt", "<cmd>Telescope lsp_type_definitions<cr>", {})
+      set("n", "<leader>lr", vim.lsp.buf.rename, {})
+      set("n", "<leader>la", vim.lsp.buf.code_action, {})
+      set("n", "gr", "<cmd>Telescope lsp_references<cr>", {})
+      set("n", "<leader>ls", vim.lsp.buf.signature_help, {})
+      set("n", "<leader>ld", vim.diagnostic.open_float, {})
+      set("n", "<leader>lq", vim.diagnostic.setloclist, {})
+      set("n", "<leader>lD", "<cmd>Telescope diagnostics<cr>", {})
+      set("n", "[d", vim.diagnostic.goto_prev, {})
+      set("n", "]d", vim.diagnostic.goto_next, {})
+      set("n", "<leader>lf", function()
         vim.lsp.buf.format({ async = true })
       end, {})
     end
 
-    -- set the diagnostic symbols
-    local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
-    for type, icon in pairs(signs) do
-      local hl = "DiagnosticSign" .. type
-      vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+    local function setup_diagnostic_signs()
+      local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+      for type, icon in pairs(signs) do
+        local hl = "DiagnosticSign" .. type
+        vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+      end
     end
 
+    local capabilities = require("cmp_nvim_lsp").default_capabilities()
+    local function on_attach(_, _)
+      setup_lsp_keymaps()
+    end
+    setup_diagnostic_signs()
+
     local servers = {
-      "cssls",
-      "biome",
-      "intelephense",
-      "ts_ls",
-      "lua_ls",
-      "jsonls",
-      "emmet_ls",
-      "sqlls",
-      "pylsp",
+      "cssls", "biome", "intelephense", "ts_ls", "lua_ls", "jsonls", "emmet_ls", "sqlls", "pylsp", "html"
     }
-    -- Loop over the servers and apply the on_attach function
     for _, lsp in ipairs(servers) do
       require("lspconfig")[lsp].setup({
         on_attach = on_attach,
