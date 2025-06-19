@@ -4,8 +4,12 @@
 -- create a command to toggle diagnostics
 vim.api.nvim_create_user_command("ToggleDiagnostics", function()
   local current_state = vim.diagnostic.config().virtual_text
-  vim.diagnostic.config({ virtual_text = not current_state })
-  print("Diagnostics virtual text is now " .. (not current_state and "enabled" or "disabled"))
+  vim.diagnostic.config({ virtual_text = not current_state, underline = not current_state })
+  if not current_state then
+    print("Diagnostics enabled")
+  else
+    print("Diagnostics disabled")
+  end
 end, {})
 
 -- undo persistence

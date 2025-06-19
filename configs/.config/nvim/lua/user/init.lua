@@ -75,5 +75,5 @@ require("lazy").setup("plugins", {
 })
 
 require("notify").setup({
-  background_colour = "#000000",
+  background_colour = "#C4D0FF",
 })

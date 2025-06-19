@@ -2,9 +2,6 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 local map = vim.api.nvim_set_keymap
--- show alpha dashboard
--- map("n", "<leader>h", ":Alpha<CR>", { noremap = true, silent = true })
-
 
 -- increment/decrement numbers
 map("n", "<leader>+", "<C-a>", { noremap = true, silent = true, desc = "Increment number" }) -- increment
