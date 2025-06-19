@@ -13,8 +13,5 @@ lazy-lock.json
 .zcompdump
 .zsh
 .zsh_sessions/
-configs/.config/kitty/*
-configs/.config/github-copilot/*
-configs/.config/raycast/extensions/*
-configs/.config/github-copilot/*
-configs/.config/kitty/*
+kitty/*
+raycast/extensions/*
