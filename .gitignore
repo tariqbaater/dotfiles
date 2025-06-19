@@ -1,5 +1,4 @@
 nvchad/*
-github-copilot/*
 git/*
 .git/*
 .lazy-lock.json
@@ -19,3 +18,4 @@ configs/.config/raycast/extensions/*
 configs/.config/kitty
 configs/.config/nvim/.mypy_cache
 configs/.config/raycast/extensions
+configs/.config/github-copilot/*
