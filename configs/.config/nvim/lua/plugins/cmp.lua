@@ -46,6 +46,7 @@ return {
       sources = cmp.config.sources({
         { name = "luasnip" }, -- For luasnip users.
         { name = "nvim_lsp" },
+        { name = "copilot" },
 
       }, {
         { name = "buffer" },
@@ -61,7 +62,7 @@ return {
             luasnip = "[Snippet]",
             buffer = "[Buffer]",
             path = "[Path]",
-            codeium = "[Codeium]",
+            -- codeium = "[Codeium]",
           }),
         }),
       },
@@ -108,8 +109,8 @@ return {
       local set = vim.keymap.set
       set("n", "gd", "<cmd>Telescope lsp_definitions<cr>", {})
       set("n", "K", vim.lsp.buf.hover, {})
-      set("n", "gi", "<cmd>Telescope lsp_implementations<cr>", {})
-      set("n", "gt", "<cmd>Telescope lsp_type_definitions<cr>", {})
+      -- set("n", "gi", "<cmd>Telescope lsp_implementations<cr>", {})
+      -- set("n", "gt", "<cmd>Telescope lsp_type_definitions<cr>", {})
       set("n", "<leader>lr", vim.lsp.buf.rename, {})
       set("n", "<leader>la", vim.lsp.buf.code_action, {})
       set("n", "gr", "<cmd>Telescope lsp_references<cr>", {})
