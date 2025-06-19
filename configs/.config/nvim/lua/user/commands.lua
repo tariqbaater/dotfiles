@@ -1,4 +1,13 @@
 -- custom line commands
+
+-- lsp options
+-- create a command to toggle diagnostics
+vim.api.nvim_create_user_command("ToggleDiagnostics", function()
+  local current_state = vim.diagnostic.config().virtual_text
+  vim.diagnostic.config({ virtual_text = not current_state })
+  print("Diagnostics virtual text is now " .. (not current_state and "enabled" or "disabled"))
+end, {})
+
 -- undo persistence
 vim.api.nvim_create_autocmd("BufReadPre", {
   group = vim.api.nvim_create_augroup("persist_undo", {}),
@@ -132,8 +141,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
   desc = "Save macros",
   pattern = "*",
   callback = function()
+    -- update your favorite macros here
     vim.fn.setreg("r", "diwAMath.floor(Math.random() * pa))")
-    vim.fn.setreg("f", '0f"s{`;s`}')
-    vim.fn.setreg("s", 'vatof>i class=""i')
   end,
 })
