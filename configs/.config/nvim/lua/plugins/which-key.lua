@@ -21,6 +21,7 @@ return {
     local wk = require("which-key")
 
     wk.add({
+      { "<leader>Ls", "<cmd>ToggleDiagnostics<CR>",                                   desc = "ToggleDiagnostics" },
       { "<leader>db", "<cmd>lua require('dap').toggle_breakpoint()<cr>",              desc = "Toggle Breakpoint" },
       { "<leader>dc", "<cmd>lua require('dap').continue()<cr>",                       desc = "Continue" },
       { "<leader>dn", "<cmd>lua require('dap').step_over()<cr>",                      desc = "Step Over" },
