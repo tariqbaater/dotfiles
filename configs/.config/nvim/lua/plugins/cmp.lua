@@ -125,19 +125,32 @@ return {
       end, {})
     end
 
+    -- Helper for setting up diagnostic signs
     local function setup_diagnostic_signs()
-      local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
-      for type, icon in pairs(signs) do
-        local hl = "DiagnosticSign" .. type
-        vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-      end
+      vim.diagnostic.config({
+        signs = {
+          text = {
+            [vim.diagnostic.severity.ERROR] = " ",
+            [vim.diagnostic.severity.WARN] = " ",
+            [vim.diagnostic.severity.INFO] = "󰋼 ",
+            [vim.diagnostic.severity.HINT] = "󰌵 ",
+          },
+          numhl = {
+            [vim.diagnostic.severity.ERROR] = "",
+            [vim.diagnostic.severity.WARN] = "",
+            [vim.diagnostic.severity.HINT] = "",
+            [vim.diagnostic.severity.INFO] = "",
+          },
+        },
+      })
     end
 
+    -- Setup lspconfig and lsp servers
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
     local function on_attach(_, _)
       setup_lsp_keymaps()
+      setup_diagnostic_signs()
     end
-    setup_diagnostic_signs()
 
     local servers = {
       "cssls", "biome", "intelephense", "ts_ls", "lua_ls", "jsonls", "emmet_ls", "sqlls", "pylsp", "html"
