@@ -63,7 +63,7 @@ require("lazy").setup("plugins", {
     notify = true,
   },
   install = {
-    colorscheme = { "catpuccin", "tokyonight", "habamax", "kanagawa" },
+    colorscheme = { "catppuccin", "tokyonight", "habamax", "kanagawa" },
 
   },
   checker = {

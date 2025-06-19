@@ -1,15 +1,21 @@
 {
+  "nativeMCPServers": [
+    
+  ],
   "mcpServers": {
     "github.com/antvis/mcp-server-chart": {
       "args": [
         "-y",
         "@antv/mcp-server-chart"
       ],
+      "disabled": false,
+      "command": "npx",
       "autoApprove": [
         "generate_area_chart",
         "generate_bar_chart",
         "generate_boxplot_chart",
         "generate_column_chart",
+        "generate_district_map",
         "generate_dual_axes_chart",
         "generate_fishbone_diagram",
         "generate_flow_diagram",
@@ -20,7 +26,9 @@
         "generate_mind_map",
         "generate_network_graph",
         "generate_organization_chart",
+        "generate_path_map",
         "generate_pie_chart",
+        "generate_pin_map",
         "generate_radar_chart",
         "generate_sankey_chart",
         "generate_scatter_chart",
@@ -28,12 +36,15 @@
         "generate_venn_chart",
         "generate_violin_chart",
         "generate_word_cloud_chart"
+      ]
+    },
+    "github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
       ],
-      "command": "npx",
-      "disabled": false
+      "disabled": false,
+      "command": "npx"
     }
-  },
-  "nativeMCPServers": [
-    
-  ]
+  }
 }

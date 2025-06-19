@@ -33,6 +33,12 @@ map("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
 map("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
 map("n", "<C-l>", "<C-w>l", { noremap = true, silent = true })
 
+-- windows
+vim.keymap.set("n", "<leader><left>", ":vertical resize +20<cr>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader><right>", ":vertical resize -20<cr>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader><up>", ":resize +10<cr>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader><down>", ":resize -10<cr>", { noremap = true, silent = true })
+
 -- harpoon keymaps
 map(
   "n",
