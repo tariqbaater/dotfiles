@@ -2,8 +2,8 @@
 vim.g.maplocalleader = "\\" -- Same for `maplocalleader`
 vim.g.mapleader = " "       -- Make sure to set `mapleader` before lazy so your mappings are correct
 
--- lsp options
-vim.diagnostic.config({ virtual_text = true, underline = true })
+-- -- lsp options
+-- vim.diagnostic.config({ virtual_text = true, underline = true })
 
 -- lazygit options
 vim.g.lazygit_floating_window_winblend = 0 -- transparency of floating window

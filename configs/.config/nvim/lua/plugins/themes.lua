@@ -1,10 +1,10 @@
 return {
   {
     "folke/tokyonight.nvim",
-    lazy = false,                         -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000,                      -- make sure to load this before all the other start plugins
+    lazy = false,                                   -- make sure we load this during startup if it is your main colorscheme
+    priority = 1000,                                -- make sure to load this before all the other start plugins
     config = function()
-          vim.cmd([[colorscheme catppuccin-macchiato]]) -- prioritize catppuccin-macchiato over other colorschemes
+      vim.cmd([[colorscheme catppuccin-mocha]])     -- prioritize catppuccin-macchiato over other colorschemes
     end,
   },
   {
