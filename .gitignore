@@ -12,8 +12,6 @@ lazy-lock.json
 .zcompdump
 .zsh
 .zsh_sessions/
-kitty/*
-raycast/extensions/*
 configs/.config/raycast/extensions/*
 configs/.config/kitty
 configs/.config/nvim/.mypy_cache
