@@ -1,0 +1,22 @@
+nvchad/*
+kitty/kitty-themes/*
+raycast/
+github-copilot/*
+git/*
+.git/*
+.lazy-lock.json
+# .gitignore
+config.json
+.env
+.DS_Store
+lazy-lock.json
+.zsh_history
+.zprofile
+.zcompdump
+.zsh
+.zsh_sessions/
+configs/.config/kitty/kitty-themes
+configs/.config/github-copilot
+configs/.config/raycast/extensions
+configs/.config/github-copilot
+configs/.config/kitty
