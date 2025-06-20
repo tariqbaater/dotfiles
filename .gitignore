@@ -18,3 +18,5 @@ configs/.config/raycast/extensions
 configs/.config/nvim/lazy-lock.json
 configs/.config/github-copilot/apps.json
 configs/.config/github-copilot/versions.json
+configs/.config/raycast
+configs/.config/raycast
