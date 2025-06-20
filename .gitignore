@@ -13,7 +13,6 @@ lazy-lock.json
 .zsh
 .zsh_sessions/
 configs/.config/raycast/extensions/*
-configs/.config/kitty
 configs/.config/nvim/.mypy_cache
 configs/.config/raycast/extensions
 configs/.config/github-copilot/*
