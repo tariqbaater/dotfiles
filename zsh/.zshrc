@@ -1,8 +1,6 @@
-#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting ~/bash_scripts/say.sh "Welcome Welcome back Tariq Abubakar"
 source ~/.env
 export $(grep -v '^#' .env | xargs)
 fastfetch
- # zmodload zsh/zprof # uncomment to profile startup time
 #toilet "tariqbaater" -F metal -F border
 # for displaying a logo during terminal start up
 # figlet -f script "tariq" | lolcat
@@ -11,17 +9,11 @@ fastfetch
 # mysql -e "USE finances; SELECT * FROM asset_payments;" | tail -n +2 | awk '{sum += $3} END {result = (3500000) - sum; printf "%'\''d\n", result}'
 export PATH="/opt/homebrew/bin:$PATH"
 
-
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 #homebrew command-not-found
 HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
 if [ -f "$HB_CNF_HANDLER" ]; then
 source "$HB_CNF_HANDLER";
 fi
-
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -34,16 +26,12 @@ ZSH_COLORIZE_STYLE="monokai"
 
 source $ZSH/oh-my-zsh.sh
 
-
-
 # User configuration
-
 # aliases
 alias arc='open -a "Arc"'
 alias raycast='open -a "Raycast"'
 alias vpn='open -a "OpenVPN Connect"'
 alias expai='open raycast://ai-commands/explain-ai'
-alias search="~/bash_scripts/google.sh"
 alias icat="kitten icat"
 alias c='clear'
 alias la='eza -lah'
@@ -65,16 +53,6 @@ alias gb='git branch'
 alias rm='trash'
 alias what-i-got='compgen -c | fzf | xargs -I {} {}'
 alias zellij='zsh <(curl -L zellij.dev/launch) '
-# Mac setup for pomo
-alias work="timer 60m && terminal-notifier -message 'Pomodoro'\
-        -title 'Work Timer is up! Take a Break 😊'\
-        -appIcon '~/Pictures/pumpkin.png'\
-        -sound Crystal"
-
-alias rest="timer 10m && terminal-notifier -message 'Pomodoro'\
-        -title 'Break is over! Get back to work 😬'\
-        -appIcon '~/Pictures/pumpkin.png'\
-        -sound Crystal"
 # Search for uses of linux commands
 alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
 alias fman='compgen -c | fzf | xargs man'
@@ -105,7 +83,7 @@ function nvims() {
   NVIM_APPNAME=$config nvim $@
 }
 
-bindkey -s ^a 'nvims\n'
+bindkey -s ^e 'nvims\n'
 
 # git
 function gcap() {

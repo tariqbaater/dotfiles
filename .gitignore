@@ -16,3 +16,4 @@ configs/.config/raycast/extensions/*
 configs/.config/nvim/.mypy_cache
 configs/.config/raycast/extensions
 configs/.config/github-copilot/*
+configs/.config/nvim/lazy-lock.json
