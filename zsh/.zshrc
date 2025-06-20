@@ -114,23 +114,6 @@ function note() {
     vi "$HOME/iCloud/notes/quick_notes.md"
 
 }
-# Promo project
-function promo() {
-    # execute a bash script ~/bash_scripts/promo-checker.sh
-    ~/bash_scripts/promo-checker.sh "$@"
-}
-
-# MAC reminder
-function reminder() {
-    # execute a bash script ~/bash_scripts/reminder.sh
-    ~/bash_scripts/reminder.sh "$@"
-
-}
-
-# Password Generator
-function passgen() {
-    ~/bash_scripts/passGen.sh "$@"
-}
 
 # End of lines added by compinstall
 autoload -Uz compinit
@@ -151,17 +134,9 @@ export PATH="$HOME/.tmuxifier/bin:$PATH"
 #zoxide settings
 eval "$(zoxide init zsh)"
 
-#
-# timezsh() {
-#   shell=${1-$SHELL}
-#   for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
-# }
-#
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# export PATH=$PATH:$HOME/go/bin
 
-# Generated for envman. Do not edit.
-[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH=$PATH:$HOME/go/bin
 
 # pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"

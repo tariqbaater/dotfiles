@@ -20,3 +20,9 @@ configs/.config/github-copilot/apps.json
 configs/.config/github-copilot/versions.json
 configs/.config/raycast
 configs/.config/raycast
+configs/.config/nvim/.DS_Store
+configs/.config/nvim/lazy-lock.json
+configs/.config/.DS_Store
+configs/.DS_Store
+tmux
+.DS_Store
