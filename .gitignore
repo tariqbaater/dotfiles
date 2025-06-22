@@ -26,3 +26,4 @@ configs/.config/.DS_Store
 configs/.DS_Store
 tmux
 .DS_Store
+configs/.config/nvim/lua/.DS_Store
