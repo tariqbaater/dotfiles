@@ -3,6 +3,27 @@ vim.g.maplocalleader = " "
 
 local map = vim.api.nvim_set_keymap
 
+-- copen navigaation
+
+map("n", "<leader>C", ":copen<CR>", { noremap = true, silent = true, desc = "Open quickfix list" })
+map("n", "<leader>C<CR>", ":cclose<CR>", { noremap = true, silent = true, desc = "Close quickfix list" })
+map("n", "§", ":cnext<CR>", { noremap = true, silent = true, desc = "Next quickfix item" })
+map("n", "±", ":cprev<CR>", { noremap = true, silent = true, desc = "Previous quickfix item" })
+
+-- Quickly append semicolon or comma in insert mode
+vim.keymap.set('i', ';;', '<Esc>A;<Esc>')
+vim.keymap.set('i', ',,', '<Esc>A,<Esc>')
+
+-- Open in finder
+vim.keymap.set('n', '<Leader><Leader>o', ':!open $PWD<CR><CR>', { silent = true })
+
+-- Open line, but stay in normal mode
+vim.keymap.set('n', '<CR>', 'o<Esc>')
+
+-- Keep visual selection when indenting
+vim.keymap.set('x', '>', '>gv')
+vim.keymap.set('x', '<', '<gv')
+
 -- increment/decrement numbers
 map("n", "<leader>+", "<C-a>", { noremap = true, silent = true, desc = "Increment number" }) -- increment
 map("n", "<leader>-", "<C-x>", { noremap = true, silent = true, desc = "Decrement number" }) -- decrement

@@ -1,15 +1,12 @@
 {
-  "nativeMCPServers": [
-    
-  ],
   "mcpServers": {
     "github.com/antvis/mcp-server-chart": {
+      "disabled": false,
+      "command": "npx",
       "args": [
         "-y",
         "@antv/mcp-server-chart"
       ],
-      "disabled": false,
-      "command": "npx",
       "autoApprove": [
         "generate_area_chart",
         "generate_bar_chart",
@@ -39,12 +36,23 @@
       ]
     },
     "github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking": {
+      "disabled": false,
+      "command": "npx",
       "args": [
         "-y",
         "@modelcontextprotocol/server-sequential-thinking"
-      ],
+      ]
+    },
+    "github.com/21st-dev/magic-mcp": {
       "disabled": false,
-      "command": "npx"
+      "command": "npx",
+      "args": [
+        "-y",
+        "@21st-dev/magic@latest"
+      ]
     }
-  }
+  },
+  "nativeMCPServers": [
+    
+  ]
 }

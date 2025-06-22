@@ -68,7 +68,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
     -- split below the same window
     vim.cmd([[setlocal splitbelow]])
     -- set terminal size to 10 lines, **I disabeld this because it breaks lazygit inside neovim**
-    vim.cmd([[resize 10]])
+    -- vim.cmd([[resize 10]])
     -- open terminal in insert mode
     vim.cmd([[setlocal filetype=terminal]])
     vim.cmd([[setlocal statusline=%{get(b:,'coc_current_function','')}]])
@@ -135,7 +135,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
   desc = "Lazygit size",
   pattern = "*lazygit*",
   callback = function()
-    vim.cmd([[resize 30]])
+    vim.cmd([[resize 36]])
   end,
 })
 
@@ -146,6 +146,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
   pattern = "*",
   callback = function()
     -- update your favorite macros here
-    vim.fn.setreg("r", "diwAMath.floor(Math.random() * pa))")
+    -- make the current line in markdown into a checkbox
+    vim.fn.setreg("c", "0i- [ f]€ý5€kr 0j0")
   end,
 })

@@ -1,4 +1,4 @@
 return {
-	"easymotion/vim-easymotion",
-	lazy = false,
+  "easymotion/vim-easymotion",
+  lazy = false,
 }
