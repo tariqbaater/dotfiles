@@ -153,7 +153,7 @@ return {
     end
 
     local servers = {
-      "cssls", "biome", "intelephense", "ts_ls", "lua_ls", "jsonls", "emmet_ls", "sqlls", "pylsp", "html"
+      "cssls", "biome", "intelephense", "ts_ls", "lua_ls", "jsonls", "emmet_ls", "sqlls", "pylsp", "html", "gopls",
     }
     for _, lsp in ipairs(servers) do
       require("lspconfig")[lsp].setup({
