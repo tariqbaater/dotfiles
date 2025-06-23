@@ -21,6 +21,7 @@ return {
     local wk = require("which-key")
 
     wk.add({
+      { "<leader>tt", "<cmd>TodoList<CR>",                                            desc = "Todo List" },
       { "<leader>Ls", "<cmd>ToggleDiagnostics<CR>",                                   desc = "ToggleDiagnostics" },
       { "<leader>db", "<cmd>lua require('dap').toggle_breakpoint()<cr>",              desc = "Toggle Breakpoint" },
       { "<leader>dc", "<cmd>lua require('dap').continue()<cr>",                       desc = "Continue" },
@@ -38,9 +39,10 @@ return {
       { "<leader>c",  "<cmd>bd<cr>",                                                  desc = "Close buffer" },
       -- { "<leader>C",  "<cmd>bufdo bd!<cr>",                                           desc = "Close all buffers" },
       { "<leader>x",  "<cmd>BufferLinePickClose<cr>",                                 desc = "Pick Close buffer" },
-      { "<leader>r",  "<cmd>w<cr>:sp | terminal python3 %<CR>",                       desc = "run python in a horizontal split" },
-      { "<leader>j",  "<cmd>w<cr>:sp | terminal node %<CR>",                          desc = "run JS file in a horizontal split" },
-      { "<leader>k",  "<cmd>w<cr>:sp | terminal cargo run % <CR>",                    desc = "Compile TS file" },
+      -- { "<leader>r",  "<cmd>w<cr>:sp | terminal python3 %<CR>",                       desc = "run python in a horizontal split" },
+      { "<leader>r",  "<cmd>w<cr>:Cook<CR>",                                          desc = "run code in a floating window" },
+      -- { "<leader>j",  "<cmd>w<cr>:sp | terminal node %<CR>",                          desc = "run JS file in a horizontal split" },
+      -- { "<leader>k",  "<cmd>w<cr>:sp | terminal cargo run % <CR>",                    desc = "Compile TS file" },
       { "<leader>h",  "<cmd>Alpha<CR>",                                               desc = "show dashboard" },
       { "<leader>gg", "<cmd>LazyGit<CR>",                                             desc = "open lazygit" },
       { "<leader>z",  "<cmd>lua require('telescope').extensions.notify.notify()<CR>", desc = "show notifications" },
