@@ -16,12 +16,12 @@ return {
       auto_install = true,
       ensure_installed = {
         "lua_ls", "intelephense", "cssls", "jsonls",
-        "emmet_ls", "html", "pylsp", "sqlls", "biome"
+        "emmet_ls", "html", "pylsp", "sqlls", "biome", "gopls"
       },
     })
     require("mason-tool-installer").setup({
       ensure_installed = {
-        "prettierd", "stylua", "black", "isort", "sql-formatter", "biome"
+        "prettierd", "stylua", "black", "isort", "sql-formatter", "biome", "gofumpt",
       },
     })
   end,
