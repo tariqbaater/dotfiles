@@ -10,7 +10,7 @@ local function expand_path(path)
 end
 
 local function win_config()
-  -- This function returns the window configuration
+  -- This function returns the window style configuration
   local width = math.min(math.floor(vim.o.columns * 0.8), 64)
   local height = math.floor(vim.o.lines * 0.8)
   return {
@@ -20,7 +20,12 @@ local function win_config()
     row = math.floor((vim.o.lines - height) / 2),
     col = math.floor((vim.o.columns - width) / 2),
     style = 'minimal',
-    border = 'rounded',
+    border = 'single',
+    title = 'Todo List',
+    title_pos = 'center',
+    focusable = true,
+    footer = "q:close, @c:convert to checklist, @x: mark as done, dd: delete task",
+    footer_pos = 'center',
   }
 end
 
@@ -37,8 +42,15 @@ local function open_floating_file(target_file)
     buf = vim.api.nvim_create_buf(false, false)
     vim.api.nvim_buf_set_name(buf, expanded_path)
   end
+
+  -- This ignore swapfile for the floating window if it's opened somewhere else
   vim.bo[buf].swapfile = false
-  local win = vim.api.nvim_open_win(buf, true, win_config())
+
+  -- Open the buffer in a floating window
+  vim.api.nvim_open_win(buf, true, win_config())
+
+  -- Close the floating window when 'q' is pressed
+  vim.api.nvim_buf_set_keymap(buf, 'n', 'q', ':close<CR>', { noremap = true, silent = true })
 end
 
 local function setup_user_commands(opts)
@@ -47,8 +59,6 @@ local function setup_user_commands(opts)
   local target_file = opts.target_file
   if not target_file then
     target_file = default_target_file
-    vim.notify("Using default todo file: " .. default_target_file, vim.log.levels.INFO)
-    vim.notify("Make sure the file is created at: " .. expand_path(default_target_file), vim.log.levels.WARN)
   end
   -- This function sets up user commands
   vim.api.nvim_create_user_command(
