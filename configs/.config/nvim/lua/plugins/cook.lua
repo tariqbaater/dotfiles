@@ -7,6 +7,7 @@ return {
         lua = "'lua %s'",
         js = "'node %s'",
         php = "'php %s'",
+        sh = "'bash %s'",
       }
     })
   end,
