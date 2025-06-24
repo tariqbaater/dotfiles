@@ -108,10 +108,11 @@ function gcop() {
 
 # quick notes
 function note() {
-    echo "*$(date)*" >> "$HOME/iCloud/notes/quick_notes.md"
-    echo ": $@" | base64 >> "$HOME/iCloud/notes/quick_notes.md"
-    echo "\n" >> "$HOME/iCloud/notes/quick_notes.md"
-    vi "$HOME/iCloud/notes/quick_notes.md"
+    # echo "*$(date)*" >> "$HOME/iCloud/notes/quick_notes.md"
+    # echo ": $@" | base64 >> "$HOME/iCloud/notes/quick_notes.md"
+    # echo "\n" >> "$HOME/iCloud/notes/quick_notes.md"
+    # vi "$HOME/iCloud/notes/quick_notes.md"
+    echo "- [ ] $@" >> "$HOME/notes/todo.md"
 
 }
 
