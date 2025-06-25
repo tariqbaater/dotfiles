@@ -21,6 +21,7 @@ return {
     local wk = require("which-key")
 
     wk.add({
+      { "<leader>to", "<cmd>TodoComments<CR>",                                        desc = "Todo Comments" },
       { "<leader>tt", "<cmd>TodoList<CR>",                                            desc = "Todo List" },
       { "<leader>Ls", "<cmd>ToggleDiagnostics<CR>",                                   desc = "ToggleDiagnostics" },
       { "<leader>db", "<cmd>lua require('dap').toggle_breakpoint()<cr>",              desc = "Toggle Breakpoint" },
@@ -72,6 +73,7 @@ return {
       { "<leader>fr", "<cmd>Telescope lsp_references<CR>",                            desc = "references" },
       { "<leader>fm", "<cmd>Telescope marks<CR>",                                     desc = "marks" },
       { "<leader>ft", "<cmd>Telescope colorscheme<CR>",                               desc = "themes" },
+      { "<leader>fT", "<cmd>TodoTelescope<CR>",                                       desc = "Find TODOs" },
       { "<leader>fz", "<cmd>Telescope zoxide list<CR>",                               desc = "zoxide" },
       { "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<CR>",                            desc = "rename" },
       { "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<CR>",                       desc = "code action" },
