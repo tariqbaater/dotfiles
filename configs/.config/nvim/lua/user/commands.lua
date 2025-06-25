@@ -106,7 +106,8 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_create_autocmd("BufWritePre", {
   group = vim.api.nvim_create_augroup("format_on_save", {}),
   desc = "Format on save",
-  pattern = "*",
+  pattern =
+  "*.lua, *.py, *.js, *.ts, *.json, *.css, *.scss, *.html, *.md, *.php, *.go, *.rs, *.java, *.c, *.cpp, *.h, *.sh, *.yaml, *.sql",
   callback = function()
     vim.lsp.buf.format()
   end,
