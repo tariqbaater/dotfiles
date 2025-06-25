@@ -11,5 +11,7 @@ end
 local todo = require("user_functions.todo")
 todo.setup({
   -- your custom options here
-  -- target_file = "~/notes/todo.md",
+  target_file = "~/notes/todo.md",
 })
+
+local test = require("find-todos").setup()
