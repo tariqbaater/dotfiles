@@ -4,7 +4,12 @@ local M = {}
 
 local function map_data(file, dir, data)
   local full_path = dir .. "/" .. file
-  local lines = vim.fn.readfile(full_path)
+  -- safely read file with error handling
+  local ok, lines = pcall(vim.fn.readfile, full_path)
+  if not ok then
+    vim.notify("Error reading file: " .. full_path, vim.log.levels.ERROR)
+    return
+  end
 
   -- iterate through the lines of the file
   for index, value in ipairs(lines) do
@@ -17,25 +22,45 @@ local function map_data(file, dir, data)
         file_name = file,
         col_idx = find,
         row = index,
+        content = value:sub(find), -- store the TODO comment content
       })
     end
   end
 end
 
 local function get_files(dir)
-  -- decalare a table that will hold the file names
+  -- declare a table that will hold the file names
   local return_files = {}
 
+  -- safely read directory with error handling
+  local ok, files = pcall(vim.fn.readdir, dir)
+  if not ok then
+    vim.notify("Error reading directory: " .. dir, vim.log.levels.ERROR)
+    return return_files
+  end
+
   -- iterate through the current directory
-  for _, file in ipairs(vim.fn.readdir(dir)) do
+  for _, file in ipairs(files) do
     -- skip hidden files
     if vim.startswith(file, ".") then
       goto continue
     end
+
     -- declare the full path of the file
     local full_path = dir .. "/" .. file
-    -- if the file is a directory, recursively get files from it
-    if vim.fn.isdirectory(full_path) == 0 then
+
+    -- safely check if path is directory
+    local ok_dir, is_dir = pcall(function()
+      return vim.fn.isdirectory(full_path) == 1
+    end)
+
+    if not ok_dir then
+      vim.notify("Error checking directory: " .. full_path, vim.log.levels.WARN)
+      goto continue
+    end
+
+    -- if the file is not a directory, process it
+    if not is_dir then
       map_data(file, dir, return_files)
     else
       -- iterate through the files in the subdirectory
@@ -55,30 +80,50 @@ function M.setup()
     local buf = vim.api.nvim_create_buf(false, true)
     local current_buf = vim.api.nvim_get_current_buf()
 
-    local lines = {}
-    for _, file in ipairs(files) do
-      table.insert(lines, file.file_name .. "-" .. file.col_idx .. ":" .. file.row)
-    end
-
-
-    vim.api.nvim_buf_set_lines(buf, 0, -1, true, lines)
+    -- Calculate window dimensions
     local width = math.min(math.floor(vim.o.columns * 0.8), 64)
     local height = math.floor(vim.o.lines * 0.8)
 
+    local lines = {}
+    -- Add a header line
+    table.insert(lines, string.rep("=", width))
+    table.insert(lines, "TODOs Found: " .. #files)
+    table.insert(lines, string.rep("-", width))
+
+    for _, file in ipairs(files) do
+      -- Format each TODO entry with file info and content
+      table.insert(lines, string.format("📄 %s:%d", file.file_name, file.row))
+      -- Add the TODO content with proper indentation
+      table.insert(lines, "  " .. file.content:gsub("^%s*", ""))
+      table.insert(lines, string.rep("-", width))
+    end
+
+    vim.api.nvim_buf_set_lines(buf, 0, -1, true, lines)
+
+    -- Set up syntax highlighting
+    vim.api.nvim_buf_set_option(buf, "filetype", "markdown")
+
+    -- Add buffer local highlights
+    local ns_id = vim.api.nvim_create_namespace("todo_comments")
+    for i, line in ipairs(lines) do
+      if line:match("^📄") then
+        vim.api.nvim_buf_add_highlight(buf, ns_id, "Directory", i - 1, 0, -1)
+      elseif line:match("^%s*TODO:") then
+        vim.api.nvim_buf_add_highlight(buf, ns_id, "Todo", i - 1, 0, -1)
+      end
+    end
+
+    -- Create floating window
     local win = vim.api.nvim_open_win(buf, true, {
       relative = 'editor',
       width = width,
       height = height,
       row = math.floor((vim.o.lines - height) / 2),
       col = math.floor((vim.o.columns - width) / 2),
-      border = 'single',
-      -- style = 'minimal',
-      title = "Todo Comments",
-      title_pos = 'center',
-      focusable = true,
-      footer = "Press 'l' to open the file and jump to the line, 'q' to close",
-      footer_pos = 'center',
-
+      style = 'minimal',
+      border = 'rounded',
+      title = " Todo Comments ",
+      title_pos = 'center'
     })
 
     -- keymap to open the file and jump to the line
