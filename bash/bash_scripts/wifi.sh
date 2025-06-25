@@ -3,7 +3,7 @@
 # This script is used to connect to a Wi-Fi network using networksetup
 
 # Assign arguments to variables
-SSID="iPhone"
+SSID="TaRiQ++++bAaTeR"
 PASSWORD="12345679"
 # Check if the Wi-Fi interface is available
 # Get the Wi-Fi interface name
