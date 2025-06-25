@@ -14,4 +14,4 @@ todo.setup({
   target_file = "~/notes/todo.md",
 })
 
-local test = require("find-todos").setup()
+require("user_functions.find-todos").setup()
