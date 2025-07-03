@@ -27,3 +27,5 @@ configs/.DS_Store
 tmux
 .DS_Store
 configs/.config/nvim/lua/.DS_Store
+configs/.config/yazi/flavors/catppuccin-mocha.yazi
+configs/.config/yazi/flavors/dracula.yazi
