@@ -47,6 +47,7 @@ return {
         { name = "luasnip" }, -- For luasnip users.
         { name = "nvim_lsp" },
         { name = "copilot" },
+        -- local path
 
       }, {
         { name = "buffer" },

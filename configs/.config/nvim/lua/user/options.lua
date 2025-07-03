@@ -19,6 +19,9 @@ vim.g.lazygit_config_file_path = {} -- table of custom config file paths
 -- Neovim default updatetime is 4000 set to lower value to update perfomance
 vim.opt.updatetime = 200
 
+-- Performance improvements
+vim.opt.redrawtime = 10000
+vim.opt.maxmempattern = 20000
 
 
 -- set numbers and relative numbers

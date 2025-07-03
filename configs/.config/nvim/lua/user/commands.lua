@@ -151,5 +151,11 @@ vim.api.nvim_create_autocmd("BufEnter", {
     vim.fn.setreg("c", "0I- [ €kb €kr€kbf]€ý5a j")
     -- mark as completed checkbox
     vim.fn.setreg("x", "02f €ý5rx€ý50j")
+    -- bold
+    vim.fn.setreg("b", "0i**A**0")
+    -- italic
+    vim.fn.setreg("i", "0i*A*0")
+    -- list item
+    vim.fn.setreg("l", "0I- 0")
   end,
 })
