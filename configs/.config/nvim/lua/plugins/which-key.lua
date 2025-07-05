@@ -61,6 +61,7 @@ return {
       { "<leader>pp", "<cmd>MCPHub<CR>",                                              desc = "MCPHub" },
       { "<leader>fa", "<cmd>Config <CR>",                                             desc = "Nvim config files" },
       { "<leader>fo", "<cmd>Telescope oldfiles<CR>",                                  desc = "open old files" },
+      { "<leader>fe", "<cmd>Telescope treesitter<CR>",                                desc = "Treesitter Symbols" },
       { "<leader>fc", "<cmd>Telescope commands<CR>",                                  desc = "commands" },
       { "<leader>fk", "<cmd>Telescope keymaps<CR>",                                   desc = "keymaps" },
       { "<leader>fh", "<cmd>Telescope help_tags<CR>",                                 desc = "help tags" },
