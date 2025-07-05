@@ -65,14 +65,14 @@ export MANPAGER='nvim +Man!'
 
 # nvim configuration picker
 alias nvim-lazy='NVIM_APPNAME=LazyVim nvim'
-alias nvim-astro='NVIM_APPNAME=AstroNvim nvim'
+alias nvim-astro='NVIM_APPNAME=astro nvim'
 alias nvim-chad='NVIM_APPNAME=nvchad nvim'
 # alias nvim-default='NVIM_APPNAME=kickstart nvim'
 # alias functions
 
 #nvim picker function
 function nvims() {
-  items=("default" "LazyVim" "AstroNvim" "nvchad")
+  items=("default" "LazyVim" "astro" "nvchad")
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Nvim Config → " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z $config ]]; then
     echo "Nothing selected"
