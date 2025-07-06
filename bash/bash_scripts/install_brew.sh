@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 print_logo() {
-  cat <<EOF
+cat <<'EOF'
 
   ______           _       ____              __
  /_  __/___ ______(_)___ _/ __ )____ _____ _/ /____  _____
@@ -19,9 +19,21 @@ EOF
 clear
 print_logo
 
+# check the OS type
+if [[ "$(uname)" != "Darwin" ]]; then
+    echo "This script is intended for macOS only. Exiting..."
+    exit 1
+fi
+
+# Exit on error, undefined variable, or pipe failure
 set -euo pipefail
 
+# list of brew packages to install
 BREW_LIST_FILE="brew_list"
+# Dotfiles repository URL (update this URL accordingly)
+DOTFILES_REPO_URL="https://github.com/tariqbaater/dotfiles.git"
+# Target directory for dotfiles, within the .config directory
+DOTFILES_DIR="$HOME/.config/dotfiles"
 
 # Check if the brew_list file exists
 echo "Checking if $BREW_LIST_FILE exists..."
@@ -66,10 +78,6 @@ echo "Finished installing brew packages."
 
 
 echo "Pulling dotfiles repository..."
-# Dotfiles repository URL (update this URL accordingly)
-DOTFILES_REPO_URL="https://github.com/tariqbaater/dotfiles.git"
-# Target directory for dotfiles, within the .config directory
-DOTFILES_DIR="$HOME/.config/dotfiles"
 
 # Create .config directory if it doesn't exist
 echo "Checking if .config directory exists..."

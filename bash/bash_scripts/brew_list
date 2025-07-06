@@ -357,8 +357,6 @@ zoxide
 zstd
 aerospace
 chromedriver
-devpod
-firefox
 font-3270-nerd-font
 font-fira-code
 font-hack-nerd-font
@@ -366,7 +364,6 @@ font-jetbrains-mono-nerd-font
 hiddenbar
 iterm2
 ngrok
-pycharm-ce
 shortcat
 skim
 thonny
