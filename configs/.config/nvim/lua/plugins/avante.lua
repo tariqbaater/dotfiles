@@ -46,6 +46,13 @@ return {
       'MeanderingProgrammer/render-markdown.nvim',
       opts = {
         file_types = { "markdown", "Avante" },
+        checkbox = { checked = { scope_highlight = '@markup.strikethrough' } },
+        code = {
+          sign = false,
+          width = 'block',
+          min_width = 45,
+          left_pad = 2,
+        },
       },
       ft = { "markdown", "Avante" },
     },
