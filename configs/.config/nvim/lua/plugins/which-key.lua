@@ -94,7 +94,14 @@ return {
       { "<leader>D",  "<cmd>w<cr>:sp |terminal g++ % -o %:r && ./%:r<CR>",            desc = "compile and run c++" },
       { "<leader>m",  "<cmd>DBUIToggle<CR>",                                          desc = "Deploy DBUI" },
       { "<leader>y",  "<cmd>InspectTree<CR>",                                         desc = "Inspect tree" },
-      { "<leader>o",  "<cmd>TSJToggle<CR>",                                           desc = "Toggle TSJ" },
+      { "<leader>oo", "<cmd>TSJToggle<CR>",                                           desc = "Toggle TSJ" },
+      { "<leader>os", "<cmd>ObsidianQuickSwitch<CR>",                                 desc = "Obsidian quick search" },
+      { "<leader>og", "<cmd>ObsidianSearch<CR>",                                      desc = "Obsidian grep search" },
+      { "<leader>on", "<cmd>ObsidianNew<CR>",                                         desc = "Obsidian new file" },
+      { "<leader>ot", "<cmd>ObsidianTags<CR>",                                        desc = "Obsidian tags" },
+      { "<leader>ol", "<cmd>ObsidianLink<CR>",                                        desc = "Create Link" },
+      { "<leader>of", "<cmd>ObsidianFollowLink<CR>",                                  desc = "Follow Link" },
+      { "<leader>or", "<cmd>ObsidianRename<CR>",                                      desc = "Rename current buffer" },
       { "<leader>vp", "<cmd>MarkdownPreviewToggle<CR>",                               desc = "Markdown Preview" },
       { "<leader>vs", "<cmd>MarkdownPreviewStop<CR>",                                 desc = "Markdown Stop" }
     })
