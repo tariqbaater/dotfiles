@@ -28,6 +28,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 # aliases
+alias or='vim $HOME/library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault/inbox/*.md'
+alias ov='z /Users/tariq/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault'
 alias arc='open -a "Arc"'
 alias raycast='open -a "Raycast"'
 alias vpn='open -a "OpenVPN Connect"'
