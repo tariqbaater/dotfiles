@@ -97,7 +97,7 @@ return {
       { "<leader>oo", "<cmd>TSJToggle<CR>",                                           desc = "Toggle TSJ" },
       { "<leader>os", "<cmd>ObsidianQuickSwitch<CR>",                                 desc = "Obsidian quick search" },
       { "<leader>og", "<cmd>ObsidianSearch<CR>",                                      desc = "Obsidian grep search" },
-      { "<leader>on", "<cmd>ObsidianNew<CR>",                                         desc = "Obsidian new file" },
+      { "<leader>on", "<cmd>ObsidianNewFromTemplate<CR>",                             desc = "Obsidian new file" },
       { "<leader>ot", "<cmd>ObsidianTags<CR>",                                        desc = "Obsidian tags" },
       { "<leader>ol", "<cmd>ObsidianLink<CR>",                                        desc = "Create Link" },
       { "<leader>of", "<cmd>ObsidianFollowLink<CR>",                                  desc = "Follow Link" },
