@@ -7,7 +7,12 @@ return {
   },
   config = function()
     require("nvim-treesitter.configs").setup({
-      auto_install = false,
+      auto_install = true,
+
+      ensure_installed = {
+        "markdown",
+        "markdown_inline",
+      },
 
       highlight = {
         enable = true,
@@ -36,9 +41,9 @@ return {
 
           },
           selection_modes = {
-            ["@parameter.outer"] = "v",             -- charwise
-            ["@function.outer"] = "v",              -- linewise
-            ["@class.outer"] = "<c-v>",             -- blockwise
+            ["@parameter.outer"] = "v", -- charwise
+            ["@function.outer"] = "v",  -- linewise
+            ["@class.outer"] = "<c-v>", -- blockwise
           },
         },
       },
