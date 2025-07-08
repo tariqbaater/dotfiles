@@ -89,7 +89,7 @@ fi
 # Clone dotfiles repository if it doesn't exist, else pull latest changes
 if [[ ! -d "$DOTFILES_DIR" ]]; then
     echo "Cloning dotfiles repository..."
-    git clone "$DOTFILES_REPO_URL" "$DOTFILES_DIR"
+    git clone --depth=5 "$DOTFILES_REPO_URL" "$DOTFILES_DIR"
 else
     echo "Dotfiles repository already exists. Pulling latest changes..."
     cd "$DOTFILES_DIR" && git pull
