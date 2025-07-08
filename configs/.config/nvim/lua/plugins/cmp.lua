@@ -47,7 +47,8 @@ return {
         { name = "luasnip" }, -- For luasnip users.
         { name = "nvim_lsp" },
         { name = "copilot" },
-        { name = "render-markdown" }
+        { name = "render-markdown" },
+        { name = "obsidian" }
 
       }, {
         { name = "buffer" },
@@ -154,7 +155,17 @@ return {
     end
 
     local servers = {
-      "cssls", "biome", "intelephense", "ts_ls", "lua_ls", "jsonls", "emmet_ls", "sqlls", "pylsp", "html", "gopls",
+      "cssls",
+      "biome",
+      "intelephense",
+      "ts_ls",
+      "lua_ls",
+      "jsonls",
+      "emmet_ls",
+      "sqlls",
+      "pylsp",
+      "html",
+      "gopls",
     }
     for _, lsp in ipairs(servers) do
       require("lspconfig")[lsp].setup({
