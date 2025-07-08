@@ -3,7 +3,27 @@ vim.g.maplocalleader = " "
 
 local map = vim.api.nvim_set_keymap
 
--- copen navigaation
+-- Obsidian
+map("n", "<leader>ov",
+  ":Telescope find_files search_dirs={\"/Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault\"}<cr>",
+  { noremap = true, silent = true, desc = "Open Obsidian notes" })
+
+map("n", "<leader>oz",
+  ":Telescope live_grep search_dirs={\"/Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault\"}<cr>",
+  { noremap = true, silent = true, desc = "Open Obsidian notes" })
+-- move file in current buffer to zettelkasten folder
+map("n", "<leader>ok",
+  ":!mv '%:p' /Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault/zettelkasten<cr>:bd<cr>",
+  { noremap = true, silent = true, desc = "Move file to zettelkasten folder" })
+-- delete file in current buffer
+map("n", "<leader>odd", ":!rm '%:p'<cr>:bd<cr>",
+  { noremap = true, silent = true, desc = "Delete file in current buffer" })
+-- navigate to vault
+map("n", "<leader>oc",
+  ":cd /Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault<cr>",
+  { noremap = true, silent = true, desc = "Change directory to Obsidian vault" })
+
+-- copen navigation
 map("n", "<leader>C", ":copen<CR>", { noremap = true, silent = true, desc = "Open quickfix list" })
 map("n", "<leader>C<CR>", ":cclose<CR>", { noremap = true, silent = true, desc = "Close quickfix list" })
 map("n", "§", ":cnext<CR>", { noremap = true, silent = true, desc = "Next quickfix item" })
