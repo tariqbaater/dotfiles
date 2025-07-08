@@ -23,17 +23,41 @@ return {
     workspaces = {
       {
         name = "personal",
-        path = "~/vaults/personal",
+        path = "/Users/tariq/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault/personal",
       },
       {
         name = "work",
-        path = "~/vaults/work",
+        path = "/Users/tariq/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault/work",
       },
+    },
+    notes_subdir = "inbox",              -- subdirectory for notes, relative to the vault path
+    new_notes_location = "notes_subdir", -- where to create new notes, can be "notes" or "inbox"
+    note_id = "title,date",              -- how to generate note IDs, can be "title", "date", or "title,date"
+    disable_frontmatter = true,
+    templates = {
+      folder = "/Users/tariq/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault/templates",
+      date_format = "%Y-%m-%d",
+      time_format = "%H:%M",
     },
     completion = {
       nvim_cmp = true, -- if using nvim-cmp, set to true to enable completion
+      min_chars = 2,   -- minimum number of characters to trigger completion
     },
-
-    -- see below for full list of options 👇
+    mappings = {
+      -- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
+      ["gf"] = {
+        action = function()
+          return require("obsidian").util.gf_passthrough()
+        end,
+        opts = { noremap = false, expr = true, buffer = true },
+      },
+      -- Smart action depending on context, either follow link or toggle checkbox.
+      ["<cr>"] = {
+        action = function()
+          return require("obsidian").util.smart_action()
+        end,
+        opts = { buffer = true, expr = true },
+      }
+    },
   },
 }
