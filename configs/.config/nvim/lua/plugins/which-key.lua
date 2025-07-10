@@ -48,7 +48,7 @@ return {
       { "<leader>gg", "<cmd>LazyGit<CR>",                                             desc = "open lazygit" },
       { "<leader>z",  "<cmd>lua require('telescope').extensions.notify.notify()<CR>", desc = "show notifications" },
       { "<leader>n",  "<cmd>enew<CR>",                                                desc = "new buffer" },
-      { '"',          "<cmd>Telescope registers<CR>",                                 desc = "registers" },
+      -- { '"',          "<cmd>Telescope registers<CR>",                                 desc = "registers" },
       { "<leader>ww", "<C-w>w",                                                       desc = "focus next window" },
       { "<leader>ws", "<C-w>s",                                                       desc = "split window below" },
       { "<leader>wv", "<C-w>v",                                                       desc = "split window right" },

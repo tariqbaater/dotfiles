@@ -32,6 +32,7 @@ vim.opt.relativenumber = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
+vim.opt.textwidth = 100 -- set text width for automatic line breaks
 
 -- search
 vim.opt.ignorecase = true

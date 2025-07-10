@@ -3,6 +3,10 @@ vim.g.maplocalleader = " "
 
 local map = vim.api.nvim_set_keymap
 
+-- sed search and replace
+map("n", "<leader>R", ":%s/<C-R><C-W>/<C-R>0/g<CR>",
+  { noremap = true, silent = true, desc = "Search and replace word under cursor" })
+
 -- Obsidian
 map("n", "<leader>ov",
   ":Telescope find_files search_dirs={\"/Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault\"}<cr>",
