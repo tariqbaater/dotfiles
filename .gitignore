@@ -24,7 +24,6 @@ configs/.config/nvim/.DS_Store
 configs/.config/nvim/lazy-lock.json
 configs/.config/.DS_Store
 configs/.DS_Store
-tmux
 .DS_Store
 configs/.config/nvim/lua/.DS_Store
 configs/.config/yazi/flavors/catppuccin-mocha.yazi
