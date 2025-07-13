@@ -166,6 +166,7 @@ return {
       "pylsp",
       "html",
       "gopls",
+      "tinymist"
     }
     for _, lsp in ipairs(servers) do
       require("lspconfig")[lsp].setup({
@@ -173,5 +174,14 @@ return {
         capabilities = capabilities,
       })
     end
+    -- Setup for specific LSPs
+    require("lspconfig").tinymist.setup({
+      on_attach = on_attach,
+      capabilities = capabilities,
+      settings = {
+        formatterMode = "typestyle",
+        exportPdf = "never",
+      },
+    })
   end,
 }
