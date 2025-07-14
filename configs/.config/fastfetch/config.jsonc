@@ -3,7 +3,6 @@
 // So the credit belongs to "waytoabv"
 //
 // kitten icat ~/github/dotfiles-latest/fastfetch/images/link-green.webp
-
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
@@ -13,17 +12,17 @@
     // "type": "kitty-direct",
     "type": "kitty-icat",
     // "source": "~/.config/fastfetch/images/star-saber-ship-linkarzu.png",
-    "source": "~/.config/fastfetch/images/Link-green.png",
+    // "source": "~/.config/fastfetch/images/Pochita.png",
     "height": 15,
-    // "width": 30,
+    "width": 30,
     "position": "left",
     "padding": {
       "top": 5,
-      "right": 0,
-    },
+      "right": 15
+    }
   },
   "display": {
-    "separator": " ",
+    "separator": " "
   },
   "modules": [
     "break",

@@ -1,9 +1,21 @@
+logos=(
+ "Aisaka"
+ "Geass"
+ "Link-green"
+ "Loli"
+ "Pochita"
+ "Ryuzaki"
+ "agk clan"
+ "chelsea"
+
+  )
+# Select a random logo
+random_logo="${logos[RANDOM % ${#logos[@]} + 1]}"
+# Set the logo variable
+fastfetch --logo ~/.config/fastfetch/images/"$random_logo".png
+
 source ~/.env
-export $(grep -v '^#' .env | xargs)
-fastfetch
-#toilet "tariqbaater" -F metal -F border
-# for displaying a logo during terminal start up
-# figlet -f script "tariq" | lolcat
+# export $(grep -v '^#' .env | xargs)
 
 # echo "Remaining balance:"
 # mysql -e "USE finances; SELECT * FROM asset_payments;" | tail -n +2 | awk '{sum += $3} END {result = (3500000) - sum; printf "%'\''d\n", result}'
@@ -29,7 +41,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 # aliases
 alias or='vim $HOME/library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault/inbox/*.md'
-alias ov='z /Users/tariq/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault'
+alias ov='z $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault'
 alias arc='open -a "Arc"'
 alias raycast='open -a "Raycast"'
 alias vpn='open -a "OpenVPN Connect"'
