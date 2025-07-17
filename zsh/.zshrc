@@ -21,6 +21,12 @@ source ~/.env
 # mysql -e "USE finances; SELECT * FROM asset_payments;" | tail -n +2 | awk '{sum += $3} END {result = (3500000) - sum; printf "%'\''d\n", result}'
 export PATH="/opt/homebrew/bin:$PATH"
 
+# pywal settings
+# export PATH="${PATH}:/Users/tariq/.local/lib/python3.11/site-packages"
+# (cat ~/.cache/wal/sequences &)
+# cat ~/.cache/wal/sequences
+# source ~/.cache/wal/colors-tty.sh
+
 #homebrew command-not-found
 HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
 if [ -f "$HB_CNF_HANDLER" ]; then
@@ -40,6 +46,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 # aliases
+alias rsn='rsync -av /Users/tariq/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault/notes arch:/home/tariq/Documents/Obsidian/'
 alias or='vim $HOME/library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault/inbox/*.md'
 alias ov='z $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault'
 alias arc='open -a "Arc"'

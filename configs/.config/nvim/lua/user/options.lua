@@ -15,6 +15,9 @@ vim.g.lazygit_config_file_path = '' -- custom config file path
 -- OR
 vim.g.lazygit_config_file_path = {} -- table of custom config file paths
 
+-- set border for all floating windows
+vim.opt.winborder = "rounded"
+
 
 -- Neovim default updatetime is 4000 set to lower value to update perfomance
 vim.opt.updatetime = 200
