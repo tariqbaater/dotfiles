@@ -14,8 +14,16 @@ random_logo="${logos[RANDOM % ${#logos[@]} + 1]}"
 # Set the logo variable
 fastfetch --logo ~/.config/fastfetch/images/"$random_logo".png
 
+# User Settings
+source ~/.dotfiles/zsh/.zshrcu
+
+# Global secret variables
 source ~/.env
 
+# copilot settings
+eval "$(gh copilot alias -- zsh)"
+
+# add custom bin directory to PATH
 export PATH="/opt/homebrew/bin:$PATH"
 
 #homebrew command-not-found
@@ -35,32 +43,6 @@ ZSH_COLORIZE_STYLE="monokai"
 
 source $ZSH/oh-my-zsh.sh
 
-# git commit picker
-function gcop() {
-    git log \
-        --reverse \
-        --color=always \
-        --format="%C(cyan)%h %C(blue)%ar%C(auto)%d %C(yellow)%s%+b %C(black)%ae" "$@" |
-    fzf -i -e +s \
-        --reverse \
-        --tiebreak=index \
-        --no-multi \
-        --ansi \
-        --preview "echo {} | grep -o '[a-f0-9]\{7\}' | head -1 | xargs -I % sh -c 'git show --color=always % | diff-so-fancy'" \
-        --header "Press Enter to view, Ctrl+C to copy hash" \
-        --bind "ctrl-x:execute(echo {} | grep -o '[a-f0-9]\{7\}' | head -1 | xclip -r -selection clipboard)"
-}
-
-# quick notes
-function note() {
-    # echo "*$(date)*" >> "$HOME/iCloud/notes/quick_notes.md"
-    # echo ": $@" | base64 >> "$HOME/iCloud/notes/quick_notes.md"
-    # echo "\n" >> "$HOME/iCloud/notes/quick_notes.md"
-    # vi "$HOME/iCloud/notes/quick_notes.md"
-    echo "- [ ] $@" >> "$HOME/notes/todo.md"
-
-}
-
 # End of lines added by compinstall
 autoload -Uz compinit
 compinit
@@ -72,6 +54,9 @@ source /opt/homebrew/opt/fzf/shell/completion.zsh
 export FZF_DEFAULT_COMMAND='find .'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH=$PATH:$HOME/go/bin
+
 #tmux settings
 export LC_ALL=en_US.UTF-8   export LANG=en_US.UTF-8
 export PATH="$HOME/.tmuxifier/bin:$PATH"
@@ -79,10 +64,6 @@ export PATH="$HOME/.tmuxifier/bin:$PATH"
 
 #zoxide settings
 eval "$(zoxide init zsh)"
-
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH=$PATH:$HOME/go/bin
 
 # yazi settings
 function y() {
@@ -178,4 +159,3 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
-eval "$(gh copilot alias -- zsh)"
