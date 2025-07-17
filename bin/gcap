@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+# git
+function gcap() {
+  git add . && git commit -m "$1" && git push -f origin main
+}

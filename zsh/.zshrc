@@ -15,17 +15,8 @@ random_logo="${logos[RANDOM % ${#logos[@]} + 1]}"
 fastfetch --logo ~/.config/fastfetch/images/"$random_logo".png
 
 source ~/.env
-# export $(grep -v '^#' .env | xargs)
 
-# echo "Remaining balance:"
-# mysql -e "USE finances; SELECT * FROM asset_payments;" | tail -n +2 | awk '{sum += $3} END {result = (3500000) - sum; printf "%'\''d\n", result}'
 export PATH="/opt/homebrew/bin:$PATH"
-
-# pywal settings
-# export PATH="${PATH}:/Users/tariq/.local/lib/python3.11/site-packages"
-# (cat ~/.cache/wal/sequences &)
-# cat ~/.cache/wal/sequences
-# source ~/.cache/wal/colors-tty.sh
 
 #homebrew command-not-found
 HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
@@ -43,73 +34,6 @@ ZSH_COLORIZE_STYLE="monokai"
 # ZSH_TMUX_AUTOSTART=true
 
 source $ZSH/oh-my-zsh.sh
-
-# User configuration
-# aliases
-alias rsn='rsync -av /Users/tariq/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault/notes arch:/home/tariq/Documents/Obsidian/'
-alias or='vim $HOME/library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault/inbox/*.md'
-alias ov='z $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault'
-alias arc='open -a "Arc"'
-alias raycast='open -a "Raycast"'
-alias vpn='open -a "OpenVPN Connect"'
-alias expai='open raycast://ai-commands/explain-ai'
-alias icat="kitten icat"
-alias c='clear'
-alias la='eza -lah'
-alias ll='eza -la'
-alias ls='eza'
-alias tree='eza --tree'
-alias nz='vi ~/.zshrc'
-alias sz='source ~/.zshrc'
-alias st='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3'
-alias vi='nvim'
-alias vim='nvim'
-alias sar='curl -s https://api.exchangerate-api.com/v4/latest/SAR | jq '.rates.KES''
-alias usd='curl -s https://api.exchangerate-api.com/v4/latest/USD | jq '.rates.KES''
-alias gbp='curl -s https://api.exchangerate-api.com/v4/latest/GBP | jq '.rates.SAR''
-alias myip="curl -s http://checkip.dyndns.org/ | sed 's/[a-zA-Z<>/ :]//g'"                                                   ─╯
-alias ip="echo $(ifconfig | grep broadcast | awk '{print $2}')" # use the $(command) to escape stdout issues
-alias cd='z'
-alias gb='git branch'
-alias rm='trash'
-alias what-i-got='compgen -c | fzf | xargs -I {} {}'
-alias zellij='zsh <(curl -L zellij.dev/launch) '
-# Search for uses of linux commands
-alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
-alias fman='compgen -c | fzf | xargs man'
-# Search a file with fzf and open it using neovim
-# alias fzf='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
-alias vifzf='vi $(fd --type f --hidden --exclude .git | fzf-tmux -m --preview "bat --style=numbers --color=always --line-range :500 {}")'
-
-# man page in vim
-export MANPAGER='nvim +Man!'
-
-# nvim configuration picker
-alias nvim-lazy='NVIM_APPNAME=LazyVim nvim'
-alias nvim-astro='NVIM_APPNAME=astro nvim'
-alias nvim-chad='NVIM_APPNAME=nvchad nvim'
-# alias nvim-default='NVIM_APPNAME=kickstart nvim'
-# alias functions
-
-#nvim picker function
-function nvims() {
-  items=("default" "LazyVim" "astro" "nvchad")
-  config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Nvim Config → " --height=~50% --layout=reverse --border --exit-0)
-  if [[ -z $config ]]; then
-    echo "Nothing selected"
-    return 0
-  elif [[ $config == "default" ]]; then
-    config=""
-  fi
-  NVIM_APPNAME=$config nvim $@
-}
-
-bindkey -s ^e 'nvims\n'
-
-# git
-function gcap() {
-  git add . && git commit -m "$1" && git push -f origin main
-}
 
 # git commit picker
 function gcop() {

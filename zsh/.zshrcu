@@ -1,0 +1,49 @@
+# echo "Remaining balance:"
+# mysql -e "USE finances; SELECT * FROM asset_payments;" | tail -n +2 | awk '{sum += $3} END {result = (3500000) - sum; printf "%'\''d\n", result}'
+
+# User configuration
+# aliases
+alias rsn='rsync -av /Users/tariq/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault/notes arch:/home/tariq/Documents/Obsidian/'
+alias or='vim $HOME/library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault/inbox/*.md'
+alias ov='z $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault'
+alias arc='open -a "Arc"'
+alias raycast='open -a "Raycast"'
+alias vpn='open -a "OpenVPN Connect"'
+alias expai='open raycast://ai-commands/explain-ai'
+alias icat="kitten icat"
+alias c='clear'
+alias la='eza -lah'
+alias ll='eza -la'
+alias ls='eza'
+alias tree='eza --tree'
+alias nz='vi ~/.zshrc'
+alias sz='source ~/.zshrc'
+alias st='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3'
+alias vi='nvim'
+alias vim='nvim'
+alias sar='curl -s https://api.exchangerate-api.com/v4/latest/SAR | jq '.rates.KES''
+alias usd='curl -s https://api.exchangerate-api.com/v4/latest/USD | jq '.rates.KES''
+alias gbp='curl -s https://api.exchangerate-api.com/v4/latest/GBP | jq '.rates.SAR''
+alias myip="curl -s http://checkip.dyndns.org/ | sed 's/[a-zA-Z<>/ :]//g'"                                                   ─╯
+alias ip="echo $(ifconfig | grep broadcast | awk '{print $2}')" # use the $(command) to escape stdout issues
+alias cd='z'
+alias gb='git branch'
+alias rm='trash'
+alias what-i-got='compgen -c | fzf | xargs -I {} {}'
+alias zellij='zsh <(curl -L zellij.dev/launch) '
+# Search for uses of linux commands
+alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
+alias fman='compgen -c | fzf | xargs man'
+# Search a file with fzf and open it using neovim
+# alias fzf='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
+alias vifzf='vi $(fd --type f --hidden --exclude .git | fzf-tmux -m --preview "bat --style=numbers --color=always --line-range :500 {}")'
+
+# man page in vim
+export MANPAGER='nvim +Man!'
+
+# nvim configuration picker
+alias nvim-lazy='NVIM_APPNAME=LazyVim nvim'
+alias nvim-astro='NVIM_APPNAME=astro nvim'
+alias nvim-chad='NVIM_APPNAME=nvchad nvim'
+# alias nvim-default='NVIM_APPNAME=kickstart nvim'
+# alias functions
