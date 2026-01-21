@@ -33,3 +33,5 @@ configs/.config/LazyVim
 configs/.config/LazyVim
 configs/.config/astro
 configs/.config/nvchad
+configs/.config/nvim-bk
+configs/.config/kitty/kitty.conf.bak
