@@ -27,11 +27,10 @@ eval "$(gh copilot alias -- zsh)"
 export PATH="/opt/homebrew/bin:$PATH"
 
 #homebrew command-not-found
-HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
-if [ -f "$HB_CNF_HANDLER" ]; then
-source "$HB_CNF_HANDLER";
+HOMEBREW_COMMAND_NOT_FOUND_HANDLER="$(brew --repository)/Library/Homebrew/command-not-found/handler.sh"
+if [ -f "$HOMEBREW_COMMAND_NOT_FOUND_HANDLER" ]; then
+  source "$HOMEBREW_COMMAND_NOT_FOUND_HANDLER";
 fi
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -159,3 +158,8 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/tariq/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
