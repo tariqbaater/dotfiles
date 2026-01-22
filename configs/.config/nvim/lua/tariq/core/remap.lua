@@ -1,28 +1,48 @@
 local map = vim.api.nvim_set_keymap
 
 -- sed search and replace
-map("n", "<leader>R", ":%s/<C-R><C-W>/<C-R>0/g<CR>",
-  { noremap = true, silent = true, desc = "Search and replace word under cursor" })
+map(
+  "n",
+  "<leader>R",
+  ":%s/<C-R><C-W>/<C-R>0/g<CR>",
+  { noremap = true, silent = true, desc = "Search and replace word under cursor" }
+)
 
 -- Obsidian
-map("n", "<leader>ov",
-  ":Telescope find_files search_dirs={\"/Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault\"}<cr>",
-  { noremap = true, silent = true, desc = "Open Obsidian notes" })
+map(
+  "n",
+  "<leader>ov",
+  ':Telescope find_files search_dirs={"/Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault"}<cr>',
+  { noremap = true, silent = true, desc = "Open Obsidian notes" }
+)
 
-map("n", "<leader>oz",
-  ":Telescope live_grep search_dirs={\"/Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault\"}<cr>",
-  { noremap = true, silent = true, desc = "Open Obsidian notes" })
+map(
+  "n",
+  "<leader>oz",
+  ':Telescope live_grep search_dirs={"/Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault"}<cr>',
+  { noremap = true, silent = true, desc = "Open Obsidian notes" }
+)
 -- move file in current buffer to zettelkasten folder
-map("n", "<leader>ok",
+map(
+  "n",
+  "<leader>ok",
   ":!mv '%:p' /Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault/zettelkasten<cr>:bd<cr>",
-  { noremap = true, silent = true, desc = "Move file to zettelkasten folder" })
+  { noremap = true, silent = true, desc = "Move file to zettelkasten folder" }
+)
 -- delete file in current buffer
-map("n", "<leader>odd", ":!rm '%:p'<cr>:bd<cr>",
-  { noremap = true, silent = true, desc = "Delete file in current buffer" })
+map(
+  "n",
+  "<leader>odd",
+  ":!rm '%:p'<cr>:bd<cr>",
+  { noremap = true, silent = true, desc = "Delete file in current buffer" }
+)
 -- navigate to vault
-map("n", "<leader>oc",
+map(
+  "n",
+  "<leader>oc",
   ":cd /Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault<cr>",
-  { noremap = true, silent = true, desc = "Change directory to Obsidian vault" })
+  { noremap = true, silent = true, desc = "Change directory to Obsidian vault" }
+)
 
 -- copen navigation
 map("n", "<leader>C", ":copen<CR>", { noremap = true, silent = true, desc = "Open quickfix list" })
@@ -31,19 +51,19 @@ map("n", "§", ":cnext<CR>", { noremap = true, silent = true, desc = "Next quick
 map("n", "±", ":cprev<CR>", { noremap = true, silent = true, desc = "Previous quickfix item" })
 
 -- Quickly append semicolon or comma in insert mode
-vim.keymap.set('i', ';;', '<Esc>A:<Esc>')
-vim.keymap.set('i', ',,', '<Esc>A,<Esc>')
-vim.keymap.set('i', '))', '<Esc>A)<Esc>')
+vim.keymap.set("i", ";;", "<Esc>A:<Esc>")
+vim.keymap.set("i", ",,", "<Esc>A,<Esc>")
+vim.keymap.set("i", "))", "<Esc>A)<Esc>")
 
 -- -- Open in finder
 -- vim.keymap.set('n', '<Leader><Leader>O', ':!open $PWD<CR><CR>', { silent = true })
 
 -- Open line, but stay in normal mode
-vim.keymap.set('n', '<CR>', 'o<Esc>')
+vim.keymap.set("n", "<CR>", "o<Esc>")
 
 -- Keep visual selection when indenting
-vim.keymap.set('x', '>', '>gv')
-vim.keymap.set('x', '<', '<gv')
+vim.keymap.set("x", ">", ">gv")
+vim.keymap.set("x", "<", "<gv")
 
 -- increment/decrement numbers
 map("n", "<leader>+", "<C-a>", { noremap = true, silent = true, desc = "Increment number" }) -- increment
@@ -71,6 +91,25 @@ map("n", "<C-h>", "<C-w>h", { noremap = true, silent = true })
 map("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
 map("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
 map("n", "<C-l>", "<C-w>l", { noremap = true, silent = true })
+
+--  Disable arrow keys in all modes
+local modes = { "n", "i", "v", "x", "s", "o", "t" } -- all possible modes
+local arrows = { "<Up>", "<Down>", "<Left>", "<Right>" }
+
+for _, mode in ipairs(modes) do
+  for _, key in ipairs(arrows) do
+    vim.keymap.set(mode, key, "<Nop>", { noremap = true, silent = true })
+  end
+end
+
+-- local enabledModes = { "i", "c", "t", "o", "t", "s", "x" } -- modes where arrow keys are enabled
+-- -- Map alt + h/j/k/l to arrow keys in insert mode
+-- for _, mode in ipairs(enabledModes) do
+--   vim.keymap.set(mode, "<A-h>", "<Left>", { noremap = true, silent = true })
+--   vim.keymap.set(mode, "<A-j>", "<Down>", { noremap = true, silent = true })
+--   vim.keymap.set(mode, "<A-k>", "<Up>", { noremap = true, silent = true })
+--   vim.keymap.set(mode, "<A-l>", "<Right>", { noremap = true, silent = true })
+-- end
 
 -- windows
 vim.keymap.set("n", "<leader><left>", ":vertical resize +20<cr>", { noremap = true, silent = true })

@@ -57,6 +57,8 @@ return {
       { "<leader>ps", "<cmd>Lazy sync<CR>", desc = "Sync plugins" },
       { "<leader>pU", "<cmd>Lazy check<CR>", desc = "Check Update" },
       { "<leader>pp", "<cmd>MCPHub<CR>", desc = "MCPHub" },
+      { "<leader>fa", "<cmd>Config <CR>", desc = "Nvim config files" },
+
       { "<leader>fo", "<cmd>Telescope oldfiles<CR>", desc = "open old files" },
       { "<leader>fe", "<cmd>Telescope treesitter<CR>", desc = "Treesitter Symbols" },
       { "<leader>fc", "<cmd>Telescope commands<CR>", desc = "commands" },
