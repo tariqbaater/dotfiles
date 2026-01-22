@@ -35,3 +35,4 @@ configs/.config/astro
 configs/.config/nvchad
 configs/.config/nvim-bk
 configs/.config/kitty/kitty.conf.bak
+configs/.config/nvim/.luarc.json
