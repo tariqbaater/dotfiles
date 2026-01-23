@@ -19,9 +19,7 @@ return {
   },
   config = function()
     local cmp = require("cmp")
-
     local luasnip = require("luasnip")
-
     local lspkind = require("lspkind")
 
     -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
@@ -32,6 +30,13 @@ return {
         expand = function(args)
           luasnip.lsp_expand(args.body)
         end,
+      },
+      completion = {
+        completeopt = "menu,menuone,noinsert",
+      },
+      window = {
+        completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered(),
       },
       mapping = cmp.mapping.preset.insert({
         ["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
@@ -48,6 +53,12 @@ return {
         { name = "luasnip" }, -- snippets
         { name = "buffer" }, -- text within current buffer
         { name = "path" }, -- file system paths
+        { name = "copilot" },
+        { name = "render-markdown" },
+        { name = "obsidian" },
+      }, {
+        { name = "buffer" },
+        { name = "path" },
       }),
 
       -- configure lspkind for vs-code like pictograms in completion menu
@@ -57,6 +68,16 @@ return {
           ellipsis_char = "...",
         }),
       },
+
+      -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+      cmp.setup.cmdline(":", {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = cmp.config.sources({
+          { name = "path" },
+        }, {
+          { name = "cmdline" },
+        }),
+      }),
     })
   end,
 }
