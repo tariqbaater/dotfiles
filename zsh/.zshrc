@@ -21,7 +21,7 @@ source ~/.dotfiles/zsh/.zshrcu
 source ~/.env
 
 # copilot settings
-eval "$(gh copilot alias -- zsh)"
+# eval "$(gh copilot alias -- zsh)"
 
 # add custom bin directory to PATH
 export PATH="/opt/homebrew/bin:$PATH"
@@ -79,19 +79,6 @@ eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 export PATH="/opt/homebrew/sbin:$PATH"
 
-
-# Herd injected PHP 8.3 configuration.
-export HERD_PHP_83_INI_SCAN_DIR="/Users/tariq/Library/Application Support/Herd/config/php/83/"
-
-
-# Herd injected NVM configuration
-export NVM_DIR="/Users/tariq/Library/Application Support/Herd/config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-[[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
-
-# Herd injected PHP binary.
-export PATH="/Users/tariq/Library/Application Support/Herd/bin/":$PATH
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
