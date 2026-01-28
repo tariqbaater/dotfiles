@@ -33,7 +33,7 @@ BREW_LIST_FILE="brew_list"
 # Dotfiles repository URL (update this URL accordingly)
 DOTFILES_REPO_URL="https://github.com/tariqbaater/dotfiles.git"
 # Target directory for dotfiles, within the .config directory
-DOTFILES_DIR="$HOME/.config/dotfiles"
+DOTFILES_DIR="$HOME/.dotfiles"
 
 # Check if the brew_list file exists
 echo "Checking if $BREW_LIST_FILE exists..."
