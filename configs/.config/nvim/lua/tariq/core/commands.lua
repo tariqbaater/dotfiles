@@ -38,13 +38,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
--- set filetype for blade files
-vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
-  pattern = { "*.blade.php" },
-  callback = function()
-    vim.opt.filetype = "html"
-  end,
-})
 -- remove trailing whitespace
 vim.api.nvim_create_autocmd("BufWritePre", {
   group = vim.api.nvim_create_augroup("strip_trailing_whitespace", {}),
@@ -77,6 +70,17 @@ vim.api.nvim_create_autocmd("TermOpen", {
     vim.cmd([[tnoremap <buffer> <c-j> <c-\><c-n><c-w>j]])
     vim.cmd([[tnoremap <buffer> <c-k> <c-\><c-n><c-w>k]])
     vim.cmd([[tnoremap <buffer> <c-l> <c-\><c-n><c-w>l]])
+  end,
+})
+
+-- when a markdown file is opened, set wrap and spelling
+vim.api.nvim_create_autocmd("FileType", {
+  group = vim.api.nvim_create_augroup("markdown_settings", {}),
+  desc = "Markdown settings",
+  pattern = "markdown",
+  callback = function()
+    vim.cmd([[setlocal wrap]])
+    vim.cmd([[setlocal spell]])
   end,
 })
 
@@ -118,14 +122,6 @@ vim.api.nvim_create_autocmd("BufWritePost", {
     print("Sourced " .. vim.fn.expand("%"))
   end,
 })
-
--- command for checking exchange rates
--- vim.api.nvim_create_user_command("Currency", function()
---   vim.cmd([[!curl -s https://api.exchangerate-api.com/v4/latest/SAR | jq .rates.KES]])
---   vim.cmd([[echo]])
---   vim.cmd([[!curl -s https://api.exchangerate-api.com/v4/latest/USD | jq .rates.KES]])
---   vim.cmd([[echo]])
--- end, {})
 
 -- when lazygit is opened within neovim, set the size to 30 lines
 vim.api.nvim_create_autocmd("TermOpen", {
