@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 #nvim picker function
-items=("default" "LazyVim" "astro" "nvchad")
+items=("default" "LazyVim" "nvchad")
 config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Nvim Config → " --height=~50% --layout=reverse --border --exit-0)
 if [[ -z $config ]]; then
   echo "Nothing selected"
