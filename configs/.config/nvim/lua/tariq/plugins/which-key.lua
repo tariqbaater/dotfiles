@@ -44,6 +44,8 @@ return {
       },
       { "<leader>h", "<cmd>Alpha<CR>", desc = "show dashboard" },
       { "<leader>gg", "<cmd>LazyGit<CR>", desc = "open lazygit" },
+      { "<leader>gl", "<cmd>LazyGitLog<CR>", desc = "open lazygit log" },
+      { "<leader>gf", "<cmd>LazyGitFilterCurrentFile<CR>", desc = "open lazygit filter current file" },
       { "<leader>z", "<cmd>lua require('telescope').extensions.notify.notify()<CR>", desc = "show notifications" },
       { "<leader>n", "<cmd>enew<CR>", desc = "new buffer" },
       -- { '"',          "<cmd>Telescope registers<CR>",                                 desc = "registers" },
