@@ -93,6 +93,22 @@ sketchybar --add item chevron left \
                            icon.color=0xff1e1e2e \
            --subscribe front_app front_app_switched
 
+sketchybar --add item vpn left \
+           --set vpn update_freq=10 script="$PLUGIN_DIR/vpn.sh" \
+                     background.color=0xfffab387 \
+                     background.corner_radius=5 \
+                     background.height=24 \
+                     background.padding_left=6 \
+                     background.padding_right=10 \
+                     background.drawing=on \
+                     background.border_width=1 \
+                     background.border_color=0xff585b70 \
+                     label.color=0xff1e1e2e \
+                     icon.color=0xff1e1e2e \
+                     padding_left=150 \
+                     click_script="open -b org.openvpn.client.app" \
+           --subscribe vpn vpn_change
+
 
 ##### Adding Right Items #####
 # In the same way as the left items we can add items to the right side.
@@ -177,22 +193,7 @@ sketchybar --add item clock right \
                       icon.color=0xff1e1e2e \
                       padding_left=0 padding_right=8 \
                       click_script="open 'x-apple.systempreferences:com.apple.preference.network'" \
-           --subscribe wifi wifi_change \
-           --add item vpn right \
-           --set vpn update_freq=10 script="$PLUGIN_DIR/vpn.sh" \
-                     background.color=0xfffab387 \
-                     background.corner_radius=5 \
-                     background.height=24 \
-                     background.padding_left=6 \
-                     background.padding_right=10 \
-                     background.drawing=on \
-                     background.border_width=1 \
-                     background.border_color=0xff585b70 \
-                     label.color=0xff1e1e2e \
-                     icon.color=0xff1e1e2e \
-                     padding_left=0 \
-                     click_script="open -b org.openvpn.client.app" \
-           --subscribe vpn vpn_change
+           --subscribe wifi wifi_change
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update
