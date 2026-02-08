@@ -6,9 +6,24 @@
 source "$HOME/.config/sketchybar/colors.sh"
 
 FOCUSED_WORKSPACE=$(aerospace list-workspaces --focused)
+CURRENT_FILE="/tmp/sketchybar_current_workspace"
+PREV_FILE="/tmp/sketchybar_prev_workspace"
 
+# Track previous workspace
+STORED_CURRENT=""
+[ -f "$CURRENT_FILE" ] && STORED_CURRENT=$(cat "$CURRENT_FILE")
+
+if [ "$FOCUSED_WORKSPACE" != "$STORED_CURRENT" ]; then
+    [ -n "$STORED_CURRENT" ] && echo "$STORED_CURRENT" > "$PREV_FILE"
+    echo "$FOCUSED_WORKSPACE" > "$CURRENT_FILE"
+fi
+
+PREV_WORKSPACE=""
+[ -f "$PREV_FILE" ] && PREV_WORKSPACE=$(cat "$PREV_FILE")
+
+# Only show current and previous workspace
 if [ "$1" = "$FOCUSED_WORKSPACE" ]; then
-    sketchybar --set $NAME background.color=$ACCENT_COLOR
+    sketchybar --set $NAME background.color=$ACCENT_COLOR drawing=on
 
     # Clear front_app if focused workspace has no windows
     WINDOW_COUNT=$(aerospace list-windows --workspace "$1" 2>/dev/null | wc -l | tr -d ' ')
@@ -23,6 +38,8 @@ if [ "$1" = "$FOCUSED_WORKSPACE" ]; then
             sketchybar --set front_app background.drawing=on
         fi
     fi
+elif [ "$1" = "$PREV_WORKSPACE" ]; then
+    sketchybar --set $NAME background.color=0xff45475a drawing=on
 else
-    sketchybar --set $NAME background.color=0xff45475a
+    sketchybar --set $NAME drawing=off
 fi

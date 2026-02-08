@@ -6,5 +6,5 @@
 
 ICON="􀧞"
 
-sketchybar --set "$NAME" icon=$ICON label="$(date '+%a %b %-d %-H:%M')"
+sketchybar --set "$NAME" icon=$ICON label="$(date '+%a %-d %b %-H:%M %p')"
 
