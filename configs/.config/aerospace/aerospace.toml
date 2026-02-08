@@ -165,28 +165,24 @@ alt-shift-l = ['join-with right']
 
 # Use  osascript -e 'id of app "kitty"' to get app-id
 [[on-window-detected]]
-if.app-id = 'com.apple.systempreferences'
-run = 'move-node-to-workspace 5'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.finder'
-run = 'move-node-to-workspace 4'
+if.app-id = 'company.thebrowser.Browser'
+run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
 if.app-id = 'net.kovidgoyal.kitty'
 run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
-if.app-id = 'company.thebrowser.Browser'
-run = 'move-node-to-workspace 1'
+if.app-id = 'com.apple.finder'
+run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.python3'
-run = 'move-node-to-workspace 3'
+run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.ScreenContinuity'
-run = 'move-node-to-workspace 3'
+run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Passwords'
