@@ -63,7 +63,9 @@ done
 sketchybar --add item chevron left \
            --set chevron icon=􁍃 label.drawing=off \
            --add item front_app left \
-           --set front_app icon.drawing=off script="$PLUGIN_DIR/front_app.sh" \
+           --set front_app icon.drawing=on \
+                           icon.font="sketchybar-app-font:Regular:16.0" \
+                           script="$PLUGIN_DIR/front_app.sh" \
                            background.color=0xffcba6f7 \
                            background.corner_radius=5 \
                            background.height=24 \
