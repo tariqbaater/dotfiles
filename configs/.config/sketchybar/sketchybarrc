@@ -47,6 +47,8 @@ sketchybar --add item apple_logo left \
                               background.corner_radius=5 \
                               background.height=24 \
                               background.drawing=on \
+                              background.border_width=1 \
+                              background.border_color=0xff585b70 \
                               padding_left=4 \
                               padding_right=4 \
                               click_script="open -b com.apple.systempreferences" \
@@ -65,6 +67,8 @@ for sid in $(aerospace list-workspaces --all); do
         padding_left=3 \
         padding_right=3 \
         background.drawing=on \
+        background.border_width=1 \
+        background.border_color=0xff585b70 \
         drawing=off \
         label="$sid" \
         click_script="aerospace workspace $sid" \
@@ -83,6 +87,8 @@ sketchybar --add item chevron left \
                            background.padding_left=10 \
                            background.padding_right=10 \
                            background.drawing=on \
+                           background.border_width=1 \
+                           background.border_color=0xff585b70 \
                            label.color=0xff1e1e2e \
                            icon.color=0xff1e1e2e \
            --subscribe front_app front_app_switched
@@ -110,6 +116,8 @@ sketchybar --add item clock right \
                        background.padding_left=10 \
                        background.padding_right=10 \
                        background.drawing=on \
+                       background.border_width=1 \
+                       background.border_color=0xff585b70 \
                        label.color=0xff1e1e2e \
                        icon.color=0xff1e1e2e \
                         padding_left=0 padding_right=8 \
@@ -122,6 +130,8 @@ sketchybar --add item clock right \
                            background.padding_left=10 \
                            background.padding_right=10 \
                            background.drawing=on \
+                           background.border_width=1 \
+                           background.border_color=0xff585b70 \
                            label.color=0xff1e1e2e \
                            icon.color=0xff1e1e2e \
                            padding_left=0 padding_right=8 \
@@ -133,6 +143,8 @@ sketchybar --add item clock right \
                         background.padding_left=10 \
                         background.padding_right=6 \
                         background.drawing=on \
+                        background.border_width=1 \
+                        background.border_color=0xff585b70 \
                         label.color=0xff1e1e2e \
                         icon.color=0xff1e1e2e \
                         padding_left=0 padding_right=8 \
@@ -145,6 +157,8 @@ sketchybar --add item clock right \
                          background.padding_left=6 \
                          background.padding_right=10 \
                          background.drawing=on \
+                         background.border_width=1 \
+                         background.border_color=0xff585b70 \
                          label.color=0xff1e1e2e \
                          icon.color=0xff1e1e2e \
                          padding_left=0 padding_right=8 \
@@ -157,6 +171,8 @@ sketchybar --add item clock right \
                       background.padding_left=6 \
                       background.padding_right=10 \
                       background.drawing=on \
+                      background.border_width=1 \
+                      background.border_color=0xff585b70 \
                       label.color=0xff1e1e2e \
                       icon.color=0xff1e1e2e \
                       padding_left=0 padding_right=8 \
@@ -170,6 +186,8 @@ sketchybar --add item clock right \
                      background.padding_left=6 \
                      background.padding_right=10 \
                      background.drawing=on \
+                     background.border_width=1 \
+                     background.border_color=0xff585b70 \
                      label.color=0xff1e1e2e \
                      icon.color=0xff1e1e2e \
                      padding_left=0 \
