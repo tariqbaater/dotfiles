@@ -50,8 +50,10 @@ for sid in $(aerospace list-workspaces --all); do
         background.color=0xff45475a \
         background.corner_radius=5 \
         background.height=24 \
-        background.padding_left=8 \
-        background.padding_right=8 \
+        background.padding_left=2 \
+        background.padding_right=2 \
+        padding_left=3 \
+        padding_right=3 \
         background.drawing=on \
         label="$sid" \
         click_script="aerospace workspace $sid" \
@@ -62,6 +64,13 @@ sketchybar --add item chevron left \
            --set chevron icon= label.drawing=off \
            --add item front_app left \
            --set front_app icon.drawing=off script="$PLUGIN_DIR/front_app.sh" \
+                           background.color=0xffcba6f7 \
+                           background.corner_radius=5 \
+                           background.height=24 \
+                           background.padding_left=10 \
+                           background.padding_right=10 \
+                           background.drawing=on \
+                           label.color=0xff1e1e2e \
            --subscribe front_app front_app_switched
 
 
@@ -80,7 +89,7 @@ sketchybar --add item chevron left \
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update
 sketchybar --add item clock right \
-           --set clock update_freq=10 icon.drawing=off \
+           --set clock icon=󰃰 update_freq=10 \
                        background.color=0xffa6e3a1 \
                        background.corner_radius=5 \
                        background.height=24 \
@@ -88,31 +97,58 @@ sketchybar --add item clock right \
                        background.padding_right=10 \
                        background.drawing=on \
                        label.color=0xff1e1e2e \
+                        padding_left=0 padding_right=8 \
                        script="$PLUGIN_DIR/clock.sh" \
            --add item volume right \
            --set volume script="$PLUGIN_DIR/volume.sh" \
                         background.color=0xfff5c2e7 \
                         background.corner_radius=5 \
                         background.height=24 \
-                        background.padding_left=8 \
-                        background.padding_right=4 \
+                        background.padding_left=10 \
+                        background.padding_right=6 \
                         background.drawing=on \
                         label.color=0xff1e1e2e \
                         icon.color=0xff1e1e2e \
-                        padding_right=0 \
+                        padding_left=0 padding_right=8 \
            --subscribe volume volume_change \
            --add item battery right \
            --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" \
                          background.color=0xfff5c2e7 \
                          background.corner_radius=5 \
                          background.height=24 \
-                         background.padding_left=4 \
-                         background.padding_right=8 \
+                         background.padding_left=6 \
+                         background.padding_right=10 \
                          background.drawing=on \
                          label.color=0xff1e1e2e \
                          icon.color=0xff1e1e2e \
-                         padding_left=0 \
-           --subscribe battery system_woke power_source_change
+                         padding_left=0 padding_right=8 \
+           --subscribe battery system_woke power_source_change \
+           --add item wifi right \
+           --set wifi update_freq=10 script="$PLUGIN_DIR/wifi.sh" \
+                      background.color=0xfffab387 \
+                      background.corner_radius=5 \
+                      background.height=24 \
+                      background.padding_left=6 \
+                      background.padding_right=10 \
+                      background.drawing=on \
+                      label.color=0xff1e1e2e \
+                      icon.color=0xff1e1e2e \
+                      padding_left=0 padding_right=8 \
+                      click_script="open 'x-apple.systempreferences:com.apple.preference.network'" \
+           --subscribe wifi wifi_change \
+           --add item vpn right \
+           --set vpn update_freq=10 script="$PLUGIN_DIR/vpn.sh" \
+                     background.color=0xfffab387 \
+                     background.corner_radius=5 \
+                     background.height=24 \
+                     background.padding_left=6 \
+                     background.padding_right=10 \
+                     background.drawing=on \
+                     label.color=0xff1e1e2e \
+                     icon.color=0xff1e1e2e \
+                     padding_left=0 \
+                     click_script="open -b org.openvpn.client.app" \
+           --subscribe vpn vpn_change
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update
