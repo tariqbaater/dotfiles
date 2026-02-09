@@ -103,6 +103,7 @@ return {
       { "<leader>os", "<cmd>ObsidianQuickSwitch<CR>", desc = "Obsidian quick search" },
       { "<leader>og", "<cmd>ObsidianSearch<CR>", desc = "Obsidian grep search" },
       { "<leader>on", "<cmd>ObsidianNewFromTemplate<CR>", desc = "Obsidian new file" },
+      { "<leader>oT", "<cmd>ObsidianTemplate<CR>", desc = "Obsidian templates" },
       { "<leader>ot", "<cmd>ObsidianTags<CR>", desc = "Obsidian tags" },
       { "<leader>ol", "<cmd>ObsidianLink<CR>", desc = "Create Link" },
       { "<leader>of", "<cmd>ObsidianFollowLink<CR>", desc = "Follow Link" },
