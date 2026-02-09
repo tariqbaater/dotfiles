@@ -10,23 +10,23 @@ if [ -n "$AIRPODS" ]; then
   # Try to get battery level from connected AirPods
   BATTERY=$(echo "$BT_INFO" | grep -A 20 "$AIRPODS" | grep "Battery Level" | head -1 | sed 's/.*: //')
 
-  ICON="􀪷"
-  LABEL="On"
+  ICON=" 􀪷"
+  LABEL=""
   if [ -n "$BATTERY" ]; then
     LABEL="$BATTERY"
   else
-    LABEL="On"
+    LABEL=""
   fi
 else
   # Check for any other connected Bluetooth headphones
   BT_HEADPHONES=$(echo "$BT_INFO" | grep -B 5 "Connected: Yes" | grep -B 5 "Minor Type: Headphones" | head -1 | sed 's/^[[:space:]]*//;s/:$//')
 
   if [ -n "$BT_HEADPHONES" ]; then
-    ICON="􀑈"
-    LABEL="On"
+    ICON=" 􀑈"
+    LABEL=""
   else
-    ICON="􂬂"
-    LABEL="Off"
+    ICON=" 􂬂"
+    LABEL=""
   fi
 fi
 

@@ -9,9 +9,9 @@ PLUGIN_DIR="$CONFIG_DIR/plugins"
 # https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
 
 sketchybar --bar position=top height=40 blur_radius=50 color=$BAR_COLOR \
-                  border_color=$ACCENT_COLOR border_width=2 \
-                  notch_width=250 notch_offset=0 \
-                  margin=18 corner_radius=10 \
+                  border_color=$ACCENT_COLOR border_width=3 \
+                  padding_left=5 padding_right=5 \
+                  margin=16 corner_radius=10 \
 
 
 ##### Changing Defaults #####
@@ -24,7 +24,7 @@ default=(
   padding_right=8
   icon.color=$WHITE
   icon.font="SF Pro:Semibold:14.0"
-  label.font="SF Pro:Semibold:14.0"
+  label.font="SF Pro:Semibold:12.0"
   label.color=$WHITE
   icon.padding_left=6
   icon.padding_right=6
@@ -105,7 +105,7 @@ sketchybar --add item vpn left \
                      background.border_color=0xff585b70 \
                      label.color=0xff1e1e2e \
                      icon.color=0xff1e1e2e \
-                     padding_left=150 \
+                     padding_left=5 \
                      click_script="open -b org.openvpn.client.app" \
            --subscribe vpn vpn_change
 
@@ -144,7 +144,7 @@ sketchybar --add item clock right \
                            background.corner_radius=5 \
                            background.height=24 \
                            background.padding_left=10 \
-                           background.padding_right=10 \
+                           background.padding_right=6 \
                            background.drawing=on \
                            background.border_width=1 \
                            background.border_color=0xff585b70 \
