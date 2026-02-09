@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Read current menu bar auto-hide state
+current_state=$(defaults read com.apple.dock autohide)
+
+if [[ "$current_state" == "1" ]]; then
+    echo "Menu bar is currently set to auto-hide. Changing to always show..."
+    defaults write com.apple.dock autohide -bool false
+else
+    echo "Menu bar is currently always visible. Changing to auto-hide..."
+    defaults write com.apple.dock autohide -bool true
+fi
+
+echo "Restarting Dock..."
+killall Dock
+
+echo "Done! Menu bar auto-hide setting has been toggled."
