@@ -31,11 +31,15 @@ if [ "$1" = "$FOCUSED_WORKSPACE" ]; then
         sketchybar --set front_app label="" icon="" background.drawing=off
     else
         FOCUSED_APP=$(aerospace list-windows --workspace "$1" --focused 2>/dev/null | awk -F '|' '{gsub(/^[ \t]+|[ \t]+$/, "", $2); print $2}')
+        # Fallback: if --focused returns nothing (timing race), get any window from workspace
+        if [ -z "$FOCUSED_APP" ]; then
+            FOCUSED_APP=$(aerospace list-windows --workspace "$1" 2>/dev/null | head -1 | awk -F '|' '{gsub(/^[ \t]+|[ \t]+$/, "", $2); print $2}')
+        fi
         if [ -n "$FOCUSED_APP" ]; then
             ICON=$($HOME/.config/sketchybar/plugins/icon_map_fn.sh "$FOCUSED_APP")
             sketchybar --set front_app label="$FOCUSED_APP" icon="$ICON" background.drawing=on
         else
-            sketchybar --set front_app background.drawing=on
+            sketchybar --set front_app label="" icon="" background.drawing=off
         fi
     fi
 elif [ "$1" = "$PREV_WORKSPACE" ]; then
