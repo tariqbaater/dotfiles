@@ -12,4 +12,4 @@ echo "=== Upgrading Packages ==="
 $BREW upgrade
 echo ""
 echo "Done! You can close this window."
-exec bash
+exit 0
