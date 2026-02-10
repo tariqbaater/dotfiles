@@ -169,7 +169,7 @@ if.app-id = 'company.thebrowser.Browser'
 run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
-if.app-id = 'net.kovidgoyal.kitty'
+if.app-id = 'com.mitchellh.ghostty'
 run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
@@ -187,3 +187,10 @@ run = 'move-node-to-workspace 4'
 [[on-window-detected]]
 if.app-id = 'com.apple.Passwords'
 run = 'move-node-to-workspace 6'
+
+# Ghostty tabs are detected as separate windows, so we need to move them to the same workspace
+[[on-window-detected]]
+if.app-id="com.mitchellh.ghostty"
+run= [
+  "layout tiling",
+]
