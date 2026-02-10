@@ -2,7 +2,7 @@
 
 sketchybar --add item wifi right \
            --set wifi update_freq=10 script="$PLUGIN_DIR/wifi.sh" \
-                      background.color=$PEACH \
+                      background.color=$BLUE \
                       background.corner_radius=5 \
                       background.height=24 \
                       background.padding_left=6 \

@@ -12,10 +12,10 @@ This is a SketchyBar configuration for macOS. SketchyBar is a highly customizabl
 
 1. **sketchybarrc** - Main entry point that orchestrates the entire bar setup:
    - Sources `colors.sh` to load the color scheme
-   - Configures bar appearance (position, height, blur)
+   - Configures bar appearance (position, height, blur, borders, padding, and corner radius)
    - Sets default item properties (fonts, padding, colors)
-   - Adds left items (Apple logo, AeroSpace workspaces, front app indicator)
-   - Adds right items (clock, volume, battery)
+   - Adds left items (Apple logo, AeroSpace workspaces, front app indicator, VPN)
+   - Adds right items (clock, Bluetooth, volume, battery, Wi-Fi)
    - Subscribes items to relevant events
 
 2. **colors.sh** - Centralized color definitions with multiple theme options:
@@ -23,13 +23,19 @@ This is a SketchyBar configuration for macOS. SketchyBar is a highly customizabl
    - Contains commented-out alternatives: Gray, Purple, Red, Blue, Green, Orange, Yellow
    - All colors use ARGB hex format (0xAARRGGBB)
 
-3. **plugins/** directory - Contains executable scripts that update bar items:
+3. **items/** directory - Contains individual item configuration scripts:
+   - Current items include `apple_logo.sh`, `workspaces.sh`, `front_app.sh`, `vpn.sh`, `clock.sh`, `bluetooth.sh`, `volume.sh`, `battery.sh`, and `wifi.sh`.
+   - These scripts are responsible for setting up specific bar items by configuring and setting up item properties and bindings.
+
+4. **plugins/** directory - Contains executable scripts that update bar items:
+   - Plugins include `battery.sh`, `clock.sh`, `aerospace.sh`, `wifi.sh`, `front_app.sh`, `icon_map_fn.sh`, `vpn.sh`, `bluetooth.sh`, and `volume.sh.`
    - Each plugin responds to either periodic updates or event-driven changes
    - Plugins use environment variables passed by SketchyBar ($NAME, $SENDER, $INFO, etc.)
 
 ### Key Integration: AeroSpace Window Manager
 
 The configuration dynamically creates workspace indicators based on AeroSpace:
+
 - Iterates through active workspaces using `aerospace list-workspaces --all`
 - Creates a `space.$sid` item for each workspace
 - Subscribes to `aerospace_workspace_change` event
@@ -38,17 +44,22 @@ The configuration dynamically creates workspace indicators based on AeroSpace:
 ### Plugin Architecture
 
 Each plugin follows a pattern:
+
 - Receives context via environment variables ($NAME, $SENDER, $INFO, $FOCUSED_WORKSPACE)
 - Processes information (parsing system data, checking conditions)
 - Updates the bar item using `sketchybar --set $NAME <properties>`
 
 **Key plugins:**
-- **aerospace.sh** - Toggles workspace background highlighting based on focus
-- **front_app.sh** - Displays currently focused application name
-- **battery.sh** - Shows battery percentage and charging status with dynamic icons
-- **clock.sh** - Displays current date/time (updates every 10s)
-- **volume.sh** - Shows volume level with dynamic icons (event-driven via volume_change)
-- **current_space.sh** - Alternative workspace indicator with click-to-reload functionality
+
+- **aerospace.sh** (dynamically highlights workspaces)
+- **front_app.sh** (displays active app)
+- **battery.sh** (battery status and icons)
+- **wifi.sh** (Wi-Fi status/signals)
+- **vpn.sh** (VPN status and events)
+- **bluetooth.sh** (Bluetooth devices)
+- **volume.sh** (volume level and mute status)
+- **clock.sh** (current time display and date)
+- **icon_map_fn.sh** (handles dynamic icon mapping for events and items)
 
 ## Reloading Configuration
 
@@ -81,6 +92,7 @@ export FOCUSED_WORKSPACE="1"
 ## Modifying Color Schemes
 
 To change the theme, edit `colors.sh`:
+
 1. Comment out current scheme (Teal by default)
 2. Uncomment desired scheme
 3. Reload SketchyBar
@@ -88,6 +100,7 @@ To change the theme, edit `colors.sh`:
 ## Event System
 
 SketchyBar uses an event-driven architecture:
+
 - **Custom events**: `aerospace_workspace_change` (triggered by AeroSpace)
 - **System events**: `volume_change`, `front_app_switched`, `system_woke`, `power_source_change`
 - Items subscribe to events using `--subscribe <item_name> <event_name>`
@@ -95,10 +108,11 @@ SketchyBar uses an event-driven architecture:
 
 ## Font Requirements
 
-Configuration uses **Hack Nerd Font**:
-- Icons: Bold 17.0
-- Labels: Bold 14.0
-- Ensure Nerd Font is installed for proper icon rendering
+Configuration uses **SF Pro**:
+
+- Icons: Semibold 14.0
+- Labels: Semibold 12.0
+- Ensure SF Pro font is installed for proper icon rendering
 
 ## File Permissions
 

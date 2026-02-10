@@ -6,7 +6,7 @@ sketchybar --add item chevron left \
            --set front_app icon.drawing=on \
                            icon.font="sketchybar-app-font:Regular:16.0" \
                            script="$PLUGIN_DIR/front_app.sh" \
-                           background.color=$MAUVE \
+                           background.color=$PEACH \
                            background.corner_radius=5 \
                            background.height=24 \
                            background.padding_left=10 \

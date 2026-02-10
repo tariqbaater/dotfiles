@@ -14,3 +14,4 @@ sketchybar --add item clock right \
                        icon.color=$DARK_TEXT \
                        padding_left=0 padding_right=8 \
                        script="$PLUGIN_DIR/clock.sh" \
+                       click_script="open -b com.apple.iCal"

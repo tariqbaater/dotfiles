@@ -2,7 +2,7 @@
 
 sketchybar --add item bluetooth right \
            --set bluetooth update_freq=10 script="$PLUGIN_DIR/bluetooth.sh" \
-                           background.color=$BLUE \
+                           background.color=$LAVENDER \
                            background.corner_radius=5 \
                            background.height=24 \
                            background.padding_left=10 \
@@ -13,3 +13,5 @@ sketchybar --add item bluetooth right \
                            label.color=$DARK_TEXT \
                            icon.color=$DARK_TEXT \
                            padding_left=0 padding_right=8 \
+                           click_script="open x-apple.systempreferences:com.apple.BluetoothSettings" \
+            --subscribe bluetooth bluetooth_change

@@ -13,4 +13,5 @@ sketchybar --add item volume right \
                         label.color=$DARK_TEXT \
                         icon.color=$DARK_TEXT \
                         padding_left=0 padding_right=8 \
+                        click_script="open 'x-apple.systempreferences:com.apple.preference.sound'" \
            --subscribe volume volume_change \

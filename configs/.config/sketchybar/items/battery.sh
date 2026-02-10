@@ -13,4 +13,5 @@ sketchybar --add item battery right \
                          label.color=$DARK_TEXT \
                          icon.color=$DARK_TEXT \
                          padding_left=0 padding_right=8 \
+                         click_script="open 'x-apple.systempreferences:com.apple.preference.battery'" \
            --subscribe battery system_woke power_source_change \

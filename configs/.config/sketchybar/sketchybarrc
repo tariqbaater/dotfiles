@@ -3,7 +3,7 @@ PLUGIN_DIR="$CONFIG_DIR/plugins"
 
 ##### Bar Appearance #####
 sketchybar --bar position=top height=40 blur_radius=50 color=$BAR_COLOR \
-                  border_color=$ACCENT_COLOR border_width=3 \
+                  border_color=$MAUVE border_width=3 \
                   padding_left=5 padding_right=5 \
                   margin=16 corner_radius=10 \
 

@@ -12,8 +12,9 @@ export DARK_TEXT=0xff1e1e2e      # Base (dark text on colored bg)
 
 # Item-specific accent colors
 export GREEN=0xffa6e3a1          # clock
-export BLUE=0xff89b4fa           # bluetooth
+export BLUE=0xff89b4fa           # wifi
 export PINK=0xfff5c2e7           # volume
 export TEAL=0xff94e2d5           # battery
-export PEACH=0xfffab387          # vpn, wifi
+export PEACH=0xfffab387          # vpn
 export MAUVE=0xffcba6f7          # front_app (same as ACCENT_COLOR)
+export LAVENDER=0xffb4befe       # bluetooth
