@@ -1,0 +1,41 @@
+# Dynamic theme colors
+config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
+
+# Font
+font-family = "Fira Code"
+font-size = 16
+font-style = Regular
+
+# theme
+theme = Catppuccin Mocha
+
+# Cursor
+cursor-style = "block"
+
+
+# Window
+window-padding-x = 14
+window-padding-y = 14
+confirm-close-surface=false
+resize-overlay = never
+gtk-toolbar-style = flat
+window-decoration = auto
+macos-titlebar-style = hidden
+background-opacity = 0.9
+
+# Cursor styling
+cursor-style = "block"
+cursor-style-blink = false
+custom-shader = shaders/cursor_blaze_no_trail.glsl
+
+# Cursor styling + SSH session terminfo
+# (all shell integration options must be passed together)
+shell-integration-features = no-cursor,ssh-env
+
+# Keyboard bindings
+
+# Misc
+copy-on-select = true
+
+# Slowdown mouse scrolling
+mouse-scroll-multiplier = 0.95
