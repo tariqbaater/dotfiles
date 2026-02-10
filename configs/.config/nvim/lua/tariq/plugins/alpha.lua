@@ -35,7 +35,7 @@ return {
       dashboard.button("f", " 🎄  Find file", ":Telescope find_files<CR>"),
       dashboard.button("o", " 🌳  Old files", ":Telescope oldfiles <CR>"),
       dashboard.button("r", " 🚀  Recent", ":Telescope oldfiles<CR>"),
-      dashboard.button("s", " 🔬  Settings", ":view ~/.config/nvim/lua/user/options.lua <CR>"),
+      dashboard.button("s", " 🔬  Settings", ":view ~/.config/nvim/lua/tariq/core/options.lua <CR>"),
       dashboard.button("q", " 🏓  Quit NVIM", ":qa<CR>"),
       dashboard.button("c", " 🔌  Plugins", ":Config<CR>"),
     }

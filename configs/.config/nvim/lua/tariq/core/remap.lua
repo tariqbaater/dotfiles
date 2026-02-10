@@ -51,12 +51,12 @@ map("n", "§", ":cnext<CR>", { noremap = true, silent = true, desc = "Next quick
 map("n", "±", ":cprev<CR>", { noremap = true, silent = true, desc = "Previous quickfix item" })
 
 -- Quickly append semicolon or comma in insert mode
-vim.keymap.set("i", ";;", "<Esc>A:<Esc>")
-vim.keymap.set("i", ",,", "<Esc>A,<Esc>")
-vim.keymap.set("i", "))", "<Esc>A)<Esc>")
+-- vim.keymap.set("i", ";;", "<Esc>A:<Esc>")
+-- vim.keymap.set("i", ",,", "<Esc>A,<Esc>")
+-- vim.keymap.set("i", "))", "<Esc>A)<Esc>")
 
 -- -- Open in finder
--- vim.keymap.set('n', '<Leader><Leader>O', ':!open $PWD<CR><CR>', { silent = true })
+-- vim.keymap.set("n", "<Leader><Leader>O", ":!open $PWD<CR><CR>", { silent = true })
 
 -- Open line, but stay in normal mode
 vim.keymap.set("n", "<CR>", "o<Esc>")
@@ -71,9 +71,7 @@ map("n", "<leader>-", "<C-x>", { noremap = true, silent = true, desc = "Decremen
 
 -- normal mode
 map("i", "jk", "<ESC>", { noremap = true, silent = true })
-map("i", "jj", "<ESC>", { noremap = true, silent = true })
 map("i", "kj", "<ESC>", { noremap = true, silent = true })
-map("i", "kk", "<ESC>", { noremap = true, silent = true })
 
 -- cycle buffers
 map("n", "<Tab>", ":bnext<CR>", { noremap = true, silent = true })
