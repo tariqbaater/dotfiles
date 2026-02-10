@@ -27,6 +27,7 @@ source "$CONFIG_DIR/items/apple_logo.sh"
 source "$CONFIG_DIR/items/workspaces.sh"
 source "$CONFIG_DIR/items/front_app.sh"
 source "$CONFIG_DIR/items/vpn.sh"
+source "$CONFIG_DIR/items/brew.sh"
 
 ##### Adding Right Items #####
 source "$CONFIG_DIR/items/clock.sh"
