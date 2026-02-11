@@ -8,9 +8,10 @@ if [ -z "$VPN_RUNNING" ]; then
   ICON="􁣡"
   LABEL="VPN Off"
 else
-  # Check if actually connected by looking for tun interface
-  TUN_INTERFACE=$(ifconfig | grep -o "utun9" | head -1)
-  if [ -n "$TUN_INTERFACE" ]; then
+  # Detect which interface handles public traffic
+  VPN_IF=$(route get 1.1.1.1 2>/dev/null | awk '/interface:/ {print $2}')
+
+  if echo "$VPN_IF" | grep -q "^utun"; then
     ICON="􁅏"
     LABEL="VPN On"
   else
