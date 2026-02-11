@@ -1,4 +1,3 @@
-Installed Homebrew formulas (commands):
 abook
 abseil
 ada-url
@@ -368,22 +367,20 @@ zimg
 zlib
 zoxide
 zstd
-
-Installed Homebrew casks:
-aerospace
-chromedriver
-claude-code
-devpod
-docker-desktop
-firefox
-font-fira-code
-font-sf-pro
-ghostty
-hiddenbar
-iterm2
-ngrok
-pycharm-ce
-sf-symbols
-shortcat
-skim
-thonny
+--cask aerospace
+--cask chromedriver
+--cask claude-code
+--cask devpod
+--cask docker-desktop
+--cask firefox
+--cask font-fira-code
+--cask font-sf-pro
+--cask ghostty
+--cask hiddenbar
+--cask iterm2
+--cask ngrok
+--cask pycharm-ce
+--cask sf-symbols
+--cask shortcat
+--cask skim
+--cask thonny
