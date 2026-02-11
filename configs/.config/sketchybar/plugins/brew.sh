@@ -9,7 +9,7 @@ export HOMEBREW_DOWNLOAD_CONCURRENCY=4
 
 case "$SENDER" in
 "mouse.clicked")
-  open -a ghostty "$CONFIG_DIR/plugins/brew_update.sh"
+  open -a Terminal "$CONFIG_DIR/plugins/brew_update.sh"
   ;;
 *)
   COUNT=$(brew outdated 2>/dev/null | wc -l | tr -d ' ')
