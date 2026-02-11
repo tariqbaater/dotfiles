@@ -51,6 +51,7 @@ read -p "Do you want to set up Git with SSH for private repos? (y/n): " SETUP_GI
 
 if [[ "$SETUP_GIT" != "y" ]]; then
   echo "Skipping Git SSH setup."
+  echo "Exiting..."
   exit 0
 else
   # Check if Git is installed
@@ -105,8 +106,10 @@ pbcopy < "${SSH_KEY}.pub"
 echo "SSH key already copied to clipboard."
 
 read -p "Press Enter after you've added the SSH key to GitHub..."
-# Test the SSH connection to GitHub
-ssh -T git@github.com
+# # Test the SSH connection to GitHub
+# ssh -T git@github.com
+# exit 0
+echo ""
 echo "Git SSH setup completed successfully."
 
 # Pull the latest changes from the dotfiles repository first, as it may contain updates to the
