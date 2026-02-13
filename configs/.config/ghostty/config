@@ -22,6 +22,8 @@ gtk-toolbar-style = flat
 window-decoration = auto
 macos-titlebar-style = hidden
 background-opacity = 0.9
+macos-option-as-alt = true
+mouse-hide-while-typing = true
 
 # Cursor styling
 cursor-style = "block"
@@ -39,3 +41,19 @@ copy-on-select = true
 
 # Slowdown mouse scrolling
 mouse-scroll-multiplier = 0.95
+
+# custom keybinds
+keybind = alt+b>r=reload_config
+keybind = alt+i=inspector:toggle
+keybind = alt+b>,=toggle_quick_terminal
+
+# splitting
+keybind = alt+b>\=new_split:right
+keybind = alt+b>-=new_split:down
+keybind = alt+b>e=equalize_splits
+
+# split nav (setting this to control will not work if tmux already uses it)
+keybind = alt+b>h=goto_split:left
+keybind = alt+b>j=goto_split:bottom
+keybind = alt+b>k=goto_split:top
+keybind = alt+b>l=goto_split:right

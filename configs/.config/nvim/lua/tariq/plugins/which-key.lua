@@ -36,7 +36,7 @@ return {
       { "<leader>e", "<cmd>Oil --float<cr>", desc = "Oil Nvim" },
       { "<leader>c", "<cmd>bd<cr>", desc = "Close buffer" },
       -- { "<leader>C",  "<cmd>bufdo bd!<cr>",                                           desc = "Close all buffers" },
-      { "<leader>x", "<cmd>BufferLinePickClose<cr>", desc = "Pick Close buffer" },
+      { "<leader>X", "<cmd>BufferLinePickClose<cr>", desc = "Pick Close buffer" },
       {
         "<leader>r",
         "<cmd>w<cr>:Cook<CR>",
@@ -96,7 +96,6 @@ return {
       { "<leader>th", "<cmd>split term://zsh<CR>", desc = "horizontal terminal" },
       { "<leader>tv", "<cmd>vsplit term://zsh<CR>", desc = "vertical terminal" },
       { "<leader>tf", "<cmd>FloatermToggle <CR>", desc = "floating terminal" },
-      { "<leader>D", "<cmd>w<cr>:sp |terminal g++ % -o %:r && ./%:r<CR>", desc = "compile and run c++" },
       { "<leader>m", "<cmd>DBUIToggle<CR>", desc = "Deploy DBUI" },
       { "<leader>y", "<cmd>InspectTree<CR>", desc = "Inspect tree" },
       { "<leader>oo", "<cmd>TSJToggle<CR>", desc = "Toggle TSJ" },

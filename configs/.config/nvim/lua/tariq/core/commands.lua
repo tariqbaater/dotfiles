@@ -106,6 +106,25 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+--  Disable arrow keys in all modes
+local modes = { "n", "i", "v", "x", "s", "o", "t" } -- all possible modes
+local arrows = { "<Up>", "<Down>", "<Left>", "<Right>" }
+
+for _, mode in ipairs(modes) do
+  for _, key in ipairs(arrows) do
+    vim.keymap.set(mode, key, "<Nop>", { noremap = true, silent = true })
+  end
+end
+
+-- local enabledModes = { "i", "c", "t", "o", "t", "s", "x" } -- modes where arrow keys are enabled
+-- -- Map alt + h/j/k/l to arrow keys in insert mode
+-- for _, mode in ipairs(enabledModes) do
+--   vim.keymap.set(mode, "<A-h>", "<Left>", { noremap = true, silent = true })
+--   vim.keymap.set(mode, "<A-j>", "<Down>", { noremap = true, silent = true })
+--   vim.keymap.set(mode, "<A-k>", "<Up>", { noremap = true, silent = true })
+--   vim.keymap.set(mode, "<A-l>", "<Right>", { noremap = true, silent = true })
+-- end
+
 -- format on save
 vim.api.nvim_create_autocmd("BufWritePre", {
   pattern = "*",

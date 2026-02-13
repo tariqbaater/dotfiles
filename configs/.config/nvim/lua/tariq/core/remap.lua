@@ -4,9 +4,18 @@ local map = vim.api.nvim_set_keymap
 map(
   "n",
   "<leader>R",
-  ":%s/<C-R><C-W>/<C-R>0/g<CR>",
-  { noremap = true, silent = true, desc = "Search and replace word under cursor" }
+  [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+  { desc = "Replace word cursor is on globally" }
 )
+
+-- make current file executable
+map("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true, desc = "makes file executable" })
+
+-- cursor positioning
+map("n", "<C-d>", "<C-d>zz", { desc = "move down in buffer with cursor centered" })
+map("n", "<C-u>", "<C-u>zz", { desc = "move up in buffer with cursor centered" })
+map("n", "n", "nzzzv", { desc = "move to next search result with cursor centered" })
+map("n", "N", "Nzzzv", { desc = "move to previous search result with cursor centered" })
 
 -- Obsidian
 map(
@@ -72,6 +81,7 @@ map("n", "<leader>-", "<C-x>", { noremap = true, silent = true, desc = "Decremen
 -- normal mode
 map("i", "jk", "<ESC>", { noremap = true, silent = true })
 map("i", "kj", "<ESC>", { noremap = true, silent = true })
+map("i", "<C-c>", "<ESC>", { noremap = true, silent = true })
 
 -- cycle buffers
 map("n", "<Tab>", ":bnext<CR>", { noremap = true, silent = true })
@@ -89,25 +99,6 @@ map("n", "<C-h>", "<C-w>h", { noremap = true, silent = true })
 map("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
 map("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
 map("n", "<C-l>", "<C-w>l", { noremap = true, silent = true })
-
---  Disable arrow keys in all modes
-local modes = { "n", "i", "v", "x", "s", "o", "t" } -- all possible modes
-local arrows = { "<Up>", "<Down>", "<Left>", "<Right>" }
-
-for _, mode in ipairs(modes) do
-  for _, key in ipairs(arrows) do
-    vim.keymap.set(mode, key, "<Nop>", { noremap = true, silent = true })
-  end
-end
-
--- local enabledModes = { "i", "c", "t", "o", "t", "s", "x" } -- modes where arrow keys are enabled
--- -- Map alt + h/j/k/l to arrow keys in insert mode
--- for _, mode in ipairs(enabledModes) do
---   vim.keymap.set(mode, "<A-h>", "<Left>", { noremap = true, silent = true })
---   vim.keymap.set(mode, "<A-j>", "<Down>", { noremap = true, silent = true })
---   vim.keymap.set(mode, "<A-k>", "<Up>", { noremap = true, silent = true })
---   vim.keymap.set(mode, "<A-l>", "<Right>", { noremap = true, silent = true })
--- end
 
 -- windows
 vim.keymap.set("n", "<leader><left>", ":vertical resize +20<cr>", { noremap = true, silent = true })
