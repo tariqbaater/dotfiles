@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sketchybar --add item brew left \
-           --set brew update_freq=300 \
+           --set brew update_freq=30 \
                       icon=🍺\
                       background.color=$YELLOW \
                       background.corner_radius=5 \
