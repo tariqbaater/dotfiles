@@ -20,3 +20,4 @@ export YELLOW=0xffdf8e1d         # updates
 export MAUVE=0xffcba6f7          # front_app (same as ACCENT_COLOR)
 export LAVENDER=0xffb4befe       # bluetooth
 export RED=0xfff38ba8            # vpn
+export SAPPHIRE=0xff74c7ec       # storage
