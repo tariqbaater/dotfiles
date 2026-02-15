@@ -15,4 +15,6 @@ sketchybar --add item storage left \
                          icon.color=$DARK_TEXT \
                          icon.font="SF Pro:Semibold:16.0" \
                          padding_left=5 \
-                         script="$PLUGIN_DIR/storage.sh"
+                         script="$PLUGIN_DIR/storage.sh" \
+                         click_script="open 'x-apple.systempreferences:com.apple.settings.Storage'" \
+           --subscribe storage system_woke
