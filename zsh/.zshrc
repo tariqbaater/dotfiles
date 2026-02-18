@@ -38,7 +38,8 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 # plugins=(git zsh-autosuggestions grc colorize zsh-syntax-highlighting web-search tmux aliases vi-mode themes copypath copyfile tmux)
 ZSH_COLORIZE_STYLE="monokai"
-# ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART=true
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -62,7 +63,7 @@ export PATH="$HOME/.tmuxifier/bin:$PATH"
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 
 #zoxide settings
-eval "$(zoxide init zsh)"
+eval "$(zoxide init zsh --cmd cd)"
 
 # yazi settings
 function y() {

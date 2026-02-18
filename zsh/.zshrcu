@@ -5,7 +5,7 @@
 # aliases
 alias rsn='rsync -av /Users/tariq/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault/notes arch:/home/tariq/Documents/Obsidian/'
 alias or='vim $HOME/library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault/inbox/*.md'
-alias ov='z $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault'
+alias ov='cd $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault'
 alias arc='open -a "Arc"'
 alias raycast='open -a "Raycast"'
 alias vpn='open -a "OpenVPN Connect"'
@@ -26,7 +26,7 @@ alias usd='curl -s https://api.exchangerate-api.com/v4/latest/USD | jq '.rates.K
 alias gbp='curl -s https://api.exchangerate-api.com/v4/latest/GBP | jq '.rates.SAR''
 alias myip="curl -s http://checkip.dyndns.org/ | sed 's/[a-zA-Z<>/ :]//g'"                                                   ─╯
 alias ip="echo $(ifconfig | grep broadcast | awk '{print $2}')" # use the $(command) to escape stdout issues
-alias cd='z'
+# alias cd='z'
 alias gb='git branch'
 alias rm='trash'
 alias what-i-got='compgen -c | fzf | xargs -I {} {}'
@@ -39,6 +39,7 @@ alias fman='compgen -c | fzf | xargs man'
 alias vifzf='vi $(fd --type f --hidden --exclude .git | fzf-tmux -m --preview "bat --style=numbers --color=always --line-range :500 {}")'
 
 # man page in vim
+export EDITOR='nvim'
 export MANPAGER='nvim +Man!'
 
 # nvim configuration picker
@@ -46,4 +47,75 @@ alias nvim-lazy='NVIM_APPNAME=LazyVim nvim'
 alias nvim-astro='NVIM_APPNAME=astro nvim'
 alias nvim-chad='NVIM_APPNAME=nvchad nvim'
 # alias nvim-default='NVIM_APPNAME=kickstart nvim'
-# alias functions
+
+# zshzle keybindings
+bindkey ' ' magic-space
+
+# -------------------------------------------
+# Alia Functions
+# -------------------------------------------
+
+# custom function to run after changing directory
+chpwd() {
+   ls -la
+}
+
+# custom function to run after changing directory, with virtualenv support
+chpwd() {
+  if [[ -d .venv ]]; then
+    source .venv/bin/activate
+  fi
+}
+
+# copy current command to clipboard
+copy-command() {
+  echo -n "$BUFFER" | pbcopy
+  zle  -M "Command copied to clipboard"
+}
+zle -N copy-command
+bindkey '^Xc' copy-command
+
+# clear screen and keep buffer
+clear-screen() {
+  echoti civis >"$TTY"
+  printf '%b' '\e[H\e[2J\e[3J' >"$TTY"
+  echoti cnorm >"$TTY"
+  zle redisplay
+}
+zle -N clear-screen
+bindkey '^Xl' clear-screen
+
+
+# -------------------------------------------
+#  Global Aliases - Use Anywhere in Commands
+# -------------------------------------------
+
+# Pipe to jq
+alias -g J='| jq'
+
+# Copy output to clipboard (macOS)
+alias -g C='| pbcopy'
+
+# -------------------------------------------
+#  Suffix Aliases - Open Files by Extension
+# -------------------------------------------
+# Just type the filename to open it with the associated program
+# alias -s json=jless
+alias -s md=bat
+alias -s go='$EDITOR'
+alias -s rs='$EDITOR'
+alias -s txt=bat
+alias -s log=bat
+alias -s py='$EDITOR'
+alias -s js='$EDITOR'
+alias -s html=open  # macOS: open in default browser
+alias -s ts='$EDITOR'
+
+# -------------------------------------------
+#  Named Directories - Bookmark Folders
+# -------------------------------------------
+# Access with ~name syntax, e.g., cd ~yt or ls ~yt
+hash -d pr=~/Projects
+hash -d dot=~/.dotfiles
+hash -d dl=~/Downloads
+# Add your own commonly used directories here

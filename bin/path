@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# cleans the PATH variable and prints it in a more readable format
+echo -e ${PATH//:/\\n}
