@@ -14,6 +14,9 @@ random_logo="${logos[RANDOM % ${#logos[@]} + 1]}"
 # Set the logo variable
 fastfetch --logo ~/.config/fastfetch/images/"$random_logo".png
 
+# bash settings
+export PS4=$'\e[31m[debug]\e[0m ' # include timestamp in debug output with red color
+
 # User Settings
 source ~/.dotfiles/zsh/.zshrcu
 
