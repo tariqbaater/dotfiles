@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script is used to connect to a Wi-Fi network using networksetup
+# This script is used to connect to a hotspot network using networksetup
 
 # Assign arguments to variables
 SSID="TaRiQ++++bAaTeR"
@@ -14,7 +14,7 @@ if [ -z "$WIFI_INTERFACE" ]; then
 fi
 # Check if the Wi-Fi is already connected to the specified SSID
 # Get the current SSID
-CURRENT_SSID=$(networksetup -getairportnetwork "$WIFI_INTERFACE" | awk -F': ' '{print $2}')
+CURRENT_SSID=$(ipconfig getsummary en0 2>/dev/null | awk -F ' : ' '/^  SSID/{print $2}')
 if [ "$CURRENT_SSID" == "$SSID" ]; then
     echo "Already connected to $SSID."
     exit 0
