@@ -19,6 +19,7 @@ alias tree='eza --tree'
 alias nz='vi ~/.zshrc'
 alias sz='source ~/.zshrc'
 alias st='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3'
+alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 alias sar='curl -s https://api.exchangerate-api.com/v4/latest/SAR | jq '.rates.KES''
@@ -50,7 +51,7 @@ alias nvim-chad='NVIM_APPNAME=nvchad nvim'
 
 # zshzle keybindings
 bindkey ' ' magic-space
-
+bindkey '^R' fzf-history-widget
 # -------------------------------------------
 # Alia Functions
 # -------------------------------------------
