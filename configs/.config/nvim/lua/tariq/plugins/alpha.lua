@@ -38,6 +38,7 @@ return {
       dashboard.button("s", " 🔬  Settings", ":view ~/.config/nvim/lua/tariq/core/options.lua <CR>"),
       dashboard.button("q", " 🏓  Quit NVIM", ":qa<CR>"),
       dashboard.button("c", " 🔌  Plugins", ":Config<CR>"),
+      dashboard.button("p", " 🕌  Prayer Times", ":SalatPopup<CR>"),
     }
     -- Send config to alpha
     alpha.setup(dashboard.opts)
