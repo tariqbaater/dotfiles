@@ -9,8 +9,8 @@ export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
 # Required: brew crashes in sketchybar's launchd sandbox without this
 # (Hardware::CPU.cores fails when getconf can't spawn as a subprocess)
-export HOMEBREW_NO_AUTO_UPDATE=1
-export HOMEBREW_DOWNLOAD_CONCURRENCY=4
+# export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_DOWNLOAD_CONCURRENCY=1
 
 case "$SENDER" in
 "mouse.clicked")
