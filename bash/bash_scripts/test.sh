@@ -1,5 +1,25 @@
 #!/bin/bash
 
+# debugging
+# set -x  # Enable debugging
+# set +x  # Disable debugging
+# example of debugging
+function debugging_example() {
+    local var1="Hello"
+    local var2="World"
+
+    # Set -x for debugging
+    set -x
+
+    # Example operations
+    echo "$var1, $var2!"
+
+    # Unset -x to stop debugging
+    # set +x
+}
+
+debugging_example
+
 # variables
 # name="World"
 
