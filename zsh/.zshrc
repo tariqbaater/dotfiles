@@ -34,6 +34,8 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# custom oh-my-zsh prompt
+# PROMPT='%n@%m %~ %# '
 # Oh-my-zsh settings
 ZSH_THEME="robbyrussell"
 # plugins=(git zsh-autosuggestions grc colorize zsh-syntax-highlighting web-search tmux aliases vi-mode themes copypath copyfile tmux)
