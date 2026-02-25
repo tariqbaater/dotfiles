@@ -15,7 +15,7 @@ function debugging_example() {
     echo "$var1, $var2!"
 
     # Unset -x to stop debugging
-    # set +x
+    set +x
 }
 
 debugging_example
