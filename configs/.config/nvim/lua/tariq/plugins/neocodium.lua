@@ -9,7 +9,6 @@ return {
         sqlite = true,
         mysql = true,
         plsql = true,
-        [""] = true,
         lua = true,
       },
     })
