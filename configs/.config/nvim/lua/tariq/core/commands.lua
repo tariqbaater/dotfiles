@@ -160,9 +160,9 @@ vim.api.nvim_create_autocmd("BufEnter", {
   callback = function()
     -- update your favorite macros here
     -- make the current line in markdown into a checkbox
-    vim.fn.setreg("c", "0I- [ €kb €kr€kbf]€ý5a j")
+    vim.fn.setreg("c", "0I- [ ï¿½kb ï¿½krï¿½kbf]ï¿½ï¿½5a j")
     -- mark as completed checkbox
-    vim.fn.setreg("x", "02f €ý5rx€ý50j")
+    vim.fn.setreg("x", "02f ï¿½ï¿½5rxï¿½ï¿½50j")
     -- bold
     vim.fn.setreg("b", "0i**A**0")
     -- italic
@@ -170,4 +170,70 @@ vim.api.nvim_create_autocmd("BufEnter", {
     -- list item
     vim.fn.setreg("l", "0I- 0")
   end,
+})
+
+-- Patch neocodeium for SQL temp buffers and mysql filetype alias
+-- These plugin files are overwritten on :LazySync, so we re-patch after updates
+local function patch_neocodeium()
+  local ok, result = pcall(function()
+    -- Add mysql -> sql alias in filetype.lua
+    local ft_path = vim.fn.stdpath("data") .. "/lazy/neocodeium/lua/neocodeium/filetype.lua"
+    local ft_content = vim.fn.readfile(ft_path)
+    local has_mysql = false
+    for _, line in ipairs(ft_content) do
+      if line:find("mysql") then
+        has_mysql = true
+        break
+      end
+    end
+    if not has_mysql then
+      for i, line in ipairs(ft_content) do
+        if line:find("bash%s*=%s*'shell'") then
+          table.insert(ft_content, i, "   mysql           = 'sql',")
+          break
+        end
+      end
+      vim.fn.writefile(ft_content, ft_path)
+    end
+
+    -- Patch workspace_uri in doc.lua to use buffer-local dir
+    local doc_path = vim.fn.stdpath("data") .. "/lazy/neocodeium/lua/neocodeium/doc.lua"
+    local doc_content = table.concat(vim.fn.readfile(doc_path), "\n")
+
+    local needs_fn_import = not doc_content:find("local fn = vim.fn")
+    local needs_workspace_fix = doc_content:find("state%.project_root_uri")
+
+    if needs_fn_import then
+      doc_content = doc_content:gsub("local api = vim%.api", "local api = vim.api\nlocal fn = vim.fn")
+    end
+
+    if needs_workspace_fix then
+      doc_content = doc_content:gsub(
+        "local name = api%.nvim_buf_get_name%(buf%)%s*\n%s*local lang",
+        "local name = api.nvim_buf_get_name(buf)\n   local abs_name = fn.fnamemodify(name, \":p\")\n   local buf_dir = fn.fnamemodify(abs_name, \":h\")\n   local lang"
+      )
+      doc_content = doc_content:gsub(
+        "workspace_uri = state%.project_root_uri",
+        "workspace_uri = stdio.to_uri(buf_dir)"
+      )
+      doc_content = doc_content:gsub(
+        "absolute_uri = stdio%.to_uri%(name%)",
+        "absolute_uri = stdio.to_uri(abs_name)"
+      )
+    end
+
+    vim.fn.writefile(vim.split(doc_content, "\n"), doc_path)
+  end)
+  if not ok then
+    vim.notify("neocodeium patch failed: " .. tostring(result), vim.log.levels.WARN)
+  end
+end
+
+patch_neocodeium()
+
+vim.api.nvim_create_autocmd("User", {
+  group = vim.api.nvim_create_augroup("neocodeium_patch", {}),
+  desc = "Re-patch neocodeium after lazy updates",
+  pattern = { "LazyUpdate", "LazyInstall", "LazySync" },
+  callback = patch_neocodeium,
 })
