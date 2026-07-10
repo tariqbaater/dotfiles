@@ -5,6 +5,7 @@ return {
     local neocodeium = require("neocodeium")
     neocodeium.setup({
       filetypes = {
+        sql = true,
         sqlite = true,
         mysql = true,
         plsql = true,
