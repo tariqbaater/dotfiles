@@ -1,17 +1,27 @@
 return {
   {
+    "mason-org/mason.nvim",
+    cmd = "Mason",
+    opts = {
+      ui = {
+        icons = {
+          package_installed = "✓",
+          package_pending = "➜",
+          package_uninstalled = "✗",
+        },
+      },
+    },
+  },
+  {
     "williamboman/mason-lspconfig.nvim",
     opts = {
-      -- list of servers for mason to install
       ensure_installed = {
         "ts_ls",
         "ruff",
         "html",
         "cssls",
         "tailwindcss",
-        "svelte",
         "lua_ls",
-        "graphql",
         "emmet_ls",
         "prismals",
         "pyright",
@@ -19,35 +29,23 @@ return {
       },
     },
     dependencies = {
-      {
-        "mason-org/mason.nvim",
-        opts = {
-          ui = {
-            icons = {
-              package_installed = "✓",
-              package_pending = "➜",
-              package_uninstalled = "✗",
-            },
-          },
-        },
-      },
-      "neovim/nvim-lspconfig",
+      "mason-org/mason.nvim",
     },
   },
   {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
     opts = {
       ensure_installed = {
-        "prettier", -- prettier formatter
-        "stylua", -- lua formatter
-        "isort", -- python formatter
-        "black", -- python formatter
+        "prettier",
+        "stylua",
+        "isort",
+        "black",
         "pylint",
         "eslint_d",
       },
     },
     dependencies = {
-      "williamboman/mason.nvim",
+      "mason-org/mason.nvim",
     },
   },
 }

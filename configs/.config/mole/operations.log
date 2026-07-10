@@ -1,0 +1,1494 @@
+
+# ========== clean session started at 2026-03-17 15:14:53 ==========
+[2026-03-17 15:15:03] [clean] REMOVED /Library/Logs/DiagnosticReports/.contents.panic (33KB)
+[2026-03-17 15:15:03] [clean] REMOVED /private/var/log/karabiner/grabber.log (180KB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/karabiner/grabber.1.log (266KB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/karabiner/grabber.3.log (266KB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/karabiner/grabber.2.log (266KB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/karabiner/core_service.3.log (266KB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/karabiner/core_service.2.log (262KB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/powermanagement/2026.03.08.asl (1.6MB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/powermanagement/2026.03.04.asl (2.2MB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/powermanagement/2026.03.05.asl (1.2MB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/powermanagement/2026.03.07.asl (2.7MB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/powermanagement/2026.03.06.asl (2.8MB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/powermanagement/2026.03.03.asl (1.7MB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/asl/BB.2026.10.31.G80.asl (4KB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/asl/BB.2026.09.30.G80.asl (4KB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/asl/BB.2027.02.28.G80.asl (135KB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/asl/BB.2026.12.31.G80.asl (4KB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/asl/BB.2026.11.30.G80.asl (8KB)
+[2026-03-17 15:15:04] [clean] REMOVED /private/var/log/asl/BB.2027.01.31.G80.asl (29KB)
+[2026-03-17 15:15:05] [clean] REMOVED /private/var/folders/v0/pxlzsrjn52n5cv29_1g8sqq80000gq/X/com.google.Chrome.code_sign_clone
+[2026-03-17 15:15:10] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e30.tracev3 (37KB)
+[2026-03-17 15:15:10] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e20.tracev3 (33KB)
+[2026-03-17 15:15:10] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001db7.tracev3 (29KB)
+[2026-03-17 15:15:10] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dc7.tracev3 (111KB)
+[2026-03-17 15:15:10] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dd5.tracev3 (41KB)
+[2026-03-17 15:15:10] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001de5.tracev3 (37KB)
+[2026-03-17 15:15:10] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dde.tracev3 (61KB)
+[2026-03-17 15:15:10] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dee.tracev3 (29KB)
+[2026-03-17 15:15:10] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e1f.tracev3 (33KB)
+[2026-03-17 15:15:10] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e0f.tracev3 (41KB)
+[2026-03-17 15:15:10] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e29.tracev3 (37KB)
+[2026-03-17 15:15:10] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dfc.tracev3 (90KB)
+[2026-03-17 15:15:10] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001df3.tracev3 (25KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e16.tracev3 (41KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e06.tracev3 (131KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e28.tracev3 (41KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dfb.tracev3 (90KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001df2.tracev3 (57KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001ebe.tracev3 (1.2MB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e07.tracev3 (98KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e17.tracev3 (25KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dc6.tracev3 (1.3MB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001db6.tracev3 (29KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e21.tracev3 (29KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e31.tracev3 (49KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001de4.tracev3 (33KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dd4.tracev3 (29KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001ded.tracev3 (98KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001ddd.tracev3 (33KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e2a.tracev3 (49KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dcf.tracev3 (111KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dbf.tracev3 (20KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dab.tracev3 (25KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e1e.tracev3 (57KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e0e.tracev3 (53KB)
+[2026-03-17 15:15:11] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001ec7.tracev3 (1.2MB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e15.tracev3 (41KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e05.tracev3 (41KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001df0.tracev3 (25KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dd6.tracev3 (45KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001de6.tracev3 (45KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001db4.tracev3 (168KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dc4.tracev3 (25KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e23.tracev3 (33KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001df9.tracev3 (33KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e2c.tracev3 (33KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dbd.tracev3 (25KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dcd.tracev3 (160KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001ddf.tracev3 (45KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001def.tracev3 (70KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001de7.tracev3 (45KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dd7.tracev3 (41KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e22.tracev3 (45KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dc5.tracev3 (348KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001db5.tracev3 (25KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dce.tracev3 (8KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dbe.tracev3 (98KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001df8.tracev3 (37KB)
+[2026-03-17 15:15:12] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e2b.tracev3 (25KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dfa.tracev3 (98KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e0d.tracev3 (12KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e1d.tracev3 (37KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dac.tracev3 (172KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e04.tracev3 (37KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e14.tracev3 (70KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001df1.tracev3 (53KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e11.tracev3 (37KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e01.tracev3 (33KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001eda.tracev3 (1.4MB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001df4.tracev3 (74KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dfd.tracev3 (53KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dc9.tracev3 (762KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001db9.tracev3 (37KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e1a.tracev3 (45KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e0a.tracev3 (33KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001daf.tracev3 (20KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001ddb.tracev3 (33KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001deb.tracev3 (37KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e08.tracev3 (25KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e18.tracev3 (33KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dd2.tracev3 (41KB)
+[2026-03-17 15:15:13] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001de2.tracev3 (29KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e27.tracev3 (37KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001db0.tracev3 (188KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dc0.tracev3 (29KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e2f.tracev3 (33KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dca.tracev3 (102KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dba.tracev3 (16KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dec.tracev3 (45KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001ddc.tracev3 (53KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e19.tracev3 (37KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e09.tracev3 (70KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001de3.tracev3 (33KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dd3.tracev3 (45KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dc1.tracev3 (205KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001db1.tracev3 (33KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e26.tracev3 (41KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e00.tracev3 (86KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e10.tracev3 (70KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001df5.tracev3 (66KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001db8.tracev3 (201KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dc8.tracev3 (127KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dfe.tracev3 (33KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001ec2.tracev3 (2.0MB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dda.tracev3 (33KB)
+[2026-03-17 15:15:14] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dea.tracev3 (53KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e2d.tracev3 (37KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dbc.tracev3 (324KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dcc.tracev3 (33KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001db3.tracev3 (20KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dc3.tracev3 (57KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001eaf.tracev3 (1.1MB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e24.tracev3 (37KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dd1.tracev3 (49KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001de1.tracev3 (49KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001df7.tracev3 (37KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001edb.tracev3 (123KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e12.tracev3 (61KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e02.tracev3 (168KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dae.tracev3 (37KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e1b.tracev3 (29KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e0b.tracev3 (41KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001de8.tracev3 (49KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dd8.tracev3 (70KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001edc.tracev3 (770KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001df6.tracev3 (61KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e03.tracev3 (29KB)
+[2026-03-17 15:15:15] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e13.tracev3 (37KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e0c.tracev3 (45KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e1c.tracev3 (29KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dd9.tracev3 (25KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001de9.tracev3 (37KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dad.tracev3 (37KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dff.tracev3 (20KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dcb.tracev3 (94KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dbb.tracev3 (16KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e2e.tracev3 (61KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001e25.tracev3 (41KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dc2.tracev3 (20KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001db2.tracev3 (152KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001de0.tracev3 (45KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/Special/0000000000001dd0.tracev3 (20KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/timesync/000000000000000a.timesync (66KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/timesync/0000000000000009.timesync (78KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/timesync/0000000000000008.timesync (25KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/timesync/000000000000000b.timesync (70KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/timesync/000000000000000c.timesync (78KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/timesync/000000000000000e.timesync (16KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/timesync/000000000000000d.timesync (25KB)
+[2026-03-17 15:15:16] [clean] REMOVED /private/var/db/diagnostics/roles.plist (4KB)
+[2026-03-17 15:15:17] [clean] REMOVED /private/var/db/DiagnosticPipeline/DRSTaskingDataModel.sqlite (41KB)
+[2026-03-17 15:15:17] [clean] REMOVED /private/var/db/DiagnosticPipeline/DRSCKConfigModel.sqlite (25KB)
+[2026-03-17 15:15:17] [clean] REMOVED /private/var/db/DiagnosticPipeline/DRSTaskingDataModel.sqlite-wal (475KB)
+[2026-03-17 15:15:17] [clean] REMOVED /private/var/db/DiagnosticPipeline/DRSDataModel.sqlite-wal (135KB)
+[2026-03-17 15:15:17] [clean] REMOVED /private/var/db/DiagnosticPipeline/DRSDataModel.sqlite (115KB)
+[2026-03-17 15:15:17] [clean] REMOVED /private/var/db/powerlog/Library/PerfPowerTelemetry/XcodeOrganizer/CurrentXcodeOrganizerDB.XCSQL (4KB)
+[2026-03-17 15:15:20] [clean] SKIPPED /Users/tariq/Library/Caches/CloudKit (whitelist)
+[2026-03-17 15:15:20] [clean] SKIPPED /Users/tariq/Library/Caches/com.anthropic.claudefordesktop (protected)
+[2026-03-17 15:15:20] [clean] SKIPPED /Users/tariq/Library/Caches/com.anthropic.claudefordesktop.ShipIt (protected)
+[2026-03-17 15:15:20] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.AMPDevicesAgent (protected)
+[2026-03-17 15:15:20] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.AMPLibraryAgent (protected)
+[2026-03-17 15:15:20] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.AppleMediaServices (protected)
+[2026-03-17 15:15:20] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.AssistantServices (protected)
+[2026-03-17 15:15:20] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.AuthenticationServicesCore.AuthenticationServicesAgent (protected)
+[2026-03-17 15:15:20] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.AvatarKit (protected)
+[2026-03-17 15:15:20] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.CharacterPicker.RemoteGenerationViewService (protected)
+[2026-03-17 15:15:20] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.CloudTelemetry (protected)
+[2026-03-17 15:15:20] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.DictionaryServices (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.Family-Settings.extension (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.FeatureAccessAgent (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.FileProviderDaemon.AppStoreService (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.HomeKit (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.Music (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.NewDeviceOutreach (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.Safari (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.SetupAssistant (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.Software-Update-Settings.extension (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.SoftwareUpdateNotificationManager (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.Spotlight (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.VideoConference (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.ViewBridge.masquerading-service-lacks-host-bundle-identifier (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.accountsd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.akd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.amsaccountsd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.amsengagementd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.amsondevicestoraged (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.ap.PromotedContentJetService (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.ap.adprivacyd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.appleaccountd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.appstore (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.appstoreagent (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.appstorecomponentsd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.assistant_service (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.assistantd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.betaenrollmentagent (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.bird (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.businessservicesd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.cache_delete (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.callintelligenced (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.chrono (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.cloudd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.commerce (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.containermanagerd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.controlcenter (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.controlcenter.helper (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.ctcategories.service (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.dataaccess.dataaccessd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.donotdisturbd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.dt.Xcode (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.dt.Xcode.ITunesSoftwareService (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.duetexpertd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.e5rt.e5bundlecache (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.feedbacklogger (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.finder (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.findmy.findmylocateagent (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.gamed (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.geoanalyticsd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.helpd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.homed (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.iCloudNotificationAgent (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.iTunes (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.iTunesCloud (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.intelligenceflow.intelligenceflowd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.itunescloudd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.managedappdistributionagent (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.nbagent (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.nsservicescache.plist (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.nsurlsessiond (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.parsecd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.passd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.preferencepanes.usercache (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.proactive.eventtracker (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.python (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.remindd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.secureelementservice (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.settings.PrivacySecurity.extension (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.sharekit.-2417890708855011662.png (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.sharekit.-4733748633353167552.png (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.sharekit.-4983781140330059684.png (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.sharekit.-6780277465686202818.png (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.sharekit.-7779189576589942603.png (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.sharekit.14153899609806.png (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.sharekit.24049398415.png (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.sharekit.26919328759.png (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.sharekit.3465968951862004152.png (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.sharekit.4024808128781873001.png (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.sharekit.6390717930805680754.png (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.sharekit.663103074326612662.png (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.sharekit.895546419455149065.png (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.shazamd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.siri.SuggestionsBookkeepingService (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.siri.bundleservicecache.plist (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.siri.conversationhandlercache.plist (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.siri.findmy.syncdevicedata.json (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.siri.transformationplugincache.plist (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.sirittsd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.storekitagent (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.systemsettings.menucache (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.textunderstandingd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.tipsd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.tiswitcher.cache (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.translationd (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.openai.chat (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/com.raycast.macos (protected)
+[2026-03-17 15:15:21] [clean] SKIPPED /Users/tariq/Library/Caches/io.tailscale.ipn.macsys (protected)
+[2026-03-17 15:15:40] [clean] FAILED /Users/tariq/Library/Caches/Arc (error)
+[2026-03-17 15:15:40] [clean] REMOVED /Users/tariq/Library/Caches/bun (37.1MB)
+[2026-03-17 15:15:40] [clean] REMOVED /Users/tariq/Library/Caches/pip (22.1MB)
+[2026-03-17 15:15:40] [clean] REMOVED /Users/tariq/Library/Caches/ssu
+[2026-03-17 15:15:40] [clean] REMOVED /Users/tariq/Library/Caches/deno (205KB)
+[2026-03-17 15:15:40] [clean] REMOVED /Users/tariq/Library/Caches/Animoji (1.3MB)
+[2026-03-17 15:15:40] [clean] REMOVED /Users/tariq/Library/Caches/GameKit (94KB)
+[2026-03-17 15:15:40] [clean] REMOVED /Users/tariq/Library/Caches/PassKit (3.7MB)
+[2026-03-17 15:15:40] [clean] REMOVED /Users/tariq/Library/Caches/SiriTTS (506.9MB)
+[2026-03-17 15:15:40] [clean] REMOVED /Users/tariq/Library/Caches/segment (4KB)
+[2026-03-17 15:15:41] [clean] REMOVED /Users/tariq/Library/Caches/Homebrew (3.01GB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/node-gyp (65.4MB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/CocoaPods
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/io.sentry (29KB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/hugo_cache
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/typescript (30.0MB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/GeoServices (81.9MB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/SentryCrash (25KB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/mbuseragent (4.4MB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/FamilyCircle (4KB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/INSTALLATION (4KB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/JetPackCache (541KB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/MiniLauncher (82KB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/ChatGPTHelper (3.3MB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/com.datadoghq
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/familycircled (2.2MB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/Docker Desktop (8KB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/askpermissiond (627KB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/storedownloadd (82KB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/icloudmailagent (82KB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/claude-cli-nodejs (430KB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/org.swift.swiftpm (119KB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/AMSDataMigratorTool
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/com.mitchellh.ghostty (246KB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/com.hackemist.SDImageCache (57KB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/company.thebrowser.Browser (99.7MB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/com.alienator88.Pearcleaner (5.7MB)
+[2026-03-17 15:15:42] [clean] REMOVED /Users/tariq/Library/Caches/com.onevcat.Kingfisher.ImageCache.default
+[2026-03-17 15:15:42] [clean] SKIPPED /Users/tariq/Library/Logs/Claude (protected)
+[2026-03-17 15:15:43] [clean] SKIPPED /Users/tariq/Library/Logs/LM Studio (protected)
+[2026-03-17 15:15:43] [clean] SKIPPED /Users/tariq/Library/Logs/com.apple.CloudTelemetry (protected)
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/Sync (94KB)
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/Xcode (115KB)
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/Pencil (1.3MB)
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/Baseband
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/Homebrew (1.7MB)
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/Assistant
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/DeviceLink (4KB)
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/AppAnalytics (4KB)
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/fsck_hfs.log (4KB)
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/CoreSimulator (1.0MB)
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/CrashReporter (12KB)
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/SiriTTSService
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/com.openai.codex (49KB)
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/DiagnosticReports (2.8MB)
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/DiscRecording.log (4KB)
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/PhotosSearch.aapbz (41KB)
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/PhotosUpgrade.aapbz (37KB)
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/PhotosLegacyUpgrade.aapbz (4KB)
+[2026-03-17 15:15:43] [clean] REMOVED /Users/tariq/Library/Logs/PrivacyPreservingMeasurement
+[2026-03-17 15:15:46] [clean] SKIPPED /Users/tariq/Library/Preferences/com.apple.recentitems.plist (protected)
+[2026-03-17 15:15:46] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.photoanalysisd (protected)
+[2026-03-17 15:15:46] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.akd (protected)
+[2026-03-17 15:15:46] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.QuickLook.thumbnailcache (protected)
+[2026-03-17 15:15:46] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.iconservices* (protected)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/Metrics
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/journals
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/Harvesting (3.5MB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/entities.db (590KB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/snippets.db (12KB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/training.db (8KB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/entities.db-shm (33KB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/entities.db-wal (4.2MB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/snippets.db-shm (33KB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/snippets.db-wal (2.1MB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/training.db-shm (33KB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/training.db-wal (201KB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/mifeaturestore.db (53KB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/email-to-name.kvcache
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/phone-to-name.kvcache
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/privacyAwareLogging.ser (4KB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/chatLengthEstimator.cmsketch (16KB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/suggestions-device-day-group (4KB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/significant-pseudo-contacts.bf.bf2-head (53KB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Suggestions/significant-pseudo-contacts.bf.bf2-tail
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/_141ED5A2-3C06-5F8C-8506-CD8178AD72FE.plist (4KB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/nvim_79441763-351A-5789-822E-4757AED731CA.plist (4KB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/adb_79441763-351A-5789-822E-4757AED731CA.plist (4KB)
+[2026-03-17 15:15:47] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/RemotePlay_79441763-351A-5789-822E-4757AED731CA.plist (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/Tableau_141ED5A2-3C06-5F8C-8506-CD8178AD72FE.plist (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/Microsoft Excel_141ED5A2-3C06-5F8C-8506-CD8178AD72FE.plist (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/Notes_141ED5A2-3C06-5F8C-8506-CD8178AD72FE.plist (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/borders_79441763-351A-5789-822E-4757AED731CA.plist (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/Homerow_79441763-351A-5789-822E-4757AED731CA.plist (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/iTerm2_141ED5A2-3C06-5F8C-8506-CD8178AD72FE.plist (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/Intervals_141ED5A2-3C06-5F8C-8506-CD8178AD72FE.plist (45KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/python3.12_79441763-351A-5789-822E-4757AED731CA.plist (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/node_141ED5A2-3C06-5F8C-8506-CD8178AD72FE.plist (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/IPTV Smarters_141ED5A2-3C06-5F8C-8506-CD8178AD72FE.plist (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/Freeform_141ED5A2-3C06-5F8C-8506-CD8178AD72FE.plist (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/AeroSpace_79441763-351A-5789-822E-4757AED731CA.plist (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/lsd_79441763-351A-5789-822E-4757AED731CA.plist (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/RStudio_141ED5A2-3C06-5F8C-8506-CD8178AD72FE.plist (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/CrashReporter/prl_client_app_141ED5A2-3C06-5F8C-8506-CD8178AD72FE.plist (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/com.apple.wallpaper/aerials/videos/4C108785-A7BA-422E-9C79-B0129F1D5550.mov (467.0MB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Application Support/com.apple.wallpaper/aerials/videos/6D6834A4-2F0F-479A-B053-7D4DC5CB8EB7.mov (475.2MB)
+[2026-03-17 15:15:48] [clean] SKIPPED /Users/tariq/Library/Containers/com.apple.wallpaper.agent/Data/Library/Caches/com.apple.wallpaper.caches (protected)
+[2026-03-17 15:15:48] [clean] SKIPPED /Users/tariq/Library/Containers/com.apple.mediaanalysisd/Data/Library/Caches/PFSceneGeographyData.index (protected)
+[2026-03-17 15:15:48] [clean] SKIPPED /Users/tariq/Library/Containers/com.apple.mediaanalysisd/Data/Library/Caches/PFSceneTaxonomyData.index (protected)
+[2026-03-17 15:15:48] [clean] SKIPPED /Users/tariq/Library/Containers/com.apple.mediaanalysisd/Data/Library/Caches/com.apple.HomeKit (protected)
+[2026-03-17 15:15:48] [clean] SKIPPED /Users/tariq/Library/Containers/com.apple.mediaanalysisd/Data/Library/Caches/com.apple.mediaanalysisd (protected)
+[2026-03-17 15:15:48] [clean] SKIPPED /Users/tariq/Library/Containers/com.apple.AppStore/Data/Library/Caches/com.apple.AppStore (protected)
+[2026-03-17 15:15:48] [clean] SKIPPED /Users/tariq/Library/Containers/com.apple.AppStore/Data/Library/Caches/com.apple.AppleMediaServices (protected)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Containers/52441115-6A77-4CF6-874B-D26B1E3A7BD9/Data/Library/Caches/com.crashlytics.data (291KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Containers/52441115-6A77-4CF6-874B-D26B1E3A7BD9/Data/Library/Caches/WebKit (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Containers/52441115-6A77-4CF6-874B-D26B1E3A7BD9/Data/Library/Caches/CastFrameworkDB.sqlite (209KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Containers/52441115-6A77-4CF6-874B-D26B1E3A7BD9/Data/Library/Caches/com.hackemist.SDImageCache (58.6MB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Containers/52441115-6A77-4CF6-874B-D26B1E3A7BD9/Data/Library/Caches/google-sdks-events (33KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Containers/52441115-6A77-4CF6-874B-D26B1E3A7BD9/Data/Library/Caches/GCKRuntimeConfiguration.plist (4KB)
+[2026-03-17 15:15:48] [clean] REMOVED /Users/tariq/Library/Containers/52441115-6A77-4CF6-874B-D26B1E3A7BD9/Data/Library/Caches/GCKClearcutLogger
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/52441115-6A77-4CF6-874B-D26B1E3A7BD9/Data/Library/Caches/net.gadm.tv (12.5MB)
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/52441115-6A77-4CF6-874B-D26B1E3A7BD9/Data/Library/Caches/gckImageCache
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/52441115-6A77-4CF6-874B-D26B1E3A7BD9/Data/Library/Caches/CastFrameworkDB.sqlite-wal (201KB)
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/52441115-6A77-4CF6-874B-D26B1E3A7BD9/Data/Library/Caches/CastFrameworkDB.sqlite-shm (33KB)
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/52441115-6A77-4CF6-874B-D26B1E3A7BD9/Data/Library/Caches/com.braze.inappmessageui
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/8A140C7D-AE38-4CAC-8598-99FB4217CBE1/Data/Library/Caches/com.crashlytics.data (229KB)
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/8A140C7D-AE38-4CAC-8598-99FB4217CBE1/Data/Library/Caches/CastFrameworkDB.sqlite (209KB)
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/8A140C7D-AE38-4CAC-8598-99FB4217CBE1/Data/Library/Caches/com.hackemist.SDImageCache (2.6MB)
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/8A140C7D-AE38-4CAC-8598-99FB4217CBE1/Data/Library/Caches/google-sdks-events (8KB)
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/8A140C7D-AE38-4CAC-8598-99FB4217CBE1/Data/Library/Caches/GCKRuntimeConfiguration.plist (4KB)
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/8A140C7D-AE38-4CAC-8598-99FB4217CBE1/Data/Library/Caches/GCKClearcutLogger (4KB)
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/8A140C7D-AE38-4CAC-8598-99FB4217CBE1/Data/Library/Caches/gckImageCache
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/8A140C7D-AE38-4CAC-8598-99FB4217CBE1/Data/Library/Caches/CastFrameworkDB.sqlite-wal (135KB)
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/8A140C7D-AE38-4CAC-8598-99FB4217CBE1/Data/Library/Caches/CastFrameworkDB.sqlite-shm (33KB)
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/8A140C7D-AE38-4CAC-8598-99FB4217CBE1/Data/Library/Caches/com.masters.Aroma (434KB)
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/F3E391C2-77BD-412C-8FA8-7EA4E81F9B3D/Data/Library/Caches/com.crashlytics.data (221KB)
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/F3E391C2-77BD-412C-8FA8-7EA4E81F9B3D/Data/Library/Caches/WebKit (733KB)
+[2026-03-17 15:15:49] [clean] REMOVED /Users/tariq/Library/Containers/F3E391C2-77BD-412C-8FA8-7EA4E81F9B3D/Data/Library/Caches/google-sdks-events (4KB)
+[2026-03-17 15:15:50] [clean] REMOVED /Users/tariq/Library/Containers/F3E391C2-77BD-412C-8FA8-7EA4E81F9B3D/Data/Library/Caches/SSACache (45KB)
+[2026-03-17 15:15:50] [clean] REMOVED /Users/tariq/Library/Containers/F3E391C2-77BD-412C-8FA8-7EA4E81F9B3D/Data/Library/Caches/CachedPrograms_v2
+[2026-03-17 15:15:50] [clean] REMOVED /Users/tariq/Library/Containers/F3E391C2-77BD-412C-8FA8-7EA4E81F9B3D/Data/Library/Caches/com.nakiostudio.uhf.ios (82KB)
+[2026-03-17 15:15:50] [clean] REMOVED /Users/tariq/Library/Containers/F3E391C2-77BD-412C-8FA8-7EA4E81F9B3D/Data/Library/Caches/CachedEPGs
+[2026-03-17 15:15:53] [clean] REMOVED /Users/tariq/Library/Group Containers/4C6364ACXT.com.parallels.toolbox/Library/Caches/Icons
+[2026-03-17 15:15:54] [clean] REMOVED /Users/tariq/Library/Group Containers/group.com.facebook.family/Library/Caches/CrossAppSharing
+[2026-03-17 15:15:54] [clean] REMOVED /Users/tariq/Library/Group Containers/group.net.whatsapp.WhatsApp.shared/Logs/WhatsApp_2 (25.6MB)
+[2026-03-17 15:15:54] [clean] REMOVED /Users/tariq/Library/Group Containers/group.net.whatsapp.WhatsApp.shared/Logs/ServiceExtension_2 (85.1MB)
+[2026-03-17 15:15:54] [clean] REMOVED /Users/tariq/Library/Group Containers/group.net.whatsapp.WhatsApp.shared/Logs/Intents_2 (291KB)
+[2026-03-17 15:15:54] [clean] REMOVED /Users/tariq/Library/Caches/com.apple.Safari/WebKitCache (4KB)
+[2026-03-17 15:15:54] [clean] REMOVED /Users/tariq/Library/Caches/com.apple.Safari/RemoteNotifications (82KB)
+[2026-03-17 15:15:54] [clean] REMOVED /Users/tariq/Library/Caches/com.apple.Safari/OnboardingExtensionIconCache (238KB)
+[2026-03-17 15:15:54] [clean] SKIPPED /Users/tariq/Library/Caches/com.dropbox.* (protected)
+[2026-03-17 15:15:54] [clean] SKIPPED /Users/tariq/Library/Caches/com.getdropbox.dropbox (protected)
+[2026-03-17 15:15:54] [clean] SKIPPED /Users/tariq/Library/Caches/com.google.GoogleDrive (protected)
+[2026-03-17 15:15:54] [clean] SKIPPED /Users/tariq/Library/Caches/com.box.desktop (protected)
+[2026-03-17 15:15:54] [clean] SKIPPED /Users/tariq/Library/Caches/com.microsoft.OneDrive (protected)
+[2026-03-17 15:15:54] [clean] SKIPPED /Users/tariq/Library/Caches/com.microsoft.Word (protected)
+[2026-03-17 15:15:54] [clean] SKIPPED /Users/tariq/Library/Caches/com.microsoft.Excel (protected)
+[2026-03-17 15:15:54] [clean] SKIPPED /Users/tariq/Library/Caches/com.microsoft.Powerpoint (protected)
+[2026-03-17 15:15:54] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.iWork.* (protected)
+[2026-03-17 15:15:59] [clean] REMOVED /Users/tariq/.npm/_npx/042a303932eac314 (1.3MB)
+[2026-03-17 15:16:01] [clean] REMOVED /Users/tariq/.npm/_npx/0b9ff77863cb6e9f (187.8MB)
+[2026-03-17 15:16:01] [clean] REMOVED /Users/tariq/.npm/_npx/3dfbf5a9eea4a1b3 (22.6MB)
+[2026-03-17 15:16:01] [clean] REMOVED /Users/tariq/.npm/_npx/5895ca1b84221e69 (27.7MB)
+[2026-03-17 15:16:01] [clean] REMOVED /Users/tariq/.npm/_npx/590bd8cfc4710544 (21.8MB)
+[2026-03-17 15:16:01] [clean] REMOVED /Users/tariq/.npm/_npx/705d23756ff7dacc (5.0MB)
+[2026-03-17 15:16:01] [clean] REMOVED /Users/tariq/.npm/_npx/85bfc4373bfefd98 (668KB)
+[2026-03-17 15:16:01] [clean] REMOVED /Users/tariq/.npm/_npx/8784704caaadcd38 (160.5MB)
+[2026-03-17 15:16:02] [clean] REMOVED /Users/tariq/.npm/_npx/a3241bba59c344f5 (30.5MB)
+[2026-03-17 15:16:02] [clean] REMOVED /Users/tariq/.npm/_npx/abe235584debfe0e (5.8MB)
+[2026-03-17 15:16:02] [clean] REMOVED /Users/tariq/.npm/_npx/ac0ed6aa23b37c1e (745KB)
+[2026-03-17 15:16:02] [clean] REMOVED /Users/tariq/.npm/_npx/c35ab75beed40a3c (21.4MB)
+[2026-03-17 15:16:02] [clean] REMOVED /Users/tariq/.npm/_npx/c67e74de0542c87c (5.0MB)
+[2026-03-17 15:16:02] [clean] REMOVED /Users/tariq/.npm/_npx/cb6f8f41718a1947 (24.0MB)
+[2026-03-17 15:16:02] [clean] REMOVED /Users/tariq/.npm/_npx/cf9b4eea2397642a (170.2MB)
+[2026-03-17 15:16:06] [clean] REMOVED /Users/tariq/.npm/_npx/d07ada7b4a99c96e (530.6MB)
+[2026-03-17 15:16:06] [clean] REMOVED /Users/tariq/.npm/_npx/de2bd410102f5eda (25.3MB)
+[2026-03-17 15:16:06] [clean] REMOVED /Users/tariq/.npm/_npx/e41f203b7505f1fb (14.2MB)
+[2026-03-17 15:16:06] [clean] REMOVED /Users/tariq/.npm/_npx/eea2bd7412d4593b (29.7MB)
+[2026-03-17 15:16:07] [clean] REMOVED /Users/tariq/.npm/_logs/2026-03-17T06_52_34_017Z-debug-0.log (111KB)
+[2026-03-17 15:16:07] [clean] REMOVED /Users/tariq/.npm/_logs/2026-03-17T06_52_42_008Z-debug-0.log (4KB)
+[2026-03-17 15:16:07] [clean] REMOVED /Users/tariq/.npm/_logs/2026-03-17T06_53_02_203Z-debug-0.log (4KB)
+[2026-03-17 15:16:07] [clean] REMOVED /Users/tariq/.npm/_logs/2026-03-17T06_56_54_738Z-debug-0.log (4KB)
+[2026-03-17 15:16:07] [clean] REMOVED /Users/tariq/.npm/_logs/2026-03-17T06_58_15_091Z-debug-0.log (4KB)
+[2026-03-17 15:16:07] [clean] REMOVED /Users/tariq/.npm/_logs/2026-03-17T06_59_09_436Z-debug-0.log (4KB)
+[2026-03-17 15:16:07] [clean] REMOVED /Users/tariq/.npm/_logs/2026-03-17T07_20_42_805Z-debug-0.log (508KB)
+[2026-03-17 15:16:07] [clean] REMOVED /Users/tariq/.npm/_logs/2026-03-17T07_22_06_105Z-debug-0.log (4KB)
+[2026-03-17 15:16:07] [clean] REMOVED /Users/tariq/.npm/_logs/2026-03-17T12_15_44_311Z-debug-0.log (12KB)
+[2026-03-17 15:16:07] [clean] REMOVED /Users/tariq/.npm/_logs/2026-03-17T12_15_54_912Z-debug-0.log (4KB)
+[2026-03-17 15:16:07] [clean] REMOVED /Users/tariq/.npm/_logs/2026-03-17T12_15_56_396Z-debug-0.log (4KB)
+[2026-03-17 15:16:07] [clean] REMOVED /Users/tariq/.npm/_prebuilds/9f979f-keytar-v7.9.0-napi-v3-darwin-arm64.tar.gz (25KB)
+[2026-03-17 15:16:07] [clean] REMOVED /Users/tariq/.npm/_prebuilds/0068db-sqlite3-v5.1.7-napi-v6-darwin-arm64.tar.gz (987KB)
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/ajv
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/zod
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/hono
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/jose
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/tr46
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/yaml
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/fastq
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/arctic
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/braces
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/merge2
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/semver
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/@oslojs (516KB)
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/@vscode (33KB)
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/is-glob
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/pyright
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/reusify
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/@nodelib (266KB)
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/@one-ini (127KB)
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/fast-uri
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/fsevents
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/prettier
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/turndown
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/aws4fetch
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/commander
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/fast-glob
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/is-number
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/minimatch
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/picomatch
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/fill-range
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/is-extglob
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/micromatch
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/node-fetch
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-nls
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-uri
+[2026-03-17 15:16:10] [clean] REMOVED /Users/tariq/.bun/install/cache/whatwg-url
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/@mixmark-io (9.0MB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/@openauthjs (922KB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/glob-parent
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/@opencode-ai (1.4MB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/ajv-draft-04
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/editorconfig
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/fuzzy-search
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/jsonc-parser
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/run-parallel
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/request-light
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/zod@4.1.8@@@1 (5.8MB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/ajv@8.18.0@@@1 (2.4MB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/balanced-match
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/jose@5.9.6@@@1 (1.4MB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/to-regex-range
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/tr46@0.0.3@@@1 (279KB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-jsonrpc
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/yaml@2.7.1@@@1 (1.3MB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/zod@3.24.2@@@1 (852KB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/brace-expansion
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/fast-deep-equal
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/hono@4.12.1@@@1 (2.8MB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/queue-microtask
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/web-tree-sitter
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/@standard-schema (37KB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/arctic@2.3.4@@@1 (492KB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/braces@3.0.3@@@1 (70KB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/fastq@1.20.1@@@1 (86KB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/merge2@1.4.1@@@1 (16KB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/semver@7.7.4@@@1 (270KB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/is-glob@4.0.3@@@1 (20KB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/reusify@1.1.0@@@1 (57KB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/fast-uri@3.1.0@@@1 (238KB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/fsevents@2.3.3@@@1 (184KB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/prettier@3.8.1@@@1 (8.7MB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/turndown@7.2.0@@@1 (213KB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/webidl-conversions
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/fast-glob@3.3.3@@@1 (266KB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/is-number@7.0.0@@@1 (20KB)
+[2026-03-17 15:16:11] [clean] REMOVED /Users/tariq/.bun/install/cache/picomatch@2.3.1@@@1 (115KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/pyright@1.1.408@@@1 (34.6MB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/require-from-string
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/02cb71d343abda2c.npm (8KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/06b40b40c51307fb.npm (12KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/09885b3efe2688d9.npm (4KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/1a11837c25a43f31.npm (20KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/1fe7c3ba06d814c0.npm (20KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/21f19740189d11fe.npm (1.9MB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/28edde9c05eebf59.npm (12KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/29efb55ad44d0ccd.npm (8KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/2ac55eec41c08990.npm (16KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/32a94fa33cc6c369.npm (82KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/33e30784dae19d0a.npm (4KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/35754f2ee6668477.npm (8KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/414adc400e944ff5.npm (127KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/4384b599d8e1663a.npm (8KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/45628785d1f57708.npm (4KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/4673952d56027d03.npm (8KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/477361ffdfe2653d.npm (4KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/494b15126e390ed6.npm (45KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/4a18553bda9b2cbf.npm (8KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/4a2949758bde2aa4.npm (8KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/4b4a927a5e481f3b.npm (8KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/535d19218a1837f0.npm (61KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/544aad29bf256d77.npm (143KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/565c7fd5a0889e82.npm (4KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/591d5a6ce924044a.npm (4KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/59a99737c849cca3.npm (4KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/5c2c953f5445240f.npm (4KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/5d8d4e30d34ae276.npm (12KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/5eb19557bd0cfa34.npm (37KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/683510cab1c0f33d.npm (16KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/69726fe8ae9252b4.npm (16KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/70eeee515ee2021f.npm (53KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/7434e361bcb62a7b.npm (4KB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/7fd430bb39ebc5ee.npm (1.7MB)
+[2026-03-17 15:16:12] [clean] REMOVED /Users/tariq/.bun/install/cache/812f3e0efd1b43db.npm (53KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/82031dbaa0a5f690.npm (37KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/871da3362992c584.npm (33KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/872210cd453795bc.npm (16KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/8be784fbee26056f.npm (25KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/8db92bb252305edc.npm (74KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/906692029c12a6f4.npm (12KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/a60efda843bb869e.npm (8KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/a65c286097090a7a.npm (4KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/a7b2a34d9e290787.npm (8KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/a7d2d84a1efb29a8.npm (78KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/a7d7979a0861a859.npm (225KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/a7e4de6abd2c06ea.npm (4KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/aa7c4b197d450e03.npm (53KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/abb085dd0991c819.npm (8KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/aws4fetch@1.0.20@@@1 (82KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/b01d49b5d803e703.npm (25KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/b6d868b146bfff15.npm (12KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/bash-language-server
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/bbbaa22787d77a09.npm (12KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/c17f4447ebe3362d.npm (324KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/c247cbd6ce3dac49.npm (176KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/c5aa06cd54325804.npm (8KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/cb51e7589bc46deb.npm (33KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/commander@13.1.0@@@1 (233KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/d221f1e8dd7d5cb8.npm (12KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/d638d01897c51911.npm (29KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/d9115015d9c2c292.npm (45KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/ddf56466d0802a95.npm (12KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/de88ee85178290b8.npm (29KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/dfc9dabcb194648b.npm (8KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/e1c9f25d4dd45157.npm (8KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/e324920d56e54915.npm (41KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/e727ee0bba1200e8.npm (115KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/ea4fa1847ed02240.npm (8KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/eafe3578b6c71b5b.npm (4KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/ec1978c43b0e97e6.npm (8KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/f2145bf8fc482f2a.npm (8KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/f4fa45bfcb8df4f2.npm (12KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/f66190faffec6055.npm (12KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/fill-range@7.1.1@@@1 (25KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/is-extglob@2.1.1@@@1 (16KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/json-schema-traverse
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/micromatch@4.0.8@@@1 (66KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/minimatch@10.0.1@@@1 (586KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/node-fetch@2.7.0@@@1 (184KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-nls@5.2.0@@@1 (172KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-uri@3.1.0@@@1 (246KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/whatwg-url@5.0.0@@@1 (74KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/yaml-language-server
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/glob-parent@5.1.2@@@1 (29KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-languageserver
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/ajv-draft-04@1.0.0@@@1 (119KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/editorconfig@2.0.1@@@1 (66KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/fuzzy-search@3.2.1@@@1 (389KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/jsonc-parser@3.3.1@@@1 (258KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/run-parallel@1.2.0@@@1 (16KB)
+[2026-03-17 15:16:13] [clean] REMOVED /Users/tariq/.bun/install/cache/opencode-anthropic-auth
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/request-light@0.5.8@@@1 (49KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/balanced-match@1.0.2@@@1 (20KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/to-regex-range@5.0.1@@@1 (33KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-jsonrpc@8.0.2@@@1 (315KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-jsonrpc@8.2.0@@@1 (336KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/brace-expansion@2.0.2@@@1 (29KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/fast-deep-equal@3.1.3@@@1 (45KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/queue-microtask@1.2.3@@@1 (25KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/web-tree-sitter@0.24.5@@@1 (385KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-json-languageservice
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-languageserver-types
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/webidl-conversions@3.0.1@@@1 (25KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/require-from-string@2.0.2@@@1 (16KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/bash-language-server@5.6.0@@@1 (2.4MB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/json-schema-traverse@1.0.0@@@1 (57KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-languageserver-protocol
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-languageserver@8.0.2@@@1 (348KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-languageserver@9.0.1@@@1 (369KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/yaml-language-server@1.21.0@@@1 (7.1MB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/opencode-anthropic-auth@0.0.13@@@1 (37KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-languageserver-textdocument
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-json-languageservice@4.1.8@@@1 (606KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-languageserver-types@3.17.2@@@1 (389KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-languageserver-types@3.17.5@@@1 (397KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-languageserver-protocol@3.17.2@@@1 (504KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-languageserver-protocol@3.17.5@@@1 (512KB)
+[2026-03-17 15:16:14] [clean] REMOVED /Users/tariq/.bun/install/cache/vscode-languageserver-textdocument@1.0.12@@@1 (66KB)
+[2026-03-17 15:16:18] [clean] REMOVED /Users/tariq/.cache/uv/builds-v0
+[2026-03-17 15:16:18] [clean] REMOVED /Users/tariq/.cache/uv/sdists-v7 (1.3MB)
+[2026-03-17 15:16:18] [clean] REMOVED /Users/tariq/.cache/uv/sdists-v9 (14.0MB)
+[2026-03-17 15:16:18] [clean] REMOVED /Users/tariq/.cache/uv/wheels-v3 (1.4MB)
+[2026-03-17 15:16:18] [clean] REMOVED /Users/tariq/.cache/uv/wheels-v5 (2.6MB)
+[2026-03-17 15:16:18] [clean] REMOVED /Users/tariq/.cache/uv/wheels-v6 (2.7MB)
+[2026-03-17 15:16:23] [clean] REMOVED /Users/tariq/.cache/uv/archive-v0 (1.34GB)
+[2026-03-17 15:16:23] [clean] REMOVED /Users/tariq/.cache/uv/simple-v15 (90.6MB)
+[2026-03-17 15:16:23] [clean] REMOVED /Users/tariq/.cache/uv/simple-v18 (36.7MB)
+[2026-03-17 15:16:23] [clean] REMOVED /Users/tariq/.cache/uv/simple-v20 (87.1MB)
+[2026-03-17 15:16:23] [clean] REMOVED /Users/tariq/.cache/uv/binaries-v0 (70.1MB)
+[2026-03-17 15:16:23] [clean] REMOVED /Users/tariq/.cache/uv/CACHEDIR.TAG (4KB)
+[2026-03-17 15:16:23] [clean] REMOVED /Users/tariq/.cache/uv/interpreter-v4 (86KB)
+[2026-03-17 15:16:23] [clean] REMOVED /Users/tariq/.cache/uv/environments-v2
+[2026-03-17 15:16:25] [clean] REMOVED /Users/tariq/.config/gcloud/logs/2026.03.10 (2.5MB)
+[2026-03-17 15:16:25] [clean] REMOVED /Users/tariq/.oh-my-zsh/cache/grep-alias (4KB)
+[2026-03-17 15:16:25] [clean] REMOVED /Users/tariq/.oh-my-zsh/cache/completions
+[2026-03-17 15:16:25] [clean] REMOVED /Users/tariq/.oh-my-zsh/cache/Mac_applications (123KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.agents/skills/ui-ux-pro-max/scripts/__pycache__/core.cpython-312.pyc (12KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.agents/skills/ui-ux-pro-max/scripts/__pycache__/core.cpython-314.pyc (16KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.agents/skills/ui-ux-pro-max/scripts/__pycache__/design_system.cpython-312.pyc (61KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.agents/skills/ui-ux-pro-max/scripts/__pycache__/design_system.cpython-314.pyc (66KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/__pycache__/gui.cpython-312.pyc (377KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/__pycache__/conftest.cpython-312-pytest-9.0.2.pyc (4KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/emulators/__pycache__/otp_emulator.cpython-312.pyc (25KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/modules/__pycache__/logo.cpython-312.pyc (4KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/modules/__pycache__/pos_data.cpython-312.pyc (98KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/modules/__pycache__/print_txt.cpython-312.pyc (16KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/modules/__pycache__/otp_client.cpython-312.pyc (8KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/modules/__pycache__/auth_manager.cpython-312.pyc (20KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/modules/__pycache__/promo_engine.cpython-312.pyc (4KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/modules/__pycache__/card_terminal.cpython-312.pyc (4KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/modules/__pycache__/runtime_paths.cpython-312.pyc (8KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/modules/__pycache__/tax_calculator.cpython-312.pyc (4KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/modules/__pycache__/mysql_bootstrap.cpython-312.pyc (4KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/modules/__pycache__/thermal_printer.cpython-312.pyc (29KB)
+[2026-03-17 15:16:45] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/modules/__pycache__/schema_migrations.cpython-312.pyc (45KB)
+[2026-03-17 15:16:46] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/modules/utils/__pycache__/error_handler.cpython-312.pyc (4KB)
+[2026-03-17 15:16:46] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/modules/utils/__pycache__/receipt_format.cpython-312.pyc (4KB)
+[2026-03-17 15:16:46] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/modules/utils/__pycache__/log_maintenance.cpython-312.pyc (4KB)
+[2026-03-17 15:16:46] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/modules/utils/__pycache__/scanned_items_manager.cpython-312.pyc (4KB)
+[2026-03-17 15:16:46] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/new_barcode_app/.dart_tool (61.0MB)
+[2026-03-17 15:16:46] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/new_barcode_app/build (363.7MB)
+[2026-03-17 15:16:46] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/scripts/__pycache__/build_dmg.cpython-312.pyc (4KB)
+[2026-03-17 15:16:46] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/scripts/__pycache__/build_release.cpython-312.pyc (8KB)
+[2026-03-17 15:16:46] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/scripts/__pycache__/bootstrap_mysql.cpython-312.pyc (4KB)
+[2026-03-17 15:16:46] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/scripts/__pycache__/backup_runtime_data.cpython-312.pyc (4KB)
+[2026-03-17 15:16:46] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/scripts/__pycache__/create_support_bundle.cpython-312.pyc (8KB)
+[2026-03-17 15:16:46] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/scripts/__pycache__/restore_runtime_backup.cpython-312.pyc (4KB)
+[2026-03-17 15:16:46] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/styles/__pycache__/styles.cpython-312.pyc (4KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_logic.cpython-312-pytest-9.0.2.pyc (12KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_gui_auth.cpython-312-pytest-9.0.2.pyc (20KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_gui_cart.cpython-312-pytest-9.0.2.pyc (53KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_gui_core.cpython-312-pytest-9.0.2.pyc (20KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_gui_refund.cpython-312-pytest-9.0.2.pyc (61KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_otp_client.cpython-312-pytest-9.0.2.pyc (8KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_gui_barcode.cpython-312-pytest-9.0.2.pyc (25KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_gui_payment.cpython-312-pytest-9.0.2.pyc (74KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_auth_manager.cpython-312-pytest-9.0.2.pyc (8KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_gui_customer.cpython-312-pytest-9.0.2.pyc (33KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_gui_printing.cpython-312-pytest-9.0.2.pyc (41KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_gui_settings.cpython-312-pytest-9.0.2.pyc (4KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_otp_emulator.cpython-312-pytest-9.0.2.pyc (12KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_promo_engine.cpython-312-pytest-9.0.2.pyc (37KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_card_terminal.cpython-312-pytest-9.0.2.pyc (8KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_runtime_paths.cpython-312-pytest-9.0.2.pyc (12KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_backup_scripts.cpython-312-pytest-9.0.2.pyc (8KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_receipt_output.cpython-312-pytest-9.0.2.pyc (49KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_bootstrap_mysql.cpython-312-pytest-9.0.2.pyc (20KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_release_scripts.cpython-312-pytest-9.0.2.pyc (16KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_database_manager.cpython-312-pytest-9.0.2.pyc (66KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/.worktrees/stock-take/tests/__pycache__/test_schema_migrations.cpython-312-pytest-9.0.2.pyc (25KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/gui.cpython-311.pyc (352KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/gui.cpython-312.pyc (377KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/gui.cpython-314.pyc (328KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/styles.cpython-312.pyc (4KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/pos_data.cpython-312.pyc (4KB)
+[2026-03-17 15:16:47] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/after_sales.cpython-312.pyc (8KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/create_admin.cpython-312.pyc (4KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/main_updated.cpython-313.pyc (16KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/otp_emulator.cpython-312.pyc (25KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/run_migrations.cpython-312.pyc (4KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/printer_emulator.cpython-312.pyc (25KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/terminal_emulator.cpython-312.pyc (20KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/check_mysql_schema.cpython-312.pyc (4KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/shelf_label_printer.cpython-312.pyc (20KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/test_action_buttons.cpython-313.pyc (8KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/conftest.cpython-312-pytest-9.0.2.pyc (4KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/__pycache__/shelf_label_printer_web.cpython-312.pyc (16KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/assets/__pycache__/data.cpython-312.pyc (4KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/emulators/__pycache__/otp_emulator.cpython-312.pyc (25KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/emulators/__pycache__/printer_emulator.cpython-312.pyc (25KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/emulators/__pycache__/terminal_emulator.cpython-312.pyc (20KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/logo.cpython-312.pyc (4KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/test2.cpython-312.pyc (8KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/config.cpython-312.pyc (4KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/models.cpython-312.pyc (8KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/pos_data.cpython-312.pyc (98KB)
+[2026-03-17 15:16:48] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/pos_data.cpython-313.pyc (20KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/pos_data.cpython-314.pyc (70KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/print_txt.cpython-312.pyc (16KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/exceptions.cpython-312.pyc (4KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/otp_client.cpython-312.pyc (8KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/after_sales.cpython-312.pyc (8KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/auth_manager.cpython-312.pyc (20KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/promo_engine.cpython-312.pyc (4KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/card_terminal.cpython-312.pyc (4KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/runtime_paths.cpython-312.pyc (8KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/tax_calculator.cpython-312.pyc (4KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/mysql_bootstrap.cpython-312.pyc (4KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/payment_handler.cpython-312.pyc (4KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/thermal_printer.cpython-312.pyc (29KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/__pycache__/schema_migrations.cpython-312.pyc (45KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/ui/__pycache__/dialogs.cpython-312.pyc (29KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/ui/__pycache__/__init__.cpython-312.pyc (4KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/ui/__pycache__/components.cpython-312.pyc (12KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/utils/__pycache__/validation.cpython-312.pyc (12KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/utils/__pycache__/error_handler.cpython-312.pyc (4KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/utils/__pycache__/error_handler.cpython-313.pyc (20KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/utils/__pycache__/error_handler.cpython-314.pyc (25KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/utils/__pycache__/pos_controller.cpython-312.pyc (16KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/utils/__pycache__/pos_controller.cpython-313.pyc (16KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/utils/__pycache__/receipt_format.cpython-312.pyc (4KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/utils/__pycache__/log_maintenance.cpython-312.pyc (4KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/utils/__pycache__/barcode_validator.cpython-312.pyc (4KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/utils/__pycache__/payment_processor.cpython-312.pyc (16KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/utils/__pycache__/payment_processor.cpython-313.pyc (12KB)
+[2026-03-17 15:16:49] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/modules/utils/__pycache__/scanned_items_manager.cpython-312.pyc (4KB)
+[2026-03-17 15:16:50] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/new_barcode_app/.dart_tool (383.5MB)
+[2026-03-17 15:16:50] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/new_barcode_app/build (788.0MB)
+[2026-03-17 15:16:50] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/scripts/__pycache__/build_dmg.cpython-312.pyc (4KB)
+[2026-03-17 15:16:50] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/scripts/__pycache__/build_release.cpython-312.pyc (8KB)
+[2026-03-17 15:16:50] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/scripts/__pycache__/bootstrap_mysql.cpython-312.pyc (4KB)
+[2026-03-17 15:16:50] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/scripts/__pycache__/backup_runtime_data.cpython-312.pyc (4KB)
+[2026-03-17 15:16:50] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/scripts/__pycache__/create_support_bundle.cpython-312.pyc (8KB)
+[2026-03-17 15:16:50] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/scripts/__pycache__/import_master_catalog.cpython-312.pyc (8KB)
+[2026-03-17 15:16:50] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/scripts/__pycache__/restore_runtime_backup.cpython-312.pyc (4KB)
+[2026-03-17 15:16:50] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/scripts/__pycache__/bootstrap_opening_stock.cpython-312.pyc (16KB)
+[2026-03-17 15:16:50] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/scripts/__pycache__/bootstrap_inventory_from_csv.cpython-312.pyc (16KB)
+[2026-03-17 15:16:50] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/styles/__pycache__/styles.cpython-312.pyc (4KB)
+[2026-03-17 15:16:50] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/styles/__pycache__/styles.cpython-313.pyc (12KB)
+[2026-03-17 15:16:50] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/styles/__pycache__/styles.cpython-314.pyc (4KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui.cpython-312.pyc (197KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_logic.cpython-312.pyc (4KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_auth.cpython-312.pyc (12KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_cart.cpython-312.pyc (33KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_core.cpython-312.pyc (12KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_refund.cpython-312.pyc (33KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_otp_client.cpython-312.pyc (4KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_barcode.cpython-312.pyc (16KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_payment.cpython-312.pyc (49KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_auth_manager.cpython-312.pyc (4KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_customer.cpython-312.pyc (25KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_printing.cpython-312.pyc (29KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_settings.cpython-312.pyc (4KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_otp_emulator.cpython-312.pyc (4KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_promo_engine.cpython-312.pyc (16KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_card_terminal.cpython-312.pyc (4KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_error_handler.cpython-312.pyc (12KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_error_handler.cpython-313.pyc (12KB)
+[2026-03-17 15:16:51] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_runtime_paths.cpython-312.pyc (4KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_backup_scripts.cpython-312.pyc (4KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_receipt_output.cpython-312.pyc (29KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_bootstrap_mysql.cpython-312.pyc (12KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_release_scripts.cpython-312.pyc (8KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_database_manager.cpython-312.pyc (33KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_database_manager.cpython-313.pyc (16KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui.cpython-312-pytest-9.0.2.pyc (315KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_payment_processor.cpython-312.pyc (20KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_payment_processor.cpython-313.pyc (20KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_schema_migrations.cpython-312.pyc (16KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_logic.cpython-312-pytest-9.0.2.pyc (12KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_auth.cpython-312-pytest-9.0.2.pyc (20KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_cart.cpython-312-pytest-9.0.2.pyc (53KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_core.cpython-312-pytest-9.0.2.pyc (20KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_refund.cpython-312-pytest-9.0.2.pyc (61KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_otp_client.cpython-312-pytest-9.0.2.pyc (8KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_barcode.cpython-312-pytest-9.0.2.pyc (25KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_payment.cpython-312-pytest-9.0.2.pyc (74KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_auth_manager.cpython-312-pytest-9.0.2.pyc (8KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_customer.cpython-312-pytest-9.0.2.pyc (33KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_printing.cpython-312-pytest-9.0.2.pyc (41KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_gui_settings.cpython-312-pytest-9.0.2.pyc (4KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_otp_emulator.cpython-312-pytest-9.0.2.pyc (12KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_promo_engine.cpython-312-pytest-9.0.2.pyc (37KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_card_terminal.cpython-312-pytest-9.0.2.pyc (8KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_runtime_paths.cpython-312-pytest-9.0.2.pyc (12KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_backup_scripts.cpython-312-pytest-9.0.2.pyc (8KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_receipt_output.cpython-312-pytest-9.0.2.pyc (49KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_bootstrap_mysql.cpython-312-pytest-9.0.2.pyc (20KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_release_scripts.cpython-312-pytest-9.0.2.pyc (16KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_database_manager.cpython-312-pytest-9.0.2.pyc (66KB)
+[2026-03-17 15:16:52] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tests/__pycache__/test_schema_migrations.cpython-312-pytest-9.0.2.pyc (25KB)
+[2026-03-17 15:16:53] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tools/__pycache__/create_admin.cpython-312.pyc (4KB)
+[2026-03-17 15:16:53] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tools/__pycache__/run_migrations.cpython-312.pyc (4KB)
+[2026-03-17 15:16:53] [clean] REMOVED /Users/tariq/Projects/POS_Scanner/tools/__pycache__/seed_fake_sales.cpython-312.pyc (8KB)
+[2026-03-17 15:16:53] [clean] REMOVED /Users/tariq/Projects/flutter_app/.dart_tool (33KB)
+[2026-03-17 15:16:53] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/.dart_tool (98KB)
+[2026-03-17 15:16:53] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/build (4KB)
+[2026-03-17 15:16:53] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/a11y_assessments/.dart_tool (8KB)
+[2026-03-17 15:16:53] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/automated_tests/.dart_tool (4KB)
+[2026-03-17 15:16:53] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/benchmarks/complex_layout/.dart_tool (4KB)
+[2026-03-17 15:16:53] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/benchmarks/imitation_game_flutter/.dart_tool (4KB)
+[2026-03-17 15:16:53] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/benchmarks/macrobenchmarks/.dart_tool (8KB)
+[2026-03-17 15:16:54] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/benchmarks/microbenchmarks/.dart_tool (4KB)
+[2026-03-17 15:16:54] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/benchmarks/multiple_flutters/module/.dart_tool (4KB)
+[2026-03-17 15:16:54] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/benchmarks/platform_channels_benchmarks/.dart_tool (4KB)
+[2026-03-17 15:16:54] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/benchmarks/platform_views_layout/.dart_tool (4KB)
+[2026-03-17 15:16:54] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/benchmarks/platform_views_layout_hybrid_composition/.dart_tool (4KB)
+[2026-03-17 15:16:54] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/benchmarks/test_apps/stocks/.dart_tool (4KB)
+[2026-03-17 15:16:54] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/benchmarks/test_apps/stocks/build (20KB)
+[2026-03-17 15:16:54] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/bots/.dart_tool (4KB)
+[2026-03-17 15:16:54] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/customer_testing/.dart_tool (4KB)
+[2026-03-17 15:16:54] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/devicelab/.dart_tool (4KB)
+[2026-03-17 15:16:54] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/forbidden_from_release_tests/.dart_tool (4KB)
+[2026-03-17 15:16:55] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/android_engine_test/.dart_tool (4KB)
+[2026-03-17 15:16:55] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/android_semantics_testing/.dart_tool (4KB)
+[2026-03-17 15:16:55] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/android_views/.dart_tool (4KB)
+[2026-03-17 15:16:55] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/channels/.dart_tool (4KB)
+[2026-03-17 15:16:55] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/deferred_components_test/.dart_tool (4KB)
+[2026-03-17 15:16:55] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/display_cutout_rotation/.dart_tool (4KB)
+[2026-03-17 15:16:55] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/external_textures/.dart_tool (4KB)
+[2026-03-17 15:16:55] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/flavors/.dart_tool (4KB)
+[2026-03-17 15:16:55] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/flutter_gallery/.dart_tool (8KB)
+[2026-03-17 15:16:55] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/ios_add2app_life_cycle/flutterapp/.dart_tool (4KB)
+[2026-03-17 15:16:56] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/ios_app_with_extensions/.dart_tool (4KB)
+[2026-03-17 15:16:56] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/ios_platform_view_tests/.dart_tool (4KB)
+[2026-03-17 15:16:56] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/keyboard_hot_restart/.dart_tool (4KB)
+[2026-03-17 15:16:56] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/link_hook/.dart_tool (4KB)
+[2026-03-17 15:16:56] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/new_gallery/.dart_tool (4KB)
+[2026-03-17 15:16:56] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/platform_interaction/.dart_tool (4KB)
+[2026-03-17 15:16:56] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/release_smoke_test/.dart_tool (4KB)
+[2026-03-17 15:16:56] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/spell_check/.dart_tool (4KB)
+[2026-03-17 15:16:56] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/ui/.dart_tool (8KB)
+[2026-03-17 15:16:56] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/web/.dart_tool (8KB)
+[2026-03-17 15:16:57] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/web_compile_tests/.dart_tool (8KB)
+[2026-03-17 15:16:57] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/web_e2e_tests/.dart_tool (8KB)
+[2026-03-17 15:16:57] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/wide_gamut_test/.dart_tool (4KB)
+[2026-03-17 15:16:57] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/integration_tests/windows_startup_test/.dart_tool (4KB)
+[2026-03-17 15:16:57] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/manual_tests/.dart_tool (8KB)
+[2026-03-17 15:16:57] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/packages_autoroller/.dart_tool (4KB)
+[2026-03-17 15:16:57] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/snippets/.dart_tool (4KB)
+[2026-03-17 15:16:57] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/tools/.dart_tool (4KB)
+[2026-03-17 15:16:57] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/tools/android_driver_extensions/.dart_tool (4KB)
+[2026-03-17 15:16:57] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/tools/gen_defaults/.dart_tool (4KB)
+[2026-03-17 15:16:58] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/tools/gen_keycodes/.dart_tool (4KB)
+[2026-03-17 15:16:58] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/tools/vitool/.dart_tool (4KB)
+[2026-03-17 15:16:58] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/dev/tracing_tests/.dart_tool (4KB)
+[2026-03-17 15:16:58] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/engine/src/flutter/flutter_frontend_server/test/fixtures/.dart_tool (4KB)
+[2026-03-17 15:16:58] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/examples/api/.dart_tool (8KB)
+[2026-03-17 15:16:58] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/examples/flutter_view/.dart_tool (4KB)
+[2026-03-17 15:16:58] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/examples/hello_world/.dart_tool (8KB)
+[2026-03-17 15:16:58] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/examples/image_list/.dart_tool (4KB)
+[2026-03-17 15:16:58] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/examples/layers/.dart_tool (4KB)
+[2026-03-17 15:16:58] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/examples/platform_channel/.dart_tool (4KB)
+[2026-03-17 15:16:58] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/examples/platform_channel_swift/.dart_tool (4KB)
+[2026-03-17 15:16:59] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/examples/platform_view/.dart_tool (4KB)
+[2026-03-17 15:16:59] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/examples/splash/.dart_tool (4KB)
+[2026-03-17 15:16:59] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/examples/texture/.dart_tool (4KB)
+[2026-03-17 15:16:59] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/packages/flutter/.dart_tool (4KB)
+[2026-03-17 15:16:59] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/packages/flutter/test_private/.dart_tool (4KB)
+[2026-03-17 15:16:59] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/packages/flutter/test_private/test/.dart_tool (4KB)
+[2026-03-17 15:16:59] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/packages/flutter_driver/.dart_tool (4KB)
+[2026-03-17 15:16:59] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/packages/flutter_goldens/.dart_tool (4KB)
+[2026-03-17 15:16:59] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/packages/flutter_localizations/.dart_tool (4KB)
+[2026-03-17 15:16:59] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/packages/flutter_test/.dart_tool (4KB)
+[2026-03-17 15:17:00] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/packages/flutter_tools/.dart_tool (45KB)
+[2026-03-17 15:17:00] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/packages/flutter_web_plugins/.dart_tool (4KB)
+[2026-03-17 15:17:00] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/packages/fuchsia_remote_debug_protocol/.dart_tool (4KB)
+[2026-03-17 15:17:00] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/packages/integration_test/.dart_tool (4KB)
+[2026-03-17 15:17:00] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/packages/integration_test/example/.dart_tool (8KB)
+[2026-03-17 15:17:00] [clean] REMOVED /Users/tariq/Projects/flutter_app/flutter/packages/integration_test/integration_test_macos/.dart_tool (4KB)
+[2026-03-17 15:17:09] [clean] REMOVED /Users/tariq/Tutorials/python/Premier_League/__pycache__/data.cpython-311.pyc (4KB)
+[2026-03-17 15:17:10] [clean] REMOVED /Users/tariq/Tutorials/python/__pycache__/random.cpython-313.pyc (4KB)
+[2026-03-17 15:17:10] [clean] REMOVED /Users/tariq/Tutorials/python/__pycache__/modules.cpython-311.pyc (4KB)
+[2026-03-17 15:17:10] [clean] REMOVED /Users/tariq/Tutorials/python/__pycache__/requests.cpython-311.pyc (4KB)
+[2026-03-17 15:17:10] [clean] REMOVED /Users/tariq/Tutorials/python/__pycache__/requests.cpython-313.pyc (4KB)
+[2026-03-17 15:17:10] [clean] REMOVED /Library/Developer/CoreSimulator/Cryptex/Caches
+[2026-03-17 15:17:10] [clean] REMOVED /Library/Developer/CoreSimulator/Cryptex/Images
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_2193743a-addon2-3_xml (115KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_53ed092d-addon2-3_xml (74KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_2193743a-addon2-3_xml (4KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_53ed092d-addon2-3_xml (4KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_029f9a26-sys-img2-4_xml (238KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_02d73479-sys-img2-4_xml (139KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_3bb7c63e-sys-img2-4_xml (152KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_485070ac-sys-img2-4_xml (160KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_678e6ea3-sys-img2-4_xml (143KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_6dd634b6-sys-img2-4_xml (156KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_706db414-sys-img2-4_xml (238KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_72847604-sys-img2-4_xml (193KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_7577a689-sys-img2-4_xml (156KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_8f4284d5-sys-img2-4_xml (143KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_a37be9bd-sys-img2-4_xml (147KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_bdaee495-sys-img2-4_xml (139KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_c45a1453-sys-img2-4_xml (143KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_d1e71dd8-sys-img2-4_xml (135KB)
+[2026-03-17 15:17:11] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_da4252ec-sys-img2-4_xml (152KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_df1ec398-sys-img2-4_xml (143KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_029f9a26-sys-img2-4_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_02d73479-sys-img2-4_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_3bb7c63e-sys-img2-4_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_485070ac-sys-img2-4_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_678e6ea3-sys-img2-4_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_6dd634b6-sys-img2-4_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_706db414-sys-img2-4_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_72847604-sys-img2-4_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_7577a689-sys-img2-4_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_8f4284d5-sys-img2-4_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_a37be9bd-sys-img2-4_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_bdaee495-sys-img2-4_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_c45a1453-sys-img2-4_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_d1e71dd8-sys-img2-4_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_da4252ec-sys-img2-4_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_df1ec398-sys-img2-4_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_b743781d-repository2-2_xml (385KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_b7518f9e-repository2-3_xml (393KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkbin-1_d2c7e9a3-addons_list-6_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_b743781d-repository2-2_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_b7518f9e-repository2-3_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/.android/cache/sdkinf-1_d2c7e9a3-addons_list-6_xml (4KB)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/UserData/IB Support/Simulator Devices
+[2026-03-17 15:17:12] [clean] SKIPPED /Users/tariq/.gradle/caches/8.14 (whitelist)
+[2026-03-17 15:17:12] [clean] SKIPPED /Users/tariq/.gradle/caches/CACHEDIR.TAG (whitelist)
+[2026-03-17 15:17:12] [clean] SKIPPED /Users/tariq/.gradle/caches/jars-9 (whitelist)
+[2026-03-17 15:17:12] [clean] SKIPPED /Users/tariq/.gradle/caches/journal-1 (whitelist)
+[2026-03-17 15:17:12] [clean] SKIPPED /Users/tariq/.gradle/caches/modules-2 (whitelist)
+[2026-03-17 15:17:12] [clean] SKIPPED /Users/tariq/.gradle/daemon/8.14 (whitelist)
+[2026-03-17 15:17:12] [clean] SKIPPED /Users/tariq/.gradle/daemon/CACHEDIR.TAG (whitelist)
+[2026-03-17 15:17:12] [clean] SKIPPED /Users/tariq/Library/Caches/com.navicat.* (protected)
+[2026-03-17 15:17:12] [clean] SKIPPED /Users/tariq/Library/Caches/com.dbeaver.* (protected)
+[2026-03-17 15:17:12] [clean] SKIPPED /Users/tariq/Library/Caches/com.redis.RedisInsight (protected)
+[2026-03-17 15:17:12] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/Cache/Cache_Data (39.3MB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/Code Cache/js (35.8MB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/Code Cache/wasm (8KB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/GPUCache/index (266KB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/GPUCache/data_0 (45KB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/GPUCache/data_1 (270KB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/GPUCache/data_2 (1.1MB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/GPUCache/data_3 (8KB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/DawnGraphiteCache/index (266KB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/DawnGraphiteCache/data_0 (8KB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/DawnGraphiteCache/data_1 (270KB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/DawnGraphiteCache/data_2 (8KB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/DawnGraphiteCache/data_3 (8KB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/DawnWebGPUCache/index (266KB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/DawnWebGPUCache/data_0 (8KB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/DawnWebGPUCache/data_1 (270KB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/DawnWebGPUCache/data_2 (8KB)
+[2026-03-17 15:17:13] [clean] REMOVED /Users/tariq/Library/Application Support/Claude/DawnWebGPUCache/data_3 (8KB)
+[2026-03-17 15:17:14] [clean] REMOVED /Users/tariq/Library/Caches/com.apple.dt.Xcode/Cache.db (49KB)
+[2026-03-17 15:17:14] [clean] REMOVED /Users/tariq/Library/Caches/com.apple.dt.Xcode/Cache.db-shm (33KB)
+[2026-03-17 15:17:14] [clean] REMOVED /Users/tariq/Library/Caches/com.apple.dt.Xcode/Cache.db-wal (659KB)
+[2026-03-17 15:17:14] [clean] REMOVED /Users/tariq/Library/Caches/com.apple.dt.Xcode/fsCachedData (475KB)
+[2026-03-17 15:17:14] [clean] REMOVED /Users/tariq/Library/Logs/CoreSimulator/CoreSimulator.log (4KB)
+[2026-03-17 15:17:15] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/ModuleCache.noindex (1.36GB)
+[2026-03-17 15:17:15] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/SymbolCache.noindex (32.1MB)
+[2026-03-17 15:17:15] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex (3.1MB)
+[2026-03-17 15:17:15] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/CompilationCache.noindex (29KB)
+[2026-03-17 15:17:15] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/Pods-foayrusvavtjridqgknvsgeftoht (20KB)
+[2026-03-17 15:17:15] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/Pods-fqutaugnpwnmtyeixahidjpsnwfe (20KB)
+[2026-03-17 15:17:15] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/Pods-ghoqxecfhrynpigncuvrpmckhpkr (20KB)
+[2026-03-17 15:17:16] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/Runner-ailibplmaanawogxtnjkxvpfomkb (41KB)
+[2026-03-17 15:17:16] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/Runner-bhjfyfdsaqzfsbglfaqliylaloce (53KB)
+[2026-03-17 15:17:16] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/Runner-broqijfgxlatrwaewzzlicbbkxef (524.4MB)
+[2026-03-17 15:17:16] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/Runner-bwnvxsrojbuusmflkbwihivaieed (20KB)
+[2026-03-17 15:17:16] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/Runner-chesqknnlusdlofucqejmoufbove (116.4MB)
+[2026-03-17 15:17:16] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/Runner-cktlwjrbtfmroeawgqivwyzomkct (82KB)
+[2026-03-17 15:17:16] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/Runner-dvzytpbswpjwwfbhpcbrvqgmdazp (242KB)
+[2026-03-17 15:17:16] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/Runner-esvngdipaicbgyfbwvdjftcedbcn (33KB)
+[2026-03-17 15:17:17] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/Runner-fjtxwhiltwisdtfxglalzbpieayj (656.9MB)
+[2026-03-17 15:17:17] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/Runner-gsrbzgrjzrjeapdzdnyqpgzhggir (180.0MB)
+[2026-03-17 15:17:17] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/Runner-gtcoxbsavjltztflobutucnecfpc (53KB)
+[2026-03-17 15:17:17] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/Runner-hidfyxxpckhyjybqmxaoophmrpur (82KB)
+[2026-03-17 15:17:17] [clean] REMOVED /Users/tariq/Library/Developer/Xcode/DerivedData/Unsaved_Xcode_Document-ddldpddvygxdaudmmexcyicynlzl (20KB)
+[2026-03-17 15:17:17] [clean] REMOVED /Users/tariq/Library/Caches/Homebrew/api (48.3MB)
+[2026-03-17 15:17:18] [clean] REMOVED /Users/tariq/Library/Caches/Homebrew/bootsnap (7.0MB)
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/update
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/gd.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/go.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/m4.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/xz.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/z3.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/aom.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/apr.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/fmt.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/ghc.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/gmp.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/lld.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/lua.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/lz4.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/lzo.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/mlx.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/nss.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/bash.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/cffi.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/curl.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/dbus.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/deno.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/glib.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/krb5.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/llvm.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/lmdb.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/lzip.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/make.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/nasm.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/node.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/npth.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/nspr.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/rust.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/swig.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/tmux.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/webp.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/x265.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/zlib.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/zstd.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/bison.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/boost.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/cairo.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/chafa.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/cmake.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/dav1d.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/emacs.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/gmime.formula.lock
+[2026-03-17 15:17:22] [clean] REMOVED /opt/homebrew/var/homebrew/locks/gpgme.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/httpd.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/imath.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libb2.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libpq.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libsm.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libuv.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxi.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxt.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/meson.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/mlx-c.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/ninja.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/pango.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/pcre2.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/xauth.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/xmlto.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/abseil.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/argon2.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/brotli.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/c-ares.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/giflib.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/gnutls.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libclc.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libice.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libpng.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libusb.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libx11.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxau.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxcb.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxmu.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libzip.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/llhttp.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/luajit.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/nettle.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/pandoc.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/pixman.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/podman.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/sfsexp.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/sqlite.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/talloc.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/tcl-tk.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/uvwasi.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/vendor-install-ruby
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/xapian.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/xtrans.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/yyjson.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/zoxide.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/ada-url.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/bindgen.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/cargo-c.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/certifi.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/cxxopts.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/docbook.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/doxygen.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/freetds.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/fribidi.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/gettext.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/glslang.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/gnu-sed.formula.lock
+[2026-03-17 15:17:23] [clean] REMOVED /opt/homebrew/var/homebrew/locks/gpgmepp.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/highway.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/itstool.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/jpeg-xl.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libavif.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libgit2.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libheif.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libidn2.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libksba.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/librsvg.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libssh2.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libthai.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libtiff.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libtool.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libvmaf.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxext.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxml2.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxtst.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libyaml.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/llvm@21.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/lua@5.4.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/maturin.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/ncurses.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/notmuch.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/openjph.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/p11-kit.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/pkgconf.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/ripgrep.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/texinfo.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/unbound.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/xkbcomp.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/apr-util.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/asciidoc.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/autoconf.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/automake.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/docutils.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/freetype.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/icu4c@78.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libde265.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libevent.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libtasn1.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxdmcp.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/nanobind.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/net-snmp.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/openjpeg.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/openldap.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/pinentry.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/protobuf.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/py3cairo.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/readline.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/simdjson.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/tcl-tk@8.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/unixodbc.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/utf8proc.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/xcb-util.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/font-util.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/go-md2man.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/graphite2.formula.lock
+[2026-03-17 15:17:24] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libassuan.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libdatrie.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libgcrypt.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/liblinear.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libngtcp2.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libsodium.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxfixes.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxfont2.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxrandr.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/molten-vk.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/mpdecimal.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/oniguruma.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/openssl@3.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/pycparser.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/robin-map.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/xcb-proto.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/xorgproto.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/fontconfig.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/gdk-pixbuf.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/gnu-getopt.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/googletest.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/jpeg-turbo.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libapplewm.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libdeflate.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libfontenc.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libnghttp2.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libnghttp3.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libtommath.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libudfread.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxkbfile.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxrender.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/pygobject3.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/sphinx-doc.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/tidy-html5.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/asciidoctor.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/docbook-xsl.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxinerama.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/little-cms2.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/python@3.11.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/python@3.12.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/python@3.13.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/python@3.14.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/spirv-tools.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/util-macros.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/xcb-util-wm.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/xorg-server.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/cryptography.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libgpg-error.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libunistring.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxkbcommon.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/libxshmfence.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/wireguard-go.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/cabal-install.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/nlohmann-json.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/spirv-headers.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/tokyo-cabinet.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/vulkan-loader.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/hdrhistogram_c.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/python-certifi.formula.lock
+[2026-03-17 15:17:25] [clean] REMOVED /opt/homebrew/var/homebrew/locks/vulkan-headers.formula.lock
+[2026-03-17 15:17:26] [clean] REMOVED /opt/homebrew/var/homebrew/locks/xcb-util-image.formula.lock
+[2026-03-17 15:17:26] [clean] REMOVED /opt/homebrew/var/homebrew/locks/zlib-ng-compat.formula.lock
+[2026-03-17 15:17:26] [clean] REMOVED /opt/homebrew/var/homebrew/locks/ca-certificates.formula.lock
+[2026-03-17 15:17:26] [clean] REMOVED /opt/homebrew/var/homebrew/locks/xkeyboardconfig.formula.lock
+[2026-03-17 15:17:26] [clean] REMOVED /opt/homebrew/var/homebrew/locks/shared-mime-info.formula.lock
+[2026-03-17 15:17:26] [clean] REMOVED /opt/homebrew/var/homebrew/locks/source-highlight.formula.lock
+[2026-03-17 15:17:26] [clean] REMOVED /opt/homebrew/var/homebrew/locks/tree-sitter@0.25.formula.lock
+[2026-03-17 15:17:26] [clean] REMOVED /opt/homebrew/var/homebrew/locks/xcb-util-keysyms.formula.lock
+[2026-03-17 15:17:26] [clean] REMOVED /opt/homebrew/var/homebrew/locks/xkeyboard-config.formula.lock
+[2026-03-17 15:17:26] [clean] REMOVED /opt/homebrew/var/homebrew/locks/docker-completion.formula.lock
+[2026-03-17 15:17:26] [clean] REMOVED /opt/homebrew/var/homebrew/locks/python-setuptools.formula.lock
+[2026-03-17 15:17:26] [clean] REMOVED /opt/homebrew/var/homebrew/locks/python-cryptography.formula.lock
+[2026-03-17 15:17:26] [clean] REMOVED /opt/homebrew/var/homebrew/locks/xcb-util-renderutil.formula.lock
+[2026-03-17 15:17:26] [clean] REMOVED /opt/homebrew/var/homebrew/locks/gobject-introspection.formula.lock
+[2026-03-17 15:17:26] [clean] REMOVED /opt/homebrew/var/homebrew/locks/spirv-llvm-translator.formula.lock
+[2026-03-17 15:17:26] [clean] REMOVED /opt/homebrew/var/homebrew/locks/mongodb-database-tools.formula.lock
+[2026-03-17 15:17:40] [clean] REMOVED /Users/tariq/Library/Application Support/Microsoft/Teams/Cache/Cache_Data (112.5MB)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Application Support/Microsoft/Teams/Code Cache/js (2.5MB)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Application Support/Microsoft/Teams/Code Cache/wasm (8KB)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Application Support/Microsoft/Teams/GPUCache/index (266KB)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Application Support/Microsoft/Teams/GPUCache/data_0 (8KB)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Application Support/Microsoft/Teams/GPUCache/data_1 (270KB)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Application Support/Microsoft/Teams/GPUCache/data_2 (8KB)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Application Support/Microsoft/Teams/GPUCache/data_3 (8KB)
+[2026-03-17 15:17:41] [clean] SKIPPED /Users/tariq/Library/Caches/com.openai.chat/org.sparkle-project.Sparkle (protected)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Caches/com.openai.chat/WebKit (4KB)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Caches/com.openai.chat/Cache.db (49KB)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Caches/com.openai.chat/async.log
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Caches/com.openai.chat/io.sentry
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Caches/com.openai.chat/Cache.db-shm (33KB)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Caches/com.openai.chat/Cache.db-wal
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Caches/com.openai.chat/fsCachedData
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Caches/com.openai.chat/nux.CB3699EE.mov (5.6MB)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Caches/com.openai.chat/nux.070152025.mp4 (1.1MB)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Caches/com.openai.chat/com.onevcat.Kingfisher.ImageCache (21.7MB)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Caches/com.anthropic.claudefordesktop/Cache.db (49KB)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Caches/com.anthropic.claudefordesktop/Cache.db-shm (33KB)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Caches/com.anthropic.claudefordesktop/Cache.db-wal (201KB)
+[2026-03-17 15:17:41] [clean] REMOVED /Users/tariq/Library/Caches/com.anthropic.claudefordesktop/fsCachedData
+[2026-03-17 15:17:42] [clean] REMOVED /Users/tariq/Library/Logs/Claude/mcp.log (3.3MB)
+[2026-03-17 15:17:42] [clean] REMOVED /Users/tariq/Library/Logs/Claude/main.log (172KB)
+[2026-03-17 15:17:42] [clean] REMOVED /Users/tariq/Library/Logs/Claude/window.log (147KB)
+[2026-03-17 15:17:42] [clean] REMOVED /Users/tariq/Library/Logs/Claude/mcp-server-n8n-mcp.log (1.8MB)
+[2026-03-17 15:17:42] [clean] REMOVED /Users/tariq/Library/Logs/Claude/mcp-server-n8n-workflows.log (942KB)
+[2026-03-17 15:17:42] [clean] REMOVED /Users/tariq/Library/Logs/Claude/mcp-server-docs-mcp-server.log (881KB)
+[2026-03-17 15:17:42] [clean] REMOVED /Users/tariq/Library/Logs/Claude/mcp-server-Control your Mac.log (598KB)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.Music (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.podcasts (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Containers/com.apple.podcasts/Data/tmp/StreamedMedia (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Containers/com.apple.podcasts/Data/tmp/*.heic (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Containers/com.apple.podcasts/Data/tmp/*.img (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Containers/com.apple.podcasts/Data/tmp/*CFNetworkDownload*.tmp (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Caches/tv.plex.player.desktop (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Caches/com.netease.163music (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Caches/com.colliderli.iina (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Caches/org.videolan.vlc (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Caches/io.mpv (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Caches/com.cleanshot.* (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Caches/com.reincubate.camo (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Caches/com.xnipapp.xnip (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Caches/com.readdle.smartemail-Mac (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Caches/com.airmail.* (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Caches/com.todoist.mac.Todoist (protected)
+[2026-03-17 15:17:42] [clean] SKIPPED /Users/tariq/Library/Caches/com.any.do.* (protected)
+[2026-03-17 15:17:42] [clean] REMOVED /Users/tariq/.zcompdump (57KB)
+[2026-03-17 15:17:42] [clean] REMOVED /Users/tariq/.zcompdump-Mac-5.9 (53KB)
+[2026-03-17 15:17:42] [clean] REMOVED /Users/tariq/.zcompdump-Mac-5.9.zwc (119KB)
+[2026-03-17 15:17:42] [clean] REMOVED /Users/tariq/.zcompdump-Tariqs-MacBook-Air-5.9 (61KB)
+[2026-03-17 15:17:42] [clean] REMOVED /Users/tariq/.zcompdump-Tariq’s MacBook Air-5.9 (53KB)
+[2026-03-17 15:17:42] [clean] REMOVED /Users/tariq/.zcompdump-Tariqs-MacBook-Air-5.9.zwc (135KB)
+[2026-03-17 15:17:42] [clean] REMOVED /Users/tariq/.zcompdump-Tariq’s MacBook Air (2)-5.9 (53KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/.lesshst (4KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/.wget-hsts (4KB)
+[2026-03-17 15:17:43] [clean] SKIPPED /Users/tariq/Library/Caches/com.vmware.fusion (protected)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Codex/Cache/Cache_Data/840867cc82557cb4_0 (8KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Codex/Cache/Cache_Data/be1d6e8b2d964403_0 (8KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Codex/Cache/Cache_Data/index-dir (4KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Codex/Cache/Cache_Data/3df811c9a5a0cd3a_0 (8KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Codex/Cache/Cache_Data/c337e01c9540e72b_0 (8KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Codex/Cache/Cache_Data/index (4KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/e310889bd5934cc9_0 (16KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/1b11386148f6e35b_0 (12KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/03ffc027490aee37_0 (12KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/index-dir (4KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/cb11ac04a16598ed_0 (20KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/8322e732a1f6c893_0 (20KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/38d807764a25c10a_0 (20KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/71ae82ee29d83ca2_0 (12KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/f132db73d99c9511_0 (12KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/d0fd69ee0b0ae4b7_0 (16KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/0c25c3c3f37a29dd_0 (16KB)
+[2026-03-17 15:17:43] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/4a9e10fdf86e108f_0 (16KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/988ee0999b5e364c_0 (8KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/f95d5ded8e5e940f_0 (111KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/8747d07cceb4d6fb_0 (8KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/0f5e8fcd57fe9778_0 (12KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/index (4KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/b34cd1206c841f95_0 (365KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/4c5f0a031c57aa88_0 (20KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/f9c751ce17addf07_0 (12KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/42a01664c40d3ced_0 (8KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/a55593d9368f6923_0 (16KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Docker Desktop/Cache/Cache_Data/501b14e1ae14df86_0 (12KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/POS_Scanner/logs/pos.log (1.6MB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/924919f0e55c255a_0 (29KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/6cd323939c1bc29b_0 (25KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/a9548b74ad4b2132_0 (37KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/cfd81dd56015006a_0 (98KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/e889b147decbd986_0 (25KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/138452bc7a686a5e_0 (266KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/44730b3550b99063_0 (86KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/a098aad7a53fa9d1_0 (25KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/860eb565efde241d_0 (20KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/b9118c9e3509ac34_0 (33KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/index-dir (4KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/6c2a40d9aca220d9_0 (29KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/d519eee4d3afe2f3_0 (5.6MB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/4c9b873edf6bdf35_0 (25KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/5b6b06929c5613ba_0 (33KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/601dd2bd8d7ebc9e_0 (33KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/0ae37a8745d02fc4_0 (201KB)
+[2026-03-17 15:17:44] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/8b44d0d00326413f_0 (25KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/46895346c4873d27_0 (25KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/e3c1eb99d23f4a7c_0 (29KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/ae397403d60214ce_0 (37KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/0ee4a8321b6ce5c8_0 (20KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/ed4e01691d3d97f1_0 (20KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/990c85ba99809274_0 (4.1MB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/61da62448886e53f_0 (29KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/27c460ff1b2d6272_0 (29KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/04bb63717851c524_0 (12KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/b8fa0e5efac272eb_0 (7.7MB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/d5698449011b9e7f_0 (20KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/9672eeeada18dc12_0 (471KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/71f81d7f2e55750e_0 (29KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/16214854c5e23182_0 (53KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/09267eb51be5653b_0 (29KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/dd3181199fdec348_0 (33KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/e7e2bf4049f3a62f_0 (467KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/20cc64b8c5893aa6_0 (33KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/384a0d164479c8d3_0 (33KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/05bd5c21a2edecbc_0 (70KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/d94a33bec20c67c0_0 (25KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/00a78fb491f3198a_0 (29KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/43cbb41b099020ec_0 (1.2MB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/ff1a58da5166909f_0 (29KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/eb041618495a39d0_0 (295KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/58324c91d2d7fb79_0 (25KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/154347c04abb8e83_0 (29KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/9330d3e12a109603_0 (11.5MB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/80736a80c3107ab5_0 (25KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/fbfb470b970fc570_0 (29KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/037b36f91621e154_0 (25KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/e14bbdad3019512b_0 (70KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/706e1ad90c422537_0 (29KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/9d7b382d7064a57e_0 (25KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/584ef709eaf0d587_0 (20KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/ecb79fc185c74ff9_0 (82KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/0f0aacc584811289_0 (33KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/f47c98aaf553f8c9_0 (29KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/51ab9cad1dfc0666_0 (213KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/93ba6492d7bf08fa_0 (41KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/f4ab8a958c727f83_0 (25KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/1d19cb32f1edafe8_0 (20KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/08fb84ab0af26085_0 (152KB)
+[2026-03-17 15:17:45] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/3241d1ae205b8cc0_0 (25KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/6b9d80bc877a5131_0 (29KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/2ad9878ce9ff1773_0 (70KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/41fa8e377e45b26a_0 (33KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/ea2b55940913914a_0 (5.4MB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/7de66391347b6e32_0 (20KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/3404230a2b1e97ed_0 (33KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/efa65a8a1af54f26_0 (25KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/8229929a59369771_0 (29KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/56411a08f6b3fc35_0 (66KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/ff32952e4650977b_0 (29KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/7352f9d2cd37c7f6_0 (25KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/1ab1b8f7856edb27_0 (20KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/index (4KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/7babfc191822ebfc_0 (37KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/663387be8834df35_0 (8KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/6255d19e4df9e5e9_0 (29KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/fe831aae791db27b_0 (33KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/d69ec921541c50bb_0 (8KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/206e89eee86457c2_0 (37KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/017557cc2dd6c11e_0 (29KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/7ee648dd2a96a6d6_0 (25KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/8ca96847c8dfdf44_0 (274KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/897a0df8d0e26005_0 (25KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/91368e42aba99398_0 (25KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/86b6bbe8eccc9b46_0 (29KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/6494df2c45256cf5_0 (25KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/626c40d65b3ca718_0 (20KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/2b30ba705ebcd7a2_0 (29KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/4252ec862e36168d_0 (29KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/e94343542720630e_0 (25KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/581f3d8bec532c59_0 (37KB)
+[2026-03-17 15:17:46] [clean] REMOVED /Users/tariq/Library/Application Support/Pencil/Cache/Cache_Data/76d969f871430501_0 (8KB)
+[2026-03-17 15:17:47] [clean] REMOVED /Users/tariq/Library/Application Support/balena-etcher/Cache/Cache_Data/index-dir (4KB)
+[2026-03-17 15:17:47] [clean] REMOVED /Users/tariq/Library/Application Support/balena-etcher/Cache/Cache_Data/index (4KB)
+[2026-03-17 15:17:47] [clean] REMOVED /Users/tariq/Library/Application Support/balenaEtcher/Cache/Cache_Data/index-dir (4KB)
+[2026-03-17 15:17:47] [clean] REMOVED /Users/tariq/Library/Application Support/balenaEtcher/Cache/Cache_Data/index (4KB)
+[2026-03-17 15:17:55] [clean] REMOVED /var/folders/v0/pxlzsrjn52n5cv29_1g8sqq80000gq/T/tmp.hYg8wE8MS9 (16KB)
+[2026-03-17 15:17:58] [clean] REMOVED /Users/tariq/Library/HTTPStorages/org.sparkle-project.DownloaderService (74KB)
+[2026-03-17 15:17:58] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.rosetta.update (protected)
+[2026-03-17 15:17:58] [clean] SKIPPED /Users/tariq/Library/Caches/com.apple.amp.mediasevicesd (protected)
+# ========== clean session ended at 2026-03-17 15:18:08, 965 items, 12.87GB ==========
+
+# ========== uninstall session started at 2026-03-17 15:20:56 ==========
+[2026-03-17 15:22:10] [uninstall] REMOVED /Applications/PostgreSQL 17/Documentation/Installation notes.app (131KB)
+[2026-03-17 15:22:11] [uninstall] REMOVED /Applications/PostgreSQL 17/Documentation/PostgreSQL documentation.app (131KB)
+[2026-03-17 15:22:12] [uninstall] REMOVED /Applications/PostgreSQL 17/Documentation/PostgreSQL release notes.app (131KB)
+[2026-03-17 15:22:13] [uninstall] REMOVED /Applications/PostgreSQL 17/Reload Configuration.app (127KB)
+[2026-03-17 15:22:14] [uninstall] REMOVED /Applications/PostgreSQL 17/Documentation/pgAdmin documentation.app (131KB)
+[2026-03-17 15:22:14] [uninstall] REMOVED /Applications/PostgreSQL 17/pgAdmin 4.app (557KB)
+
+# ========== optimize session started at 2026-03-17 15:22:37 ==========
+[2026-03-17 15:23:03] [optimize] REMOVED /Users/tariq/Library/Application Support/Dock/desktoppicture.db (53KB)
+# ========== optimize session ended at 2026-03-17 15:23:48, 14 items, 0B ==========

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": ["opencode-gemini-auth", "@mohak34/opencode-notifier@latest"],
+  "mcp": {},
+  "permission": {
+    "read": {
+      "~/.config/opencode/get-shit-done/*": "allow"
+    },
+    "external_directory": {
+      "~/.config/opencode/get-shit-done/*": "allow"
+    }
+  },
+  "provider": {
+    "lmstudio": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "LM Studio (local)",
+      "options": {
+        "baseURL": "http://127.0.0.1:1234/v1"
+      },
+      "models": {
+        "nvidia/nemotron-3-nano-4b": {
+          "name": "nvidia/nemotron-3-nano-4b"
+        }
+      }
+    },
+    "llama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "llama.cpp (local)",
+      "options": {
+        "baseurl": "http://100.92.119.107:8033/v1"
+      },
+      "models": {
+        "nvidia/nemotron-3-nano-4b": {
+          "name": "nvidia/nemotron-3-nano-4b"
+        },
+        "unsloth/gpt-oss-20b-gguf:f16": {
+          "name": "unsloth/gpt-oss-20b-gguf:f16"
+        },
+        "ggml-org/gemma-4-26b-a4b-it-gguf:q4_k_m": {
+          "name": "ggml-org/gemma-4-26b-a4b-it-gguf:q4_k_m"
+        },
+        "ggml-org/gemma-4-e4b-it-gguf:f16": {
+          "name": "ggml-org/gemma-4-e4b-it-gguf:f16"
+        }
+      }
+    },
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "ollama (local)",
+      "options": {
+        "baseurl": "http://100.92.119.107:11434/v1"
+      },
+      "models": {
+        "gemma4:26b": {
+          "name": "gemma4:26b",
+          "limit": {
+            "context": 256000,
+            "output": 65536
+          }
+        }
+      }
+    },
+    "nvidia": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "NVIDIA NIM",
+      "options": {
+        "baseURL": "https://integrate.api.nvidia.com/v1",
+        "apiKey": "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"
+      },
+      "models": {
+        "nvidia/nemotron-3-super-120b-a12b": {
+          "name": "Nemotron 3 Super"
+        },
+        "minimaxai/minimax-m2.7": {
+          "name": "minimax-m2.7"
+        }
+      }
+    }
+  }
+}

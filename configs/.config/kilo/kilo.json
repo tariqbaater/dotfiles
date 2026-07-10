@@ -1,0 +1,12 @@
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  "permission": {
+    "read": {
+      "~/.config/kilo/get-shit-done/*": "allow"
+    },
+    "external_directory": {
+      "~/.config/kilo/get-shit-done/*": "allow"
+    },
+    "bash": "allow"
+  }
+}

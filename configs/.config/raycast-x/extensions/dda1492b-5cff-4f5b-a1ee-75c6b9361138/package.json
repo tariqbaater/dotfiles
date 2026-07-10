@@ -1,0 +1,482 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "skills",
+  "title": "Skills",
+  "description": "Search and manage AI agent skills from Skills",
+  "icon": "icon.png",
+  "author": "keito4",
+  "contributors": [
+    "DaleSeo",
+    "dominik_lukes",
+    "raulg",
+    "elwin_liu",
+    "pernielsentikaer",
+    "kayo_timoteo",
+    "alexi.build",
+    "alastair_scheuermann"
+  ],
+  "platforms": [
+    "macOS",
+    "Windows"
+  ],
+  "categories": [
+    "Developer Tools"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "search-skills",
+      "title": "Search Skills",
+      "subtitle": "Skills",
+      "description": "Search for agent skills",
+      "mode": "view"
+    },
+    {
+      "name": "manage-skills",
+      "title": "Manage Skills",
+      "subtitle": "Skills",
+      "description": "View and remove installed skills",
+      "mode": "view"
+    },
+    {
+      "name": "update-all-skills",
+      "title": "Update All Skills",
+      "subtitle": "Skills",
+      "description": "Update all installed skills",
+      "mode": "no-view"
+    }
+  ],
+  "tools": [
+    {
+      "name": "search-skills",
+      "title": "Search Skills",
+      "description": "Search the skills.sh marketplace for agent skills matching a query.",
+      "instructions": "Search the skills.sh marketplace for agent skills. Call this first when the user asks for a skill or describes what they need.",
+      "input": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Natural language query describing what you're looking for (e.g. \"git commit messages\", \"code review\")"
+          },
+          "limit": {
+            "type": "number",
+            "description": "Maximum number of results to return (default 10)"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      },
+      "confirmation": false
+    },
+    {
+      "name": "read-skill",
+      "title": "Read Skill",
+      "description": "Fetch the full SKILL.md content for a specific skill to understand what it does.",
+      "instructions": "Fetch the full SKILL.md content for a specific skill. Use after search-skills to understand what a skill does.",
+      "input": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string",
+            "description": "GitHub owner/repo of the skill (e.g. \"anthropics/skills\") — from the `source` field in search results"
+          },
+          "skillId": {
+            "type": "string",
+            "description": "Skill identifier within the repo (e.g. \"git-commit\") — from the `skillId` field in search results"
+          }
+        },
+        "required": [
+          "source",
+          "skillId"
+        ]
+      },
+      "confirmation": false
+    },
+    {
+      "name": "list-installed-skills",
+      "title": "List Installed Skills",
+      "description": "List all locally installed skills with their agents, source, and install dates.",
+      "instructions": "List all locally installed skills with their agents, source, and install dates.",
+      "confirmation": false
+    },
+    {
+      "name": "install-skill",
+      "title": "Install Skill",
+      "description": "Install a skill from the skills.sh marketplace. Only call after the user has confirmed.",
+      "instructions": "Install a skill from the skills.sh marketplace. Only call this after the user has confirmed they want to install. Ask which agents to install for unless the user said \"all\".",
+      "input": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Skill display name (e.g. \"Apollo Client\") — from the `name` field in search results"
+          },
+          "source": {
+            "type": "string",
+            "description": "GitHub owner/repo (e.g. \"apollographql/skills\") — from the `source` field in search results"
+          },
+          "skillId": {
+            "type": "string",
+            "description": "Skill identifier (e.g. \"apollo-client\") — from the `skillId` field in search results"
+          },
+          "agents": {
+            "type": "string",
+            "description": "Comma-separated agent display names to install for (e.g. \"Claude Code, Cursor\"). Ask the user which agents they want before calling. Omit or pass an empty string to install for all agents."
+          }
+        },
+        "required": [
+          "name",
+          "source",
+          "skillId"
+        ]
+      },
+      "confirmation": false
+    },
+    {
+      "name": "remove-skill",
+      "title": "Remove Skill",
+      "description": "Remove an installed skill. Only call after the user has confirmed.",
+      "instructions": "Remove an installed skill. Only call this after the user has confirmed they want to remove it. Ask which agents to remove from unless the user said \"all\".",
+      "input": {
+        "type": "object",
+        "properties": {
+          "skillName": {
+            "type": "string",
+            "description": "Name of the skill to remove (e.g. \"apollo-client\")"
+          },
+          "agents": {
+            "type": "string",
+            "description": "Comma-separated agent display names to remove the skill from (e.g. \"Claude Code, Cursor\"). Omit or pass an empty string to remove from all agents."
+          }
+        },
+        "required": [
+          "skillName"
+        ]
+      },
+      "confirmation": false
+    }
+  ],
+  "preferences": [
+    {
+      "name": "customNpxPath",
+      "title": "Custom npx Path",
+      "description": "Optional override for the `npx` executable when automatic detection does not work.",
+      "placeholder": "e.g., /opt/homebrew/bin/npx or ~/.local/bin/npx",
+      "type": "textfield",
+      "required": false
+    },
+    {
+      "name": "githubToken",
+      "title": "GitHub Personal Access Token",
+      "description": "Optional token to increase the GitHub API rate limit from 60 to 5,000 requests/hour.",
+      "type": "password",
+      "required": false
+    },
+    {
+      "name": "disableSkillsCliTelemetry",
+      "title": "Disable Skills CLI Telemetry",
+      "label": "Opt out of Skills CLI telemetry",
+      "description": "Opt out of anonymous usage data collected by the underlying Skills CLI for commands run through this extension. The extension itself does not collect telemetry data.",
+      "type": "checkbox",
+      "required": false
+    },
+    {
+      "name": "defaultAgents",
+      "title": "Default Agents",
+      "description": "Agents pre-selected when installing a skill. Enter comma-separated display names exactly as shown in the agent picker, e.g. \"Claude Code, Windsurf\". Leave empty to start with no agents pre-selected.",
+      "placeholder": "e.g., Claude Code, Windsurf",
+      "type": "textfield",
+      "required": false
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.104.16",
+    "@raycast/utils": "^2.2.4",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "semver": "^7.7.3"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.1.1",
+    "@types/node": "^25.2.3",
+    "@types/react": "^19.2.13",
+    "@types/semver": "^7.7.1",
+    "eslint": "^10.0.0",
+    "eslint-plugin-n": "^17.24.0",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "lint": "ray lint",
+    "fix-lint": "ray lint --fix",
+    "publish": "ray publish"
+  },
+  "ai": {
+    "instructions": "You are an AI assistant that helps users discover and understand agent skills from the skills.sh marketplace.\n\n### Rules\n- **Search first**: Never guess or assume skill names. Always call `search-skills` before anything else.\n- **Read before describing**: If the user asks what a skill does or how it works, call `read-skill` after finding it via `search-skills`.\n- **Always show the install command**: Include the `installCommand` from search results whenever recommending a skill.\n- **Be concise**: Present the top 3–5 most relevant results unless the user asks for more.\n- **Installed skills**: If the user asks what skills they have or what is installed, call `list-installed-skills`.\n- **Install confirmation**: Always confirm with the user before calling `install-skill`. Never install without explicit approval.\n- **Agent selection**: Before installing or removing, ask which agents the user wants to target (e.g. Claude Code, Cursor). Pass the answer as `agents`. Only omit `agents` if the user explicitly says \"all\".\n- **Remove confirmation**: Always confirm with the user before calling `remove-skill`. Use `list-installed-skills` first if the user seems unsure of the exact skill name.",
+    "evals": [
+      {
+        "input": "@skills what skills are available for GraphQL?",
+        "expected": [
+          {
+            "callsTool": {
+              "name": "search-skills",
+              "arguments": {
+                "query": "GraphQL"
+              }
+            }
+          },
+          {
+            "includes": "npx skills add"
+          }
+        ],
+        "mocks": {
+          "search-skills": {
+            "skills": [
+              {
+                "name": "GraphQL Schema",
+                "skillId": "graphql-schema",
+                "source": "apollographql/skills",
+                "installs": 3800,
+                "installCommand": "npx skills add apollographql/skills@graphql-schema"
+              },
+              {
+                "name": "GraphQL Operations",
+                "skillId": "graphql-operations",
+                "source": "apollographql/skills",
+                "installs": 2900,
+                "installCommand": "npx skills add apollographql/skills@graphql-operations"
+              },
+              {
+                "name": "Apollo Client",
+                "skillId": "apollo-client",
+                "source": "apollographql/skills",
+                "installs": 5100,
+                "installCommand": "npx skills add apollographql/skills@apollo-client"
+              }
+            ],
+            "count": 3
+          }
+        }
+      },
+      {
+        "input": "@skills what does the apollo-client skill do?",
+        "expected": [
+          {
+            "callsTool": {
+              "name": "search-skills",
+              "arguments": {
+                "query": "apollo-client"
+              }
+            }
+          },
+          {
+            "callsTool": {
+              "name": "read-skill",
+              "arguments": {
+                "source": "apollographql/skills",
+                "skillId": "apollo-client"
+              }
+            }
+          },
+          {
+            "includes": "Apollo Client"
+          }
+        ],
+        "mocks": {
+          "search-skills": {
+            "skills": [
+              {
+                "name": "Apollo Client",
+                "skillId": "apollo-client",
+                "source": "apollographql/skills",
+                "installs": 5100,
+                "installCommand": "npx skills add apollographql/skills@apollo-client"
+              }
+            ],
+            "count": 1
+          },
+          "read-skill": {
+            "content": "# Apollo Client 4.x Guide\n\nGuide for building React applications with Apollo Client 4.x. Use this skill when setting up Apollo Client in a React project, writing GraphQL queries or mutations with hooks, configuring caching or cache policies, managing local state with reactive variables, or troubleshooting Apollo Client errors or performance issues."
+          }
+        }
+      },
+      {
+        "input": "@skills what skills do I have installed?",
+        "expected": [
+          {
+            "callsTool": "list-installed-skills"
+          },
+          {
+            "includes": "apollo-client"
+          }
+        ],
+        "mocks": {
+          "list-installed-skills": {
+            "skills": [
+              {
+                "name": "apollo-client",
+                "path": "~/.agents/skills/apollo-client",
+                "agents": [
+                  "Claude Code",
+                  "Cursor"
+                ],
+                "agentCount": 2,
+                "source": "apollographql/skills",
+                "installedAt": "2025-04-01T10:00:00Z",
+                "updatedAt": "2025-04-01T10:00:00Z"
+              },
+              {
+                "name": "graphql-schema",
+                "path": "~/.agents/skills/graphql-schema",
+                "agents": [
+                  "Claude Code"
+                ],
+                "agentCount": 1,
+                "source": "apollographql/skills",
+                "installedAt": "2025-03-15T08:30:00Z",
+                "updatedAt": "2025-03-15T08:30:00Z"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "input": "@skills install apollo-client for me, I confirm for Claude Code",
+        "expected": [
+          {
+            "callsTool": {
+              "name": "search-skills",
+              "arguments": {
+                "query": "apollo-client"
+              }
+            }
+          },
+          {
+            "callsTool": {
+              "name": "install-skill",
+              "arguments": {
+                "source": "apollographql/skills",
+                "skillId": "apollo-client",
+                "agents": "Claude Code"
+              }
+            }
+          },
+          {
+            "includes": "Apollo Client"
+          }
+        ],
+        "mocks": {
+          "search-skills": {
+            "skills": [
+              {
+                "name": "Apollo Client",
+                "skillId": "apollo-client",
+                "source": "apollographql/skills",
+                "installs": 5100,
+                "installCommand": "npx skills add apollographql/skills@apollo-client"
+              }
+            ],
+            "count": 1
+          },
+          "install-skill": {
+            "success": true,
+            "installedSkill": "Apollo Client",
+            "agents": [
+              "Claude Code"
+            ]
+          }
+        }
+      },
+      {
+        "input": "@skills remove apollo-client",
+        "expected": [
+          {
+            "callsTool": "list-installed-skills"
+          },
+          {
+            "callsTool": {
+              "name": "remove-skill",
+              "arguments": {
+                "skillName": "apollo-client",
+                "agents": "Claude Code"
+              }
+            }
+          },
+          {
+            "includes": "apollo-client"
+          }
+        ],
+        "mocks": {
+          "list-installed-skills": {
+            "skills": [
+              {
+                "name": "apollo-client",
+                "path": "~/.agents/skills/apollo-client",
+                "agents": [
+                  "Claude Code"
+                ],
+                "agentCount": 1,
+                "source": "apollographql/skills"
+              }
+            ]
+          },
+          "remove-skill": {
+            "success": true,
+            "removedSkill": "apollo-client",
+            "agents": [
+              "Claude Code"
+            ]
+          }
+        }
+      },
+      {
+        "input": "@skills find me a skill for designing GraphQL APIs",
+        "expected": [
+          {
+            "callsTool": {
+              "name": "search-skills",
+              "arguments": {
+                "query": "GraphQL API"
+              }
+            }
+          },
+          {
+            "includes": "npx skills add"
+          }
+        ],
+        "mocks": {
+          "search-skills": {
+            "skills": [
+              {
+                "name": "GraphQL Schema",
+                "skillId": "graphql-schema",
+                "source": "apollographql/skills",
+                "installs": 3800,
+                "installCommand": "npx skills add apollographql/skills@graphql-schema"
+              },
+              {
+                "name": "Apollo Server",
+                "skillId": "apollo-server",
+                "source": "apollographql/skills",
+                "installs": 4400,
+                "installCommand": "npx skills add apollographql/skills@apollo-server"
+              },
+              {
+                "name": "Apollo Federation",
+                "skillId": "apollo-federation",
+                "source": "apollographql/skills",
+                "installs": 2100,
+                "installCommand": "npx skills add apollographql/skills@apollo-federation"
+              }
+            ],
+            "count": 3
+          }
+        }
+      }
+    ]
+  }
+}

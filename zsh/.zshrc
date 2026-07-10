@@ -14,6 +14,13 @@ random_logo="${logos[RANDOM % ${#logos[@]} + 1]}"
 # Set the logo variable
 fastfetch --logo ~/.config/fastfetch/images/"$random_logo".png
 
+# claude-code
+export ANTHROPIC_AUTH_TOKEN=o1lama
+export ANTHROPIC_BASE_URL=http://100.92.119.107:11434
+
+# flutter sdk path
+export PATH="$HOME/Projects/flutter_app/flutter/bin:$PATH"
+
 # bash settings
 export PS4=$'\e[31m[debug]\e[0m ' # include timestamp in debug output with red color
 
@@ -156,3 +163,14 @@ fpath=(/Users/tariq/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/tariq/.lmstudio/bin"
+# End of LM Studio CLI section
+
+
+# Added by Antigravity
+export PATH="/Users/tariq/.antigravity/antigravity/bin:$PATH"
+
+# Added by MiniMax Agent
+export PATH="/Users/tariq/.mavis/bin:$PATH"

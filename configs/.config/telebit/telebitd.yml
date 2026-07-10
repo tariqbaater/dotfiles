@@ -7,7 +7,7 @@ ssh_auto: 22
 servernames:
   light-wolverine-59.telebit.io:
     wildcard: true
-    handler: 8000
+    handler: 3000
 ports: {}
 email: liwof26574@evnft.com
 agree_tos: true
@@ -15,3 +15,4 @@ relay: telebit.cloud
 token: >-
   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk0M2JiYTU0ODQwZDA4NmIxOGJkNTUxNiIsImlhdCI6MTczNTg1OTk2Miwic3ViIjoibGl3b2YyNjU3NEBldm5mdC5jb20iLCJpc3MiOiJ0ZWxlYml0LmNsb3VkIiwiYXVkIjoidGVsZWJpdC5jbG91ZCIsImRvbWFpbnMiOlsibGlnaHQtd29sdmVyaW5lLTU5LnRlbGViaXQuaW8iXSwicG9ydHMiOlsxOTEwMV19.hpP9eN-Ud5hJA7EXXv-nqQNhGKTUDso-gqtoyG931Oc
 secret: null
+disable: true

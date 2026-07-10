@@ -22,6 +22,11 @@ return {
     local luasnip = require("luasnip")
     local lspkind = require("lspkind")
 
+    -- cmp-nvim-lsp's after/plugin/cmp_nvim_lsp.lua isn't sourced when
+    -- nvim-cmp is loaded during startup (e.g. via vim-dadbod-completion).
+    -- Explicitly setup the LSP source so nvim_lsp completions work.
+    require("cmp_nvim_lsp").setup()
+
     -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
     require("luasnip.loaders.from_vscode").lazy_load()
 
@@ -68,15 +73,14 @@ return {
           ellipsis_char = "...",
         }),
       },
+    })
 
-      -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
-      cmp.setup.cmdline(":", {
-        mapping = cmp.mapping.preset.cmdline(),
-        sources = cmp.config.sources({
-          { name = "path" },
-        }, {
-          { name = "cmdline" },
-        }),
+    cmp.setup.cmdline(":", {
+      mapping = cmp.mapping.preset.cmdline(),
+      sources = cmp.config.sources({
+        { name = "path" },
+      }, {
+        { name = "cmdline" },
       }),
     })
   end,
