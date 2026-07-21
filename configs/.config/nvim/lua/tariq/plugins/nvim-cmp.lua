@@ -1,6 +1,6 @@
 return {
   "hrsh7th/nvim-cmp",
-  event = "InsertEnter",
+  event = { "InsertEnter", "CmdlineEnter" },
   dependencies = {
     "hrsh7th/cmp-buffer", -- source for text in buffer
     "hrsh7th/cmp-path", -- source for file system paths
@@ -30,6 +30,13 @@ return {
     -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
     require("luasnip.loaders.from_vscode").lazy_load()
 
+    -- Explicitly register source plugins (lazy.nvim doesn't run after/plugin
+    -- for dependency plugins, so sources would be "unknown" otherwise).
+    require("cmp").register_source("buffer", require("cmp_buffer"))
+    require("cmp").register_source("path", require("cmp_path").new())
+    require("cmp").register_source("luasnip", require("cmp_luasnip").new())
+    require("cmp").register_source("cmdline", require("cmp_cmdline").new())
+
     cmp.setup({
       snippet = { -- configure how nvim-cmp interacts with snippet engine
         expand = function(args)
@@ -58,7 +65,6 @@ return {
         { name = "luasnip" }, -- snippets
         { name = "buffer" }, -- text within current buffer
         { name = "path" }, -- file system paths
-        { name = "copilot" },
         { name = "render-markdown" },
         { name = "obsidian" },
       }, {
@@ -78,10 +84,24 @@ return {
     cmp.setup.cmdline(":", {
       mapping = cmp.mapping.preset.cmdline(),
       sources = cmp.config.sources({
-        { name = "path" },
-      }, {
         { name = "cmdline" },
+      }, {
+        { name = "path" },
       }),
+    })
+
+    cmp.setup.cmdline("/", {
+      mapping = cmp.mapping.preset.cmdline(),
+      sources = {
+        { name = "buffer" },
+      },
+    })
+
+    cmp.setup.cmdline("?", {
+      mapping = cmp.mapping.preset.cmdline(),
+      sources = {
+        { name = "buffer" },
+      },
     })
   end,
 }
