@@ -210,16 +210,10 @@ local function patch_neocodeium()
     if needs_workspace_fix then
       doc_content = doc_content:gsub(
         "local name = api%.nvim_buf_get_name%(buf%)%s*\n%s*local lang",
-        "local name = api.nvim_buf_get_name(buf)\n   local abs_name = fn.fnamemodify(name, \":p\")\n   local buf_dir = fn.fnamemodify(abs_name, \":h\")\n   local lang"
+        'local name = api.nvim_buf_get_name(buf)\n   local abs_name = fn.fnamemodify(name, ":p")\n   local buf_dir = fn.fnamemodify(abs_name, ":h")\n   local lang'
       )
-      doc_content = doc_content:gsub(
-        "workspace_uri = state%.project_root_uri",
-        "workspace_uri = stdio.to_uri(buf_dir)"
-      )
-      doc_content = doc_content:gsub(
-        "absolute_uri = stdio%.to_uri%(name%)",
-        "absolute_uri = stdio.to_uri(abs_name)"
-      )
+      doc_content = doc_content:gsub("workspace_uri = state%.project_root_uri", "workspace_uri = stdio.to_uri(buf_dir)")
+      doc_content = doc_content:gsub("absolute_uri = stdio%.to_uri%(name%)", "absolute_uri = stdio.to_uri(abs_name)")
     end
 
     vim.fn.writefile(vim.split(doc_content, "\n"), doc_path)

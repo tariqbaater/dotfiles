@@ -212,6 +212,61 @@
         ]
       },
       "confirmation": false
+    },
+    {
+      "name": "caffeinate-until",
+      "title": "Caffeinate Until",
+      "description": "Keep the Mac awake until a specific future date and time.",
+      "instructions": "Prevents the Mac from sleeping until a specific future date and time.",
+      "input": {
+        "type": "object",
+        "properties": {
+          "dateTime": {
+            "type": "string",
+            "description": "Future date and time to keep the Mac awake until, in ISO 8601 format.\nInclude the local UTC offset when known, for example \"2026-07-19T17:00:00+01:00\"."
+          }
+        },
+        "required": [
+          "dateTime"
+        ]
+      },
+      "confirmation": true
+    },
+    {
+      "name": "list-caffeination-schedules",
+      "title": "List Caffeination Schedules",
+      "description": "List the recurring caffeination schedules configured for the week.",
+      "instructions": "Lists all recurring caffeination schedules in weekday order.",
+      "confirmation": false
+    },
+    {
+      "name": "manage-caffeination-schedule",
+      "title": "Manage Caffeination Schedule",
+      "description": "Pause, resume, or delete a recurring caffeination schedule for a day.",
+      "instructions": "Pauses, resumes, or deletes the recurring caffeination schedule for one day.",
+      "input": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "description": "Action to perform on the schedule.",
+            "enum": [
+              "pause",
+              "resume",
+              "delete"
+            ]
+          },
+          "day": {
+            "type": "string",
+            "description": "Day whose schedule should be changed, for example \"monday\"."
+          }
+        },
+        "required": [
+          "action",
+          "day"
+        ]
+      },
+      "confirmation": true
     }
   ],
   "preferences": [
@@ -287,7 +342,7 @@
     "publish": "npx @raycast/api@latest publish"
   },
   "ai": {
-    "instructions": "Help users manage their Mac's sleep prevention (caffeination).\n\nBefore performing any action, check the current status with check-caffeination-status.\n\nTool selection guide:\n- User wants indefinite caffeination → use caffeinate\n- User specifies a duration (hours/minutes) → use caffeinate-for\n- User wants to caffeinate while an app runs → use caffeinate-while-app-is-running\n- User wants to set up recurring schedules → use schedule-caffeination\n- User wants to stop caffeination → use decaffeinate (note: won't work if a schedule is actively running)\n\nWhen confirming actions, mention the specific duration or condition if applicable.\n",
+    "instructions": "Help users manage their Mac's sleep prevention (caffeination).\n\nCheck the current status with check-caffeination-status before starting or stopping caffeination. Status-only questions need no other tool.\n\nTool selection guide:\n- User wants indefinite caffeination → use caffeinate\n- User specifies a duration → use caffeinate-for\n- User specifies an end date or time → use caffeinate-until with an ISO 8601 date and time, including the local UTC offset when known\n- User wants to caffeinate while an app runs → use caffeinate-while-app-is-running\n- User wants to create or replace recurring schedules → use schedule-caffeination\n- User wants to see recurring schedules → use list-caffeination-schedules\n- User wants to pause, resume, or delete a recurring schedule → call list-caffeination-schedules first, then use manage-caffeination-schedule with the matching day\n- User wants to stop caffeination → use decaffeinate. If a schedule is actively running, explain that it must be paused or deleted instead\n\nWhen confirming actions, mention the specific duration, end time, application, or schedule as applicable.\n",
     "evals": [
       {
         "input": "@coffee keep my mac awake for 2 hours",
@@ -440,6 +495,103 @@
           },
           {
             "meetsCriteria": "Confirms that Mac will stay awake"
+          }
+        ]
+      },
+      {
+        "input": "@coffee keep my Mac awake until 6pm today",
+        "mocks": {
+          "check-caffeination-status": {
+            "caffeinated": false,
+            "scheduled": false
+          },
+          "caffeinate-until": {
+            "caffeinated": true,
+            "until": "2026-07-19T17:00:00.000Z"
+          }
+        },
+        "expected": [
+          {
+            "callsTool": "check-caffeination-status"
+          },
+          {
+            "callsTool": {
+              "name": "caffeinate-until",
+              "arguments": {
+                "dateTime": {
+                  "includes": "2026-07-19T18:00:00"
+                }
+              }
+            }
+          },
+          {
+            "meetsCriteria": "Confirms the time until which the Mac will stay awake"
+          }
+        ]
+      },
+      {
+        "input": "@coffee show my caffeination schedules",
+        "mocks": {
+          "list-caffeination-schedules": {
+            "schedules": [
+              {
+                "day": "monday",
+                "from": "09:00",
+                "to": "17:00",
+                "paused": false,
+                "running": false
+              }
+            ],
+            "count": 1
+          }
+        },
+        "expected": [
+          {
+            "callsTool": "list-caffeination-schedules"
+          },
+          {
+            "meetsCriteria": "Shows the Monday schedule from 09:00 to 17:00"
+          }
+        ]
+      },
+      {
+        "input": "@coffee pause my Monday caffeination schedule",
+        "mocks": {
+          "list-caffeination-schedules": {
+            "schedules": [
+              {
+                "day": "monday",
+                "from": "09:00",
+                "to": "17:00",
+                "paused": false,
+                "running": false
+              }
+            ],
+            "count": 1
+          },
+          "manage-caffeination-schedule": {
+            "action": "pause",
+            "day": "monday",
+            "paused": true,
+            "running": false,
+            "success": true
+          }
+        },
+        "expected": [
+          {
+            "callsTool": "list-caffeination-schedules"
+          },
+          {
+            "callsTool": {
+              "name": "manage-caffeination-schedule",
+              "arguments": {
+                "action": "pause",
+                "day": "monday"
+              }
+            }
+          },
+          {
+            "meetsCriteria": "Confirms that the Monday schedule is paused"
           }
         ]
       }
