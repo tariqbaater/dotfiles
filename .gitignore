@@ -12,6 +12,10 @@ lazy-lock.json
 .zcompdump
 .zsh
 .zsh_sessions/
+gcloud/*
+github-copilot/*
+configs/.config/gws/client_secret.json
+configs/.config/configstore/firebase-tools.json
 configs/.config/raycast/extensions/*
 configs/.config/nvim/.mypy_cache
 configs/.config/raycast/extensions
@@ -36,3 +40,7 @@ configs/.config/nvchad
 configs/.config/nvim-bk
 configs/.config/kitty/kitty.conf.bak
 configs/.config/nvim/.luarc.json
+/tmux/.tmux/plugins/catppuccin-tmux
+/tmux/.tmux/plugins/tmux-yank
+/tmux/.tmux/plugins/tpm
+/tmux/.tmux/plugins/vim-tmux-navigator
