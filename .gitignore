@@ -1,46 +1,67 @@
-nvchad/*
-git/*
-.git/*
-.lazy-lock.json
-# .gitignore
-config.json
-.env
+# OS
 .DS_Store
-lazy-lock.json
+
+# Shell history & sessions
 .zsh_history
 .zprofile
 .zcompdump
 .zsh
 .zsh_sessions/
-gcloud/*
-github-copilot/*
-configs/.config/gws/client_secret.json
-configs/.config/configstore/firebase-tools.json
-configs/.config/raycast/extensions/*
-configs/.config/nvim/.mypy_cache
-configs/.config/raycast/extensions
-configs/.config/nvim/lazy-lock.json
-configs/.config/github-copilot/apps.json
-configs/.config/github-copilot/versions.json
-configs/.config/raycast
-configs/.config/raycast
-configs/.config/nvim/.DS_Store
-configs/.config/nvim/lazy-lock.json
-configs/.config/.DS_Store
-configs/.DS_Store
-.DS_Store
-configs/.config/nvim/lua/.DS_Store
-configs/.config/yazi/flavors/catppuccin-mocha.yazi
-configs/.config/yazi/flavors/dracula.yazi
-configs/.config/LazyVim
-configs/.config/LazyVim
-configs/.config/LazyVim
-configs/.config/astro
-configs/.config/nvchad
-configs/.config/nvim-bk
-configs/.config/kitty/kitty.conf.bak
-configs/.config/nvim/.luarc.json
+
+# Secrets & credentials
+.env
+config.json
+
+# gcloud - credentials, tokens, configs
+configs/.config/gcloud/
+
+# GitHub CLI - auth tokens
+configs/.config/gh/hosts.yml
+
+# Firebase & configstore
+configs/.config/configstore/
+
+# GWS - client secrets, credentials, cache
+configs/.config/gws/
+
+# Telebit - access token
+configs/.config/telebit/
+
+# Tmux plugins (installed locally)
 /tmux/.tmux/plugins/catppuccin-tmux
 /tmux/.tmux/plugins/tmux-yank
 /tmux/.tmux/plugins/tpm
 /tmux/.tmux/plugins/vim-tmux-navigator
+
+# Neovim
+configs/.config/nvim/.mypy_cache
+configs/.config/nvim/.DS_Store
+configs/.config/nvim/lazy-lock.json
+configs/.config/nvim/.luarc.json
+
+# LazyVim / NvChad / Astro - editor configs
+configs/.config/LazyVim
+configs/.config/nvchad
+configs/.config/astro
+configs/.config/nvim-bk
+
+# Kitty backup
+configs/.config/kitty/kitty.conf.bak
+
+# Raycast extensions
+configs/.config/raycast
+
+# Copilot
+configs/.config/github-copilot/
+configs/.config/gh-copilot/
+
+# Yazi flavors
+configs/.config/yazi/flavors/
+
+# Top-level ignores
+nvchad/*
+git/*
+.gcloud/*
+.github-copilot/*
+.lazy-lock.json
+lazy-lock.json
