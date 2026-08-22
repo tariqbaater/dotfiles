@@ -12,11 +12,3 @@
 .env
 config.json
 
-# Tmux plugins (installed locally)
-/tmux/.tmux/plugins/catppuccin-tmux
-/tmux/.tmux/plugins/tmux-yank
-/tmux/.tmux/plugins/tpm
-/tmux/.tmux/plugins/vim-tmux-navigator
-
-# .config - re-stow only what you need
-configs/.config/

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Colors taken from tokyonight theme
+red="0xffcba6f7"
+blue="0xff7aa2f7"
+transparent="0x00000000"
+
+options=(
+  active_color="$red"
+  inactive_color="$transparent"
+  hidpi=on
+  style=round
+  width=5.0
+  # blacklist="Screen Studio"
+)
+
+borders "${options[@]}"

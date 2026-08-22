@@ -3,7 +3,7 @@
 
 # User configuration
 # aliases
-alias rsn='rsync -av /Users/tariq/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault/notes arch:/home/tariq/Documents/Obsidian/'
+alias rsn='rsync -av /Users/tariq/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault/notes omarchy:/home/tariq/Documents/Obsidian/'
 alias or='vim $HOME/library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault/inbox/*.md'
 alias ov='cd $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault'
 alias arc='open -a "Arc"'
