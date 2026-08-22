@@ -1,19 +1,3 @@
-logos=(
- "Aisaka"
- "Geass"
- "Link-green"
- "Loli"
- "Pochita"
- "Ryuzaki"
- "agk clan"
- "chelsea"
-
-  )
-# Select a random logo
-random_logo="${logos[RANDOM % ${#logos[@]} + 1]}"
-# Set the logo variable
-fastfetch --logo ~/.config/fastfetch/images/"$random_logo".png
-
 # claude-code
 export ANTHROPIC_AUTH_TOKEN=o1lama
 export ANTHROPIC_BASE_URL=http://100.92.119.107:11434
@@ -54,6 +38,22 @@ ZSH_TMUX_AUTOSTART=true
 
 
 source $ZSH/oh-my-zsh.sh
+
+logos=(
+ "Aisaka"
+ "Geass"
+ "Link-green"
+ "Loli"
+ "Pochita"
+ "Ryuzaki"
+ "agk clan"
+ "chelsea"
+
+  )
+# Select a random logo
+random_logo="${logos[RANDOM % ${#logos[@]} + 1]}"
+# Set the logo variable
+fastfetch --logo ~/.config/fastfetch/images/"$random_logo".png
 
 # End of lines added by compinstall
 autoload -Uz compinit
@@ -119,8 +119,8 @@ zinit light-mode for \
 # Add in zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
-zinit light zsh-users/zsh-completions
-zinit light Aloxaf/fzf-tab
+#zinit light zsh-users/zsh-completions
+#zinit light Aloxaf/fzf-tab
 zinit light jeffreytse/zsh-vi-mode
 zinit load zpm-zsh/colorize
 
@@ -154,14 +154,14 @@ setopt hist_ignore_dups
 # ZSH Completion Options
 ######################################################
 
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
-# The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/tariq/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
+#zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+#zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+#zstyle ':completion:*' menu no
+#zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
+## The following lines have been added by Docker Desktop to enable Docker CLI completions.
+#fpath=(/Users/tariq/.docker/completions $fpath)
+#autoload -Uz compinit
+#compinit
 # End of Docker CLI completions
 
 # Added by LM Studio CLI (lms)
@@ -174,3 +174,4 @@ export PATH="/Users/tariq/.antigravity/antigravity/bin:$PATH"
 
 # Added by MiniMax Agent
 export PATH="/Users/tariq/.mavis/bin:$PATH"
+eval "$(atuin init zsh)"
