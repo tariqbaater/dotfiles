@@ -2,10 +2,10 @@ local map = vim.api.nvim_set_keymap
 
 -- sed search and replace
 map(
-  "n",
-  "<leader>R",
-  [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
-  { desc = "Replace word cursor is on globally" }
+	"n",
+	"<leader>R",
+	[[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+	{ desc = "Replace word cursor is on globally" }
 )
 
 -- make current file executable
@@ -19,38 +19,38 @@ map("n", "N", "Nzzzv", { desc = "move to previous search result with cursor cent
 
 -- Obsidian
 map(
-  "n",
-  "<leader>ov",
-  ':Telescope find_files search_dirs={"/Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault"}<cr>',
-  { noremap = true, silent = true, desc = "Open Obsidian notes" }
+	"n",
+	"<leader>ov",
+	':Telescope find_files search_dirs={"/Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault"}<cr>',
+	{ noremap = true, silent = true, desc = "Open Obsidian notes" }
 )
 
 map(
-  "n",
-  "<leader>oz",
-  ':Telescope live_grep search_dirs={"/Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault"}<cr>',
-  { noremap = true, silent = true, desc = "Open Obsidian notes" }
+	"n",
+	"<leader>oz",
+	':Telescope live_grep search_dirs={"/Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault"}<cr>',
+	{ noremap = true, silent = true, desc = "Open Obsidian notes" }
 )
 -- move file in current buffer to zettelkasten folder
 map(
-  "n",
-  "<leader>ok",
-  ":!mv '%:p' /Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault/zettelkasten<cr>:bd<cr>",
-  { noremap = true, silent = true, desc = "Move file to zettelkasten folder" }
+	"n",
+	"<leader>ok",
+	":!mv '%:p' /Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault/zettelkasten<cr>:bd<cr>",
+	{ noremap = true, silent = true, desc = "Move file to zettelkasten folder" }
 )
 -- delete file in current buffer
 map(
-  "n",
-  "<leader>odd",
-  ":!rm '%:p'<cr>:bd<cr>",
-  { noremap = true, silent = true, desc = "Delete file in current buffer" }
+	"n",
+	"<leader>odd",
+	":!rm '%:p'<cr>:bd<cr>",
+	{ noremap = true, silent = true, desc = "Delete file in current buffer" }
 )
 -- navigate to vault
 map(
-  "n",
-  "<leader>oc",
-  ":cd /Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault<cr>",
-  { noremap = true, silent = true, desc = "Change directory to Obsidian vault" }
+	"n",
+	"<leader>oc",
+	":cd /Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault<cr>",
+	{ noremap = true, silent = true, desc = "Change directory to Obsidian vault" }
 )
 
 -- copen navigation
@@ -108,57 +108,57 @@ vim.keymap.set("n", "<leader><down>", ":resize -10<cr>", { noremap = true, silen
 
 -- harpoon keymaps
 map(
-  "n",
-  "<leader>A",
-  ":lua require('harpoon.mark').add_file()<CR>",
-  { noremap = true, silent = true, desc = "add file to harpoon" }
+	"n",
+	"<leader>A",
+	":lua require('harpoon.mark').add_file()<CR>",
+	{ noremap = true, silent = true, desc = "add file to harpoon" }
 )
 map(
-  "n",
-  "<C-e>",
-  ":lua require('harpoon.ui').toggle_quick_menu()<CR>",
-  { noremap = true, silent = true, desc = "toggle harpoon menu" }
+	"n",
+	"<C-e>",
+	":lua require('harpoon.ui').toggle_quick_menu()<CR>",
+	{ noremap = true, silent = true, desc = "toggle harpoon menu" }
 )
 map(
-  "n",
-  "<C-p>",
-  ":lua require('harpoon.ui').nav_prev()<CR>",
-  { noremap = true, silent = true, desc = "navigate to previous mark" }
+	"n",
+	"<C-p>",
+	":lua require('harpoon.ui').nav_prev()<CR>",
+	{ noremap = true, silent = true, desc = "navigate to previous mark" }
 )
 map(
-  "n",
-  "<C-h>",
-  ":lua require('harpoon.ui').nav_next()<CR>",
-  { noremap = true, silent = true, desc = "navigate to next mark" }
+	"n",
+	"<C-l>",
+	":lua require('harpoon.ui').nav_next()<CR>",
+	{ noremap = true, silent = true, desc = "navigate to next mark" }
 )
 
 map(
-  "n",
-  "<leader>1",
-  ":lua require('harpoon.ui').nav_file(1)<CR>",
-  { noremap = true, silent = true, desc = "navigate to file 1" }
+	"n",
+	"<leader>1",
+	":lua require('harpoon.ui').nav_file(1)<CR>",
+	{ noremap = true, silent = true, desc = "navigate to file 1" }
 )
 map(
-  "n",
-  "<leader>2",
-  ":lua require('harpoon.ui').nav_file(2)<CR>",
-  { noremap = true, silent = true, desc = "navigate to file 2" }
+	"n",
+	"<leader>2",
+	":lua require('harpoon.ui').nav_file(2)<CR>",
+	{ noremap = true, silent = true, desc = "navigate to file 2" }
 )
 map(
-  "n",
-  "<leader>3",
-  ":lua require('harpoon.ui').nav_file(3)<CR>",
-  { noremap = true, silent = true, desc = "navigate to file 3" }
+	"n",
+	"<leader>3",
+	":lua require('harpoon.ui').nav_file(3)<CR>",
+	{ noremap = true, silent = true, desc = "navigate to file 3" }
 )
 map(
-  "n",
-  "<leader>4",
-  ":lua require('harpoon.ui').nav_file(4)<CR>",
-  { noremap = true, silent = true, desc = "navigate to file 4" }
+	"n",
+	"<leader>4",
+	":lua require('harpoon.ui').nav_file(4)<CR>",
+	{ noremap = true, silent = true, desc = "navigate to file 4" }
 )
 map(
-  "n",
-  "<leader>5",
-  ":lua require('harpoon.ui').nav_file(5)<CR>",
-  { noremap = true, silent = true, desc = "navigate to file 5" }
+	"n",
+	"<leader>5",
+	":lua require('harpoon.ui').nav_file(5)<CR>",
+	{ noremap = true, silent = true, desc = "navigate to file 5" }
 )
