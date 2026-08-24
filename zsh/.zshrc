@@ -8,9 +8,6 @@ export PATH="$HOME/Projects/flutter_app/flutter/bin:$PATH"
 # bash settings
 export PS4=$'\e[31m[debug]\e[0m ' # include timestamp in debug output with red color
 
-# User Settings
-source ~/.dotfiles/zsh/.zshrcu
-
 # Global secret variables
 source ~/.env
 
@@ -38,6 +35,9 @@ ZSH_TMUX_AUTOSTART=true
 
 
 source $ZSH/oh-my-zsh.sh
+
+# User Settings
+source ~/.dotfiles/zsh/.zshrcu
 
 logos=(
  "Aisaka"
