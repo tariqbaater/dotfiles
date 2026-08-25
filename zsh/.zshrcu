@@ -46,7 +46,7 @@ export MANPAGER='nvim +Man!'
 
 # nvim configuration picker
 alias nvim-lazy='NVIM_APPNAME=nvim-lazy nvim'
-#alias nvim-astro='NVIM_APPNAME=astro nvim'
+alias nvim-lite='NVIM_APPNAME=nvim-lite nvim'
 #alias nvim-chad='NVIM_APPNAME=nvchad nvim'
 # alias nvim-default='NVIM_APPNAME=kickstart nvim'
 
