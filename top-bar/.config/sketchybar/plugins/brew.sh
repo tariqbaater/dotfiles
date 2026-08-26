@@ -19,11 +19,7 @@ case "$SENDER" in
 *)
   COUNT=$($BREW outdated 2>/dev/null | wc -l | tr -d ' ')
 
-  if [ "$COUNT" -gt 0 ] 2>/dev/null; then
-    sketchybar --set "$NAME" label="$COUNT" label.drawing=on
-  else
-    sketchybar --set "$NAME" label.drawing=off
-  fi
+  sketchybar --set "$NAME" label="$COUNT" label.drawing=on
   ;;
 esac
 
