@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Main WiFi item with popup
 sketchybar --add item wifi right \
            --set wifi update_freq=10 script="$PLUGIN_DIR/wifi.sh" \
                       background.color=$BLUE \
@@ -13,5 +14,10 @@ sketchybar --add item wifi right \
                       label.color=$DARK_TEXT \
                       icon.color=$DARK_TEXT \
                       padding_left=0 padding_right=8 \
-                      click_script="open 'x-apple.systempreferences:com.apple.preference.network'" \
+                      popup.align=right \
+                      popup.background.color=$POPUP_BG \
+                      popup.background.corner_radius=8 \
+                      popup.background.border_width=1 \
+                      popup.background.border_color=$BORDER_COLOR \
+                      click_script="$CONFIG_DIR/plugins/wifi_menu.sh" \
            --subscribe wifi wifi_change
