@@ -21,3 +21,5 @@ export MAUVE=0xffcba6f7          # front_app (same as ACCENT_COLOR)
 export LAVENDER=0xffb4befe       # bluetooth
 export RED=0xfff38ba8            # vpn
 export SAPPHIRE=0xff74c7ec       # storage
+export TEXT=0xffcdd6f4            # popup text (Subtext0)
+export POPUP_BG=0xff313244        # popup background (Surface0)
