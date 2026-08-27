@@ -102,7 +102,7 @@ vim.api.nvim_create_autocmd("FileType", {
 	callback = function()
 		vim.cmd([[setlocal foldlevel=99]])
 		vim.cmd([[setlocal foldmethod=expr]])
-		vim.cmd([[setlocal foldexpr=nvim_treesitter#foldexpr()]])
+		vim.cmd([[setlocal foldexpr=v:lua.vim.treesitter.foldexpr()]])
 	end,
 })
 

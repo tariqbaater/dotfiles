@@ -1,0 +1,5 @@
+require("tariq.core")
+require("tariq.lsp")
+require("tariq.colorscheme")
+require("tariq.netrw")
+require("tariq.formatting")
