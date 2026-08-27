@@ -20,7 +20,7 @@ map("n", "<leader>m", ":DBUIToggle<CR>", { desc = "Deploy DBUI" })
 map("n", "<leader>r", ":Cook<CR>", { desc = "Run program" })
 
 -- LazyGit
-map("n", "<leader>gg", ":LazyGit<CR>", { desc = "Run program" })
+map("n", "<leader>gg", ":LazyGit<CR>", { desc = "LazyGit" })
 
 -- vim pack
 map("n", "<leader>pa", ":lua vim.pack.update()<CR>", { silent = true, desc = "Update plugins" })
@@ -29,26 +29,20 @@ map("n", "<leader>pa", ":lua vim.pack.update()<CR>", { silent = true, desc = "Up
 vim.keymap.set("n", "<leader>d", function()
 	vim.diagnostic.setqflist()
 	vim.cmd("copen")
-end, { silent = true })
+end, { silent = true, desc = "Lsp Diagnostics" })
 
 -- copen navigation
 map("n", "<leader>C", ":copen<CR>", { noremap = true, silent = true, desc = "Open quickfix list" })
-map("n", "<leader>C<CR>", ":cclose<CR>", { noremap = true, silent = true, desc = "Close quickfix list" })
 map("n", "§", ":cnext<CR>", { noremap = true, silent = true, desc = "Next quickfix item" })
 map("n", "±", ":cprev<CR>", { noremap = true, silent = true, desc = "Previous quickfix item" })
 
 -- file explorer
-map("n", "<leader>e", ":lua require('mini.files').open()<CR>", { noremap = true, silent = true })
+map("n", "<leader>e", ":lua require('mini.files').open()<CR>", { noremap = true, silent = true, desc = "Mini files" })
 -- sed search and replace
-map(
-	"n",
-	"<leader>R",
-	[[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
-	{ desc = "Replace word cursor is on globally" }
-)
+map("n", "<leader>R", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Replace word" })
 
 -- make current file executable
-map("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true, desc = "makes file executable" })
+map("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true, desc = "make executable" })
 
 -- cursor positioning
 map("n", "<C-d>", "<C-d>zz", { desc = "move down in buffer with cursor centered" })
@@ -77,10 +71,10 @@ map("n", "<Tab>", ":bnext<CR>", { noremap = true, silent = true })
 map("n", "<S-Tab>", ":bprevious<CR>", { noremap = true, silent = true })
 
 -- buffers
-map("n", "<leader>c", ":bd<CR>", { noremap = true, silent = true })
-map("n", "<leader>s", ":w<cr>", { noremap = true, silent = true })
-map("n", "<leader>n", "<cmd>enew<CR>", { noremap = true, silent = true })
-map("n", "<leader>q", "<cmd>q<cr>", { noremap = true, silent = true })
+map("n", "<leader>c", ":bd<CR>", { noremap = true, silent = true, desc = "Close buffer" })
+map("n", "<leader>s", ":w<cr>", { noremap = true, silent = true, desc = "Save buffer" })
+map("n", "<leader>n", "<cmd>enew<CR>", { noremap = true, silent = true, desc = "New Buffer" })
+map("n", "<leader>q", "<cmd>q<cr>", { noremap = true, silent = true, desc = "Quit" })
 
 -- move lines up and down
 map("v", "J", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
@@ -95,8 +89,22 @@ map("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
 map("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
 map("n", "<C-l>", "<C-w>l", { noremap = true, silent = true })
 
+-- splits
+map("n", "<leader>wv", ":vsp new<CR>", { noremap = true, silent = true, desc = "Vertical split" })
+map("n", "<leader>wh", ":split new<CR>", { noremap = true, silent = true, desc = "Horizontal split" })
+
 -- windows
-vim.keymap.set("n", "<leader><left>", ":vertical resize +20<cr>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader><right>", ":vertical resize -20<cr>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader><up>", ":resize +10<cr>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader><down>", ":resize -10<cr>", { noremap = true, silent = true })
+vim.keymap.set(
+	"n",
+	"<leader><left>",
+	":vertical resize +20<cr>",
+	{ noremap = true, silent = true, desc = "Vert resize +20" }
+)
+vim.keymap.set(
+	"n",
+	"<leader><right>",
+	":vertical resize -20<cr>",
+	{ noremap = true, silent = true, desc = "Vert resize -20" }
+)
+vim.keymap.set("n", "<leader><up>", ":resize +10<cr>", { noremap = true, silent = true, desc = "Horiz resize +10" })
+vim.keymap.set("n", "<leader><down>", ":resize -10<cr>", { noremap = true, silent = true, desc = "Horiz resize -10" })
