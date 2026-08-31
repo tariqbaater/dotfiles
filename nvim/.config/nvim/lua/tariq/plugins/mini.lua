@@ -2,10 +2,6 @@ return {
 	"echasnovski/mini.nvim",
 	event = "VeryLazy",
 	config = function()
-		require("mini.indentscope").setup({
-			symbol = "│",
-			options = { try_as_border = true },
-		})
 		require("mini.surround").setup({
 			mappings = {
 				add = "ys",
@@ -19,10 +15,6 @@ return {
 			search_method = "cover_or_nearest",
 		})
 		require("mini.comment").setup({})
-		require("mini.sessions").setup({
-			autowrite = true,
-			autoread = true,
-			silent = true,
-		})
+		require("mini.sessions").setup()
 	end,
 }

@@ -1,5 +1,22 @@
 -- custom line commands
 
+-- force treesitter to reparse the current buffer
+vim.api.nvim_create_autocmd("User", {
+	pattern = "MiniSessionsPostRead",
+	callback = function()
+		-- Loop through every single active buffer tracked by Neovim
+		for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+			-- Ensure the buffer is loaded, contains a filetype, and is real code text
+			if vim.api.nvim_buf_is_loaded(buf) and vim.bo[buf].buftype == "" and vim.bo[buf].filetype ~= "" then
+				-- Force-kick the native Tree-sitter engine into action on this buffer
+				pcall(vim.treesitter.start, buf, vim.bo[buf].filetype)
+			end
+		end
+
+		-- Force an immediate window graphics layout refresh
+		vim.cmd("redraw")
+	end,
+})
 -- lsp options
 -- create a command to toggle diagnostics
 vim.api.nvim_create_user_command("ToggleDiagnostics", function()
