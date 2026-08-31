@@ -1,13 +1,12 @@
 return {
     "folke/noice.nvim",
     event = "VeryLazy",
-    config = function()
-        require("noice").setup()
-    end,
     opts = {
-        -- add any options here
         cmdline = {
             view = "cmdline_popup",
+        },
+        presets = {
+            long_message_to_split = true,
         },
         messages = {
             enabled = true,

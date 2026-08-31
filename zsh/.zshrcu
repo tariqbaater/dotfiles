@@ -1,6 +1,3 @@
-# echo "Remaining balance:"
-# mysql -e "USE finances; SELECT * FROM asset_payments;" | tail -n +2 | awk '{sum += $3} END {result = (3500000) - sum; printf "%'\''d\n", result}'
-
 # User configuration
 # aliases
 alias rsn='rsync -av /Users/tariq/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Vault/ omarchy:/home/tariq/Documents/Obsidian/'
@@ -47,6 +44,7 @@ export MANPAGER='nvim +Man!'
 # nvim configuration picker
 alias nvim-lazy='NVIM_APPNAME=nvim-lazy nvim'
 alias nv='NVIM_APPNAME=nvim-lite nvim'
+#alias nv='NVIM_APPNAME=nvim-minimax nvim'
 #alias nvim-chad='NVIM_APPNAME=nvchad nvim'
 # alias nvim-default='NVIM_APPNAME=kickstart nvim'
 

@@ -1,3 +1,19 @@
+logos=(
+ "Aisaka"
+ "Geass"
+ "Link-green"
+ "Loli"
+ "Pochita"
+ "Ryuzaki"
+ "agk clan"
+ "chelsea"
+
+  )
+# Select a random logo
+random_logo="${logos[RANDOM % ${#logos[@]} + 1]}"
+# Set the logo variable
+fastfetch --logo ~/.config/fastfetch/images/"$random_logo".png
+
 # claude-code
 export ANTHROPIC_AUTH_TOKEN=o1lama
 export ANTHROPIC_BASE_URL=http://100.92.119.107:11434
@@ -38,22 +54,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User Settings
 source ~/.dotfiles/zsh/.zshrcu
-
-logos=(
- "Aisaka"
- "Geass"
- "Link-green"
- "Loli"
- "Pochita"
- "Ryuzaki"
- "agk clan"
- "chelsea"
-
-  )
-# Select a random logo
-random_logo="${logos[RANDOM % ${#logos[@]} + 1]}"
-# Set the logo variable
-fastfetch --logo ~/.config/fastfetch/images/"$random_logo".png
 
 # End of lines added by compinstall
 autoload -Uz compinit

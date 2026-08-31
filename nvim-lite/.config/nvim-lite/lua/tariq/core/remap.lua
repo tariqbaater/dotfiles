@@ -37,7 +37,7 @@ map("n", "§", ":cnext<CR>", { noremap = true, silent = true, desc = "Next quick
 map("n", "±", ":cprev<CR>", { noremap = true, silent = true, desc = "Previous quickfix item" })
 
 -- file explorer
-map("n", "<leader>e", ":lua require('mini.files').open()<CR>", { noremap = true, silent = true, desc = "Mini files" })
+map("n", "<leader>e", ":Oil<CR>", { noremap = true, silent = true, desc = "Mini files" })
 -- sed search and replace
 map("n", "<leader>R", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Replace word" })
 

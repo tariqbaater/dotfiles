@@ -46,7 +46,7 @@ return {
     vim.keymap.set({ "x", "o" }, "if", function() select("@function.inner", "textobjects") end, { desc = "inner function" })
     vim.keymap.set({ "x", "o" }, "ac", function() select("@class.outer", "textobjects") end, { desc = "outer class" })
     vim.keymap.set({ "x", "o" }, "ic", function() select("@class.inner", "textobjects") end, { desc = "inner class" })
-    vim.keymap.set({ "x", "o" }, "ap", function() select("@parameter.outer", "textobjects") end, { desc = "outer parameter" })
-    vim.keymap.set({ "x", "o" }, "ip", function() select("@parameter.inner", "textobjects") end, { desc = "inner parameter" })
+    vim.keymap.set({ "x", "o" }, "a,", function() select("@parameter.outer", "textobjects") end, { desc = "outer parameter" })
+    vim.keymap.set({ "x", "o" }, "i,", function() select("@parameter.inner", "textobjects") end, { desc = "inner parameter" })
   end,
 }

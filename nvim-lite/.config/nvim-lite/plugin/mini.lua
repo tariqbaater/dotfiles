@@ -9,7 +9,7 @@ require("mini.statusline").setup({})
 require("mini.tabline").setup({})
 require("mini.notify").setup({})
 require("mini.starter").setup({})
-require("mini.files").setup({})
+-- require("mini.files").setup({}) -- I use oil now
 
 -- mini.clue configurations
 local miniclue = require("mini.clue")
