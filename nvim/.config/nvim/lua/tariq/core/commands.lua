@@ -28,6 +28,12 @@ vim.api.nvim_create_user_command("Config", function()
 	vim.cmd("Telescope find_files")
 end, {})
 
+-- Projects
+vim.api.nvim_create_user_command("Projects", function()
+	vim.cmd([[cd ~/Projects]])
+	vim.cmd("Telescope find_files")
+end, {})
+
 -- highlight on yank
 vim.api.nvim_create_autocmd("TextYankPost", {
 	group = vim.api.nvim_create_augroup("highlight_yank", {}),
@@ -94,18 +100,6 @@ vim.api.nvim_create_autocmd("WinEnter", {
 	end,
 })
 
--- set fold settings
-vim.api.nvim_create_autocmd("FileType", {
-	group = vim.api.nvim_create_augroup("fold_settings", {}),
-	desc = "Set fold settings",
-	pattern = "*",
-	callback = function()
-		vim.cmd([[setlocal foldlevel=99]])
-		vim.cmd([[setlocal foldmethod=expr]])
-		vim.cmd([[setlocal foldexpr=v:lua.vim.treesitter.foldexpr()]])
-	end,
-})
-
 --  Disable arrow keys in all modes
 local modes = { "n", "i", "v", "x", "s", "o", "t" } -- all possible modes
 local arrows = { "<Up>", "<Down>", "<Left>", "<Right>" }
@@ -116,39 +110,11 @@ for _, mode in ipairs(modes) do
 	end
 end
 
--- local enabledModes = { "i", "c", "t", "o", "t", "s", "x" } -- modes where arrow keys are enabled
--- -- Map alt + h/j/k/l to arrow keys in insert mode
--- for _, mode in ipairs(enabledModes) do
---   vim.keymap.set(mode, "<A-h>", "<Left>", { noremap = true, silent = true })
---   vim.keymap.set(mode, "<A-j>", "<Down>", { noremap = true, silent = true })
---   vim.keymap.set(mode, "<A-k>", "<Up>", { noremap = true, silent = true })
---   vim.keymap.set(mode, "<A-l>", "<Right>", { noremap = true, silent = true })
--- end
-
 -- format on save
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*",
 	callback = function(args)
 		require("conform").format({ bufnr = args.buf })
-	end,
-})
-
--- source lua files on save
-vim.api.nvim_create_autocmd("BufWritePost", {
-	pattern = "*.lua",
-	callback = function()
-		vim.cmd("source %")
-		print("Sourced " .. vim.fn.expand("%"))
-	end,
-})
-
--- when lazygit is opened within neovim, set the size to 30 lines
-vim.api.nvim_create_autocmd("TermOpen", {
-	group = vim.api.nvim_create_augroup("lazygit_size", {}),
-	desc = "Lazygit size",
-	pattern = "*lazygit*",
-	callback = function()
-		vim.cmd([[resize 36]])
 	end,
 })
 
