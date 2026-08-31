@@ -101,13 +101,12 @@ vim.keymap.set("x", ">", ">gv")
 vim.keymap.set("x", "<", "<gv")
 
 -- increment/decrement numbers
-map("n", "<leader>+", "<C-a>", { noremap = true, silent = true, desc = "Increment number" }) -- increment
+map("n", "<leader>=", "<C-a>", { noremap = true, silent = true, desc = "Increment number" }) -- increment
 map("n", "<leader>-", "<C-x>", { noremap = true, silent = true, desc = "Decrement number" }) -- decrement
 
 -- normal mode
 map("i", "jk", "<ESC>", { noremap = true, silent = true })
 map("i", "kj", "<ESC>", { noremap = true, silent = true })
-map("i", "<C-c>", "<ESC>", { noremap = true, silent = true })
 
 -- cycle buffers
 map("n", "<Tab>", ":bnext<CR>", { noremap = true, silent = true })
@@ -126,65 +125,8 @@ map("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
 map("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
 map("n", "<C-l>", "<C-w>l", { noremap = true, silent = true })
 
--- windows
+-- windows resize
 vim.keymap.set("n", "<leader><left>", ":vertical resize +20<cr>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader><right>", ":vertical resize -20<cr>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader><up>", ":resize +10<cr>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader><down>", ":resize -10<cr>", { noremap = true, silent = true })
-
--- harpoon keymaps
-map(
-	"n",
-	"<leader>A",
-	":lua require('harpoon.mark').add_file()<CR>",
-	{ noremap = true, silent = true, desc = "add file to harpoon" }
-)
-map(
-	"n",
-	"<C-e>",
-	":lua require('harpoon.ui').toggle_quick_menu()<CR>",
-	{ noremap = true, silent = true, desc = "toggle harpoon menu" }
-)
-map(
-	"n",
-	"<C-p>",
-	":lua require('harpoon.ui').nav_prev()<CR>",
-	{ noremap = true, silent = true, desc = "navigate to previous mark" }
-)
-map(
-	"n",
-	"<C-l>",
-	":lua require('harpoon.ui').nav_next()<CR>",
-	{ noremap = true, silent = true, desc = "navigate to next mark" }
-)
-
-map(
-	"n",
-	"<leader>1",
-	":lua require('harpoon.ui').nav_file(1)<CR>",
-	{ noremap = true, silent = true, desc = "navigate to file 1" }
-)
-map(
-	"n",
-	"<leader>2",
-	":lua require('harpoon.ui').nav_file(2)<CR>",
-	{ noremap = true, silent = true, desc = "navigate to file 2" }
-)
-map(
-	"n",
-	"<leader>3",
-	":lua require('harpoon.ui').nav_file(3)<CR>",
-	{ noremap = true, silent = true, desc = "navigate to file 3" }
-)
-map(
-	"n",
-	"<leader>4",
-	":lua require('harpoon.ui').nav_file(4)<CR>",
-	{ noremap = true, silent = true, desc = "navigate to file 4" }
-)
-map(
-	"n",
-	"<leader>5",
-	":lua require('harpoon.ui').nav_file(5)<CR>",
-	{ noremap = true, silent = true, desc = "navigate to file 5" }
-)

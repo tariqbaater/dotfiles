@@ -43,7 +43,7 @@ return {
 				desc = "run code in a floating window",
 			},
 			{ "<leader>h", "<cmd>lua Snacks.dashboard()<CR>", desc = "show dashboard" },
-			{ "<leader>gg", "<cmd>LazyGit<CR>", desc = "open lazygit" },
+			{ "<leader>gg", "<cmd>lua Snacks.lazygit.open()<CR>", desc = "open lazygit" },
 			{ "<leader>gl", "<cmd>LazyGitLog<CR>", desc = "open lazygit log" },
 			{ "<leader>gf", "<cmd>LazyGitFilterCurrentFile<CR>", desc = "open lazygit filter current file" },
 			{

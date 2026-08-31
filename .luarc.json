@@ -1,7 +1,8 @@
 {
     "diagnostics.disable": [
         "undefined-field",
-        "undefined-global"
+        "undefined-global",
+        "undefined-doc-name"
     ],
     "diagnostics.globals": [
         "nvim_get_option_value"
