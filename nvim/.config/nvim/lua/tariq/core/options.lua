@@ -14,11 +14,11 @@
 -- vim.opt.winborder = "rounded"
 
 -- Neovim default updatetime is 4000 set to lower value to update perfomance
--- vim.opt.updatetime = 200
+vim.opt.updatetime = 200
 
 -- Performance improvements
--- vim.opt.redrawtime = 10000
--- vim.opt.maxmempattern = 20000
+vim.opt.redrawtime = 10000
+vim.opt.maxmempattern = 20000
 
 -- set conceal level
 vim.opt.conceallevel = 2
