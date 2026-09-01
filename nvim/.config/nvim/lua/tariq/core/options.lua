@@ -62,7 +62,9 @@ vim.opt.signcolumn = "yes"
 
 -- set fold column
 vim.opt.foldcolumn = "1"
-vim.opt.foldmethod = "marker" -- change to indent for folding
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
+vim.opt.foldenable = true
 
 -- save undo history
 vim.opt.undofile = true

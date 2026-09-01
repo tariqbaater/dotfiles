@@ -1,5 +1,9 @@
 return {
-    "tpope/vim-dadbod",
+  { "tpope/vim-dadbod", cmd = "DB" },
+  {
     "kristijanhusak/vim-dadbod-ui",
-    "kristijanhusak/vim-dadbod-completion",
-    }
+    cmd = "DBUIToggle",
+    dependencies = { "tpope/vim-dadbod" },
+  },
+  { "kristijanhusak/vim-dadbod-completion", ft = { "sql", "mysql", "postgres" } },
+}

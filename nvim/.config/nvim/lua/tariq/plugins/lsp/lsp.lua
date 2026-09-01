@@ -7,6 +7,18 @@ return {
     { "folke/lazydev.nvim", opts = {} },
   },
   config = function()
+    local severity = vim.diagnostic.severity
+    vim.diagnostic.config({
+      signs = {
+        text = {
+          [severity.ERROR] = "",
+          [severity.WARN] = "",
+          [severity.INFO] = "",
+          [severity.HINT] = "",
+        },
+      },
+    })
+
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
     vim.lsp.config("*", {

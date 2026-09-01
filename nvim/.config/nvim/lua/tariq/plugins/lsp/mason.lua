@@ -14,6 +14,7 @@ return {
   },
   {
     "williamboman/mason-lspconfig.nvim",
+    cmd = { "MasonInstall", "MasonUninstall", "MasonUpdate", "LspInstall", "LspInstallInfo" },
     opts = {
       ensure_installed = {
         "ts_ls",
@@ -34,6 +35,7 @@ return {
   },
   {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
+    cmd = { "MasonToolsInstall", "MasonToolsUpdate", "MasonToolsClean" },
     opts = {
       ensure_installed = {
         "prettier",

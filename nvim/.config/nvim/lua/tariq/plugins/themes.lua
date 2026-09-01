@@ -43,7 +43,7 @@ return {
           ["@text.danger"] = { fg = "#bf616a" },
           ["@text.hint"] = { fg = "#88c0d0" },
         },
-        default_integrations = true,
+        default_integrations = false,
         integrations = {
           cmp = true,
           gitsigns = true,
@@ -58,7 +58,8 @@ return {
         },
       })
 
-      vim.cmd.colorscheme "catppuccin-mocha" -- prioritize catppuccin-macchiato over other colorschemes
+      require("catppuccin").compile()
+      vim.cmd.colorscheme "catppuccin-mocha"
     end,
   },
 }
