@@ -21,14 +21,14 @@ return {
 		local wk = require("which-key")
 
 		wk.add({
-			{ "<leader>db", "<cmd>lua require('dap').toggle_breakpoint()<cr>", desc = "Toggle Breakpoint" },
-			{ "<leader>dc", "<cmd>lua require('dap').continue()<cr>", desc = "Continue" },
-			{ "<leader>dn", "<cmd>lua require('dap').step_over()<cr>", desc = "Step Over" },
-			{ "<leader>di", "<cmd>lua require('dap').step_into()<cr>", desc = "Step Into" },
-			{ "<leader>do", "<cmd>lua require('dap').step_out()<cr>", desc = "Step Out" },
-			{ "<leader>dr", "<cmd>lua require('dap').repl.open()<cr>", desc = "Repl" },
-			{ "<leader>du", "<cmd>lua require('dapui').toggle()<cr>", desc = "Dap UI" },
-			{ "<leader>dq", "<cmd>lua require('dap').terminate()<cr>", desc = "Terminate" },
+			{ "<leader>Db", "<cmd>lua require('dap').toggle_breakpoint()<cr>", desc = "Toggle Breakpoint" },
+			{ "<leader>Dc", "<cmd>lua require('dap').continue()<cr>", desc = "Continue" },
+			{ "<leader>Dn", "<cmd>lua require('dap').step_over()<cr>", desc = "Step Over" },
+			{ "<leader>Di", "<cmd>lua require('dap').step_into()<cr>", desc = "Step Into" },
+			{ "<leader>Do", "<cmd>lua require('dap').step_out()<cr>", desc = "Step Out" },
+			{ "<leader>Dr", "<cmd>lua require('dap').repl.open()<cr>", desc = "Repl" },
+			{ "<leader>Du", "<cmd>lua require('dapui').toggle()<cr>", desc = "Dap UI" },
+			{ "<leader>Dq", "<cmd>lua require('dap').terminate()<cr>", desc = "Terminate" },
 			{ "<leader>ll", "<cmd>Lazy load all<cr>", desc = "Load plugins" },
 			{ "<leader>s", "<cmd>w<cr>", desc = "Save" },
 			{ "<leader>q", "<cmd>q<cr>", desc = "Quit" },

@@ -23,7 +23,7 @@ function _G.Toggle_venn()
 		vim.b.venn_enabled = nil
 	end
 end
--- toggle keymappings for venn using <leader>v
+-- toggle keymappings for venn
 vim.api.nvim_set_keymap("n", "<leader>ve", ":lua Toggle_venn()<CR>", { noremap = true })
 
 -- sed search and replace
@@ -33,6 +33,9 @@ map(
 	[[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
 	{ desc = "Replace word cursor is on globally" }
 )
+
+-- delete text without yanking into register
+map("n", "<leader>d", '"_d', { desc = "Delete without yanking" })
 
 -- make current file executable
 map("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true, desc = "makes file executable" })
