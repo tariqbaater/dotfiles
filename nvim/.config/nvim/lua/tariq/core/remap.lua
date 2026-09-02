@@ -26,6 +26,21 @@ end
 -- toggle keymappings for venn
 vim.api.nvim_set_keymap("n", "<leader>ve", ":lua Toggle_venn()<CR>", { noremap = true })
 
+-- insert pair square brackets for markdown quicklinks since i removed pairs plugins
+-- in markdown files only
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "markdown",
+	callback = function()
+		vim.api.nvim_buf_set_keymap(
+			0,
+			"i",
+			"[",
+			"[[]]<left><left>",
+			{ noremap = true, desc = "Insert pair square brackets" }
+		)
+	end,
+})
+
 -- sed search and replace
 map(
 	"n",
