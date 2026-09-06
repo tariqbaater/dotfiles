@@ -6,10 +6,6 @@ font-style = Regular
 # theme
 theme = Catppuccin Mocha
 
-# Cursor
-cursor-style = "block"
-
-
 # Window
 window-padding-x = 14
 window-padding-y = 14
@@ -24,8 +20,9 @@ mouse-hide-while-typing = true
 
 # Cursor styling
 cursor-style = "block"
-cursor-style-blink = false
-custom-shader = shaders/cursor_blaze_no_trail.glsl
+# cursor-style-blink = false
+# custom-shader = shaders/cursor_blaze_no_trail.glsl
+custom-shader = shaders/cursor_smear.glsl
 
 # Cursor styling + SSH session terminfo
 # (all shell integration options must be passed together)
