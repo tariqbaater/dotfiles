@@ -69,6 +69,10 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH=$PATH:$HOME/go/bin
 
+# fzf search bar position
+export FZF_DEFAULT_OPTS="--layout=reverse"
+
+
 #tmux settings
 export LC_ALL=en_US.UTF-8   export LANG=en_US.UTF-8
 export PATH="$HOME/.tmuxifier/bin:$PATH"
