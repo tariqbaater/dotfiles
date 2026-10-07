@@ -26,17 +26,16 @@ else
   SSID=""
 fi
 
-# Get known networks
-KNOWN=$(networksetup -listpreferredwirelessnetworks en0 2>/dev/null | tail -n +2 | sed 's/^[[:space:]]*//')
-
 # Remove old popup items
-sketchybar --remove wifi.net_* 2>/dev/null
+for idx in $(seq 0 50); do
+  sketchybar --remove "wifi.net_$idx" 2>/dev/null
+done
 sketchybar --remove wifi.status 2>/dev/null
 sketchybar --remove wifi.sep1 2>/dev/null
 sketchybar --remove wifi.sep2 2>/dev/null
+sketchybar --remove wifi.toggle 2>/dev/null
 sketchybar --remove wifi.scan 2>/dev/null
 sketchybar --remove wifi.settings 2>/dev/null
-sketchybar --remove wifi.toggle 2>/dev/null
 
 # Add current network indicator
 sketchybar --add item wifi.status popup.wifi \
@@ -73,10 +72,26 @@ sketchybar --add item wifi.sep1 popup.wifi \
                            padding_left=10 padding_right=10 \
                            background.height=10
 
-# Add known networks
+# Get saved/known networks
+KNOWN=$(networksetup -listpreferredwirelessnetworks en0 2>/dev/null | tail -n +2 | sed 's/^[[:space:]]*//')
+
+# Write known networks to temp file (avoids subshell issues)
+KNOWN_FILE=$(mktemp)
+ADDED_FILE=$(mktemp)
+echo "$KNOWN" > "$KNOWN_FILE"
+> "$ADDED_FILE"
+
 i=0
-echo "$KNOWN" | while IFS= read -r network; do
+
+# Add known/saved networks
+while IFS= read -r network; do
   if [ -n "$network" ]; then
+    # Skip if already added (dedup)
+    if grep -qF "$network" "$ADDED_FILE" 2>/dev/null; then
+      continue
+    fi
+    echo "$network" >> "$ADDED_FILE"
+
     if [ "$network" = "$SSID" ]; then
       NETICON="􀋪"
       ICON_COLOR=$GREEN
@@ -84,17 +99,19 @@ echo "$KNOWN" | while IFS= read -r network; do
       NETICON="􀜚"
       ICON_COLOR=$TEXT
     fi
-    
+
     sketchybar --add item "wifi.net_$i" popup.wifi
     sketchybar --set "wifi.net_$i" icon="$NETICON" label="$network"
     sketchybar --set "wifi.net_$i" icon.color="$ICON_COLOR" label.color="$TEXT"
     sketchybar --set "wifi.net_$i" click_script="$CONFIG_DIR/plugins/wifi_connect.sh \"$network\""
     sketchybar --set "wifi.net_$i" background.corner_radius=4 padding_left=10 padding_right=10 background.height=28
+
     i=$((i + 1))
   fi
-done <<EOF
-$KNOWN
-EOF
+done < "$KNOWN_FILE"
+
+# Cleanup temp files
+rm -f "$KNOWN_FILE" "$ADDED_FILE"
 
 # Add separator before actions
 sketchybar --add item wifi.sep2 popup.wifi \
@@ -104,11 +121,11 @@ sketchybar --add item wifi.sep2 popup.wifi \
                            padding_left=10 padding_right=10 \
                            background.height=10
 
-# Add join other network
+# Add scan option - opens Network preferences where available networks are visible
 sketchybar --add item wifi.scan popup.wifi \
-           --set wifi.scan icon=􀅳 label="Join Other Network..." \
+           --set wifi.scan icon=􀅳 label="Scan for Networks..." \
                            icon.color=$BLUE label.color=$TEXT \
-                           click_script="networksetup -setairportnetwork en0; sketchybar --set wifi popup.drawing=off" \
+                           click_script="open 'x-apple.systempreferences:com.apple.preference.network?Wi-Fi'; sketchybar --set wifi popup.drawing=off" \
                            background.corner_radius=4 \
                            padding_left=10 padding_right=10 \
                            background.height=28

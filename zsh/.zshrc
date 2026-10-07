@@ -22,6 +22,7 @@ export ANTHROPIC_BASE_URL=http://100.92.119.107:11434
 export PATH="$HOME/Projects/flutter_app/flutter/bin:$PATH"
 
 # bash settings
+export PS2='-> '
 export PS4=$'\e[31m[debug]\e[0m ' # include timestamp in debug output with red color
 
 # Global secret variables

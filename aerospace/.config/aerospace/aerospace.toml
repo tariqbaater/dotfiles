@@ -181,7 +181,7 @@ if.app-id = 'com.apple.python3'
 run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
-if.app-id = 'com.apple.ScreenContinuity'
+if.app-id = 'com.apple.Terminal'
 run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
